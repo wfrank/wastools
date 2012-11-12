@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export OPTIONS=$@
+
+/home/wfrank/tools/wsadmin/wsadmin.sh -lang jython -f /home/wfrank/tools/wastools/lib/wasconf.py

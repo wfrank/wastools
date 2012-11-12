@@ -1,0 +1,23 @@
+---
+ACTION: modify
+OBJECTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+ATTRIBUTES:
+    genericJvmArguments: -Xdisableexplicitgc -Xgcpolicy:gencon -Xgcthreads4 -Xjit:disableInterpreterProfiling -Xlp -Xmn640m -Xmos640m -Xnoloa -Xscmx256m
+    initialHeapSize: 1280
+    maximumHeapSize: 1280
+    verboseModeGarbageCollection: True
+---
+ACTION: create
+TYPE: Property
+PARENTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+
+ATTRIBUTES:
+    genericJvmArguments: -Xdisableexplicitgc -Xgcpolicy:gencon -Xgcthreads4 -Xjit:disableInterpreterProfiling -Xlp -Xmn640m -Xmos640m -Xnoloa -Xscmx256m
+    initialHeapSize: 1280
+    maximumHeapSize: 1280
+    verboseModeGarbageCollection: True
+---
+ACTION: delete
+OBJECTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+
+...

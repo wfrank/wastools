@@ -1,0 +1,1784 @@
+AccessPointGroup
+WASX7351I: The parents command cannot be used to find the parents of type "AccessPointGroup"
+
+ActivationSpec
+WASX7351I: The parents command cannot be used to find the parents of type "ActivationSpec"
+
+ActivationSpecTemplateProps
+WASX7351I: The parents command cannot be used to find the parents of type "ActivationSpecTemplateProps"
+
+ActivitySessionService
+WASX7351I: The parents command cannot be used to find the parents of type "ActivitySessionService"
+
+AdminObject
+WASX7351I: The parents command cannot be used to find the parents of type "AdminObject"
+
+AdminObjectTemplateProps
+WASX7351I: The parents command cannot be used to find the parents of type "AdminObjectTemplateProps"
+
+AdminServerAuthentication
+WASX7351I: The parents command cannot be used to find the parents of type "AdminServerAuthentication"
+
+AdminService
+WASX7351I: The parents command cannot be used to find the parents of type "AdminService"
+
+Agent
+Server
+
+AllActivePolicy
+WASX7351I: The parents command cannot be used to find the parents of type "AllActivePolicy"
+
+AllAuthenticatedUsersExt
+WASX7351I: The parents command cannot be used to find the parents of type "AllAuthenticatedUsersExt"
+
+Application
+WASX7351I: The parents command cannot be used to find the parents of type "Application"
+
+ApplicationClientFile
+WASX7351I: The parents command cannot be used to find the parents of type "ApplicationClientFile"
+
+ApplicationConfig
+WASX7351I: The parents command cannot be used to find the parents of type "ApplicationConfig"
+
+ApplicationContainer
+WASX7351I: The parents command cannot be used to find the parents of type "ApplicationContainer"
+
+ApplicationDeployment
+WASX7351I: The parents command cannot be used to find the parents of type "ApplicationDeployment"
+
+ApplicationManagementService
+WASX7351I: The parents command cannot be used to find the parents of type "ApplicationManagementService"
+
+ApplicationProfileService
+WASX7351I: The parents command cannot be used to find the parents of type "ApplicationProfileService"
+
+ApplicationServer
+Server
+
+Archive
+WASX7351I: The parents command cannot be used to find the parents of type "Archive"
+
+AuthMechanism
+WASX7351I: The parents command cannot be used to find the parents of type "AuthMechanism"
+
+AuthenticationMechanism
+WASX7351I: The parents command cannot be used to find the parents of type "AuthenticationMechanism"
+
+AuthenticationTarget
+WASX7351I: The parents command cannot be used to find the parents of type "AuthenticationTarget"
+
+AuthorizationConfig
+WASX7351I: The parents command cannot be used to find the parents of type "AuthorizationConfig"
+
+AuthorizationGroup
+Cell
+
+AuthorizationGroupMember
+WASX7351I: The parents command cannot be used to find the parents of type "AuthorizationGroupMember"
+
+AuthorizationProvider
+WASX7351I: The parents command cannot be used to find the parents of type "AuthorizationProvider"
+
+AuthorizationTableExt
+AuthorizationGroup
+Cell
+
+AuthorizationTableImpl
+WASX7351I: The parents command cannot be used to find the parents of type "AuthorizationTableImpl"
+
+BackupCluster
+WASX7351I: The parents command cannot be used to find the parents of type "BackupCluster"
+
+BridgeInterface
+WASX7351I: The parents command cannot be used to find the parents of type "BridgeInterface"
+
+CMPConnectorFactory
+J2CResourceAdapter
+
+CORBAObjectNameSpaceBinding
+Cell
+Node
+Server
+ServerCluster
+
+CacheInstance
+CacheProvider
+
+CacheInstanceService
+WASX7351I: The parents command cannot be used to find the parents of type "CacheInstanceService"
+
+CacheProvider
+Cell
+Node
+Server
+ServerCluster
+
+Cell
+
+
+CellManager
+Server
+
+CellRoute
+WASX7351I: The parents command cannot be used to find the parents of type "CellRoute"
+
+Chain
+WASX7351I: The parents command cannot be used to find the parents of type "Chain"
+
+Classloader
+WASX7351I: The parents command cannot be used to find the parents of type "Classloader"
+
+ClientModuleRef
+WASX7351I: The parents command cannot be used to find the parents of type "ClientModuleRef"
+
+ClusterAdvisor
+WASX7351I: The parents command cannot be used to find the parents of type "ClusterAdvisor"
+
+ClusterMember
+WASX7351I: The parents command cannot be used to find the parents of type "ClusterMember"
+
+ClusteredTarget
+WASX7351I: The parents command cannot be used to find the parents of type "ClusteredTarget"
+
+CommonSecureInterop
+WASX7351I: The parents command cannot be used to find the parents of type "CommonSecureInterop"
+
+CompatibilityDescriptionGroup
+WASX7351I: The parents command cannot be used to find the parents of type "CompatibilityDescriptionGroup"
+
+CompensationService
+WASX7351I: The parents command cannot be used to find the parents of type "CompensationService"
+
+Component
+WASX7351I: The parents command cannot be used to find the parents of type "Component"
+
+ConfigProperty
+WASX7351I: The parents command cannot be used to find the parents of type "ConfigProperty"
+
+ConfigSynchronizationService
+WASX7351I: The parents command cannot be used to find the parents of type "ConfigSynchronizationService"
+
+ConnectionDefTemplateProps
+WASX7351I: The parents command cannot be used to find the parents of type "ConnectionDefTemplateProps"
+
+ConnectionDefinition
+WASX7351I: The parents command cannot be used to find the parents of type "ConnectionDefinition"
+
+ConnectionFactory
+WASX7351I: The parents command cannot be used to find the parents of type "ConnectionFactory"
+
+ConnectionPool
+WASX7351I: The parents command cannot be used to find the parents of type "ConnectionPool"
+
+ConnectionTest
+WASX7351I: The parents command cannot be used to find the parents of type "ConnectionTest"
+
+Connector
+WASX7351I: The parents command cannot be used to find the parents of type "Connector"
+
+ConnectorModuleDeployment
+WASX7351I: The parents command cannot be used to find the parents of type "ConnectorModuleDeployment"
+
+ConnectorModuleRef
+WASX7351I: The parents command cannot be used to find the parents of type "ConnectorModuleRef"
+
+Container
+WASX7351I: The parents command cannot be used to find the parents of type "Container"
+
+Cookie
+WASX7351I: The parents command cannot be used to find the parents of type "Cookie"
+
+CoreGroup
+Cell
+
+CoreGroupAccessPoint
+WASX7351I: The parents command cannot be used to find the parents of type "CoreGroupAccessPoint"
+
+CoreGroupBridgeService
+WASX7351I: The parents command cannot be used to find the parents of type "CoreGroupBridgeService"
+
+CoreGroupBridgeSettings
+Cell
+
+CoreGroupServer
+WASX7351I: The parents command cannot be used to find the parents of type "CoreGroupServer"
+
+CryptoHardwareToken
+WASX7351I: The parents command cannot be used to find the parents of type "CryptoHardwareToken"
+
+CustomAuthMechanism
+WASX7351I: The parents command cannot be used to find the parents of type "CustomAuthMechanism"
+
+CustomErrorPagePolicy
+WASX7351I: The parents command cannot be used to find the parents of type "CustomErrorPagePolicy"
+
+CustomService
+WASX7351I: The parents command cannot be used to find the parents of type "CustomService"
+
+CustomUserRegistry
+WASX7351I: The parents command cannot be used to find the parents of type "CustomUserRegistry"
+
+DCSInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "DCSInboundChannel"
+
+DRSConnectionPool
+WASX7351I: The parents command cannot be used to find the parents of type "DRSConnectionPool"
+
+DRSPartition
+WASX7351I: The parents command cannot be used to find the parents of type "DRSPartition"
+
+DRSSerialization
+WASX7351I: The parents command cannot be used to find the parents of type "DRSSerialization"
+
+DRSSettings
+WASX7351I: The parents command cannot be used to find the parents of type "DRSSettings"
+
+DataReplication
+WASX7351I: The parents command cannot be used to find the parents of type "DataReplication"
+
+DataReplicationDomain
+Cell
+
+DataSource
+JDBCProvider
+
+DataStoreProfile
+EventInfrastructureProvider
+
+DebugService
+WASX7351I: The parents command cannot be used to find the parents of type "DebugService"
+
+DeployedObject
+WASX7351I: The parents command cannot be used to find the parents of type "DeployedObject"
+
+DeployedObjectConfig
+WASX7351I: The parents command cannot be used to find the parents of type "DeployedObjectConfig"
+
+DeployedObjectProxyConfig
+Deployment
+
+Deployment
+WASX7351I: The parents command cannot be used to find the parents of type "Deployment"
+
+DeploymentTarget
+WASX7351I: The parents command cannot be used to find the parents of type "DeploymentTarget"
+
+DeploymentTargetMapping
+WASX7351I: The parents command cannot be used to find the parents of type "DeploymentTargetMapping"
+
+Description
+WASX7351I: The parents command cannot be used to find the parents of type "Description"
+
+DescriptionGroup
+WASX7351I: The parents command cannot be used to find the parents of type "DescriptionGroup"
+
+DescriptiveProperty
+WASX7351I: The parents command cannot be used to find the parents of type "DescriptiveProperty"
+
+DiagnosticProviderService
+WASX7351I: The parents command cannot be used to find the parents of type "DiagnosticProviderService"
+
+DiskCacheCustomPerformanceSettings
+WASX7351I: The parents command cannot be used to find the parents of type "DiskCacheCustomPerformanceSettings"
+
+DiskCacheEvictionPolicy
+WASX7351I: The parents command cannot be used to find the parents of type "DiskCacheEvictionPolicy"
+
+DisplayName
+WASX7351I: The parents command cannot be used to find the parents of type "DisplayName"
+
+DistributionQueue
+WASX7351I: The parents command cannot be used to find the parents of type "DistributionQueue"
+
+DynamicCache
+WASX7351I: The parents command cannot be used to find the parents of type "DynamicCache"
+
+DynamicSSLConfigSelection
+WASX7351I: The parents command cannot be used to find the parents of type "DynamicSSLConfigSelection"
+
+EARFile
+WASX7351I: The parents command cannot be used to find the parents of type "EARFile"
+
+EJBCache
+WASX7351I: The parents command cannot be used to find the parents of type "EJBCache"
+
+EJBContainer
+WASX7351I: The parents command cannot be used to find the parents of type "EJBContainer"
+
+EJBDeployment
+WASX7351I: The parents command cannot be used to find the parents of type "EJBDeployment"
+
+EJBJarFile
+WASX7351I: The parents command cannot be used to find the parents of type "EJBJarFile"
+
+EJBLocalRef
+WASX7351I: The parents command cannot be used to find the parents of type "EJBLocalRef"
+
+EJBModuleConfiguration
+WASX7351I: The parents command cannot be used to find the parents of type "EJBModuleConfiguration"
+
+EJBModuleDeployment
+WASX7351I: The parents command cannot be used to find the parents of type "EJBModuleDeployment"
+
+EJBModuleRef
+WASX7351I: The parents command cannot be used to find the parents of type "EJBModuleRef"
+
+EJBTimer
+WASX7351I: The parents command cannot be used to find the parents of type "EJBTimer"
+
+EjbNameSpaceBinding
+Cell
+Node
+Server
+ServerCluster
+
+EjbRef
+WASX7351I: The parents command cannot be used to find the parents of type "EjbRef"
+
+EmailNotifications
+WASX7351I: The parents command cannot be used to find the parents of type "EmailNotifications"
+
+EmitterFactoryProfile
+EventInfrastructureProvider
+
+EndPoint
+WASX7351I: The parents command cannot be used to find the parents of type "EndPoint"
+
+EndPointRef
+WASX7351I: The parents command cannot be used to find the parents of type "EndPointRef"
+
+EnterpriseBeanConfig
+WASX7351I: The parents command cannot be used to find the parents of type "EnterpriseBeanConfig"
+
+EnvEntry
+WASX7351I: The parents command cannot be used to find the parents of type "EnvEntry"
+
+EventBusTransmissionProfile
+EventInfrastructureProvider
+
+EventGroupProfile
+WASX7351I: The parents command cannot be used to find the parents of type "EventGroupProfile"
+
+EventGroupProfileList
+EventInfrastructureProvider
+
+EventInfrastructureProvider
+Cell
+Node
+Server
+
+EventInfrastructureService
+Server
+
+EventServerProfile
+EventInfrastructureProvider
+
+EveryoneExt
+WASX7351I: The parents command cannot be used to find the parents of type "EveryoneExt"
+
+Extension
+WASX7351I: The parents command cannot be used to find the parents of type "Extension"
+
+ExtensionMBean
+WASX7351I: The parents command cannot be used to find the parents of type "ExtensionMBean"
+
+ExtensionMBeanProvider
+WASX7351I: The parents command cannot be used to find the parents of type "ExtensionMBeanProvider"
+
+ExternalCacheGroup
+WASX7351I: The parents command cannot be used to find the parents of type "ExternalCacheGroup"
+
+ExternalCacheGroupMember
+WASX7351I: The parents command cannot be used to find the parents of type "ExternalCacheGroupMember"
+
+ExternalDomain
+WASX7351I: The parents command cannot be used to find the parents of type "ExternalDomain"
+
+ExternallyManagedHTTPServer
+Server
+
+FailRoute
+WASX7351I: The parents command cannot be used to find the parents of type "FailRoute"
+
+File
+WASX7351I: The parents command cannot be used to find the parents of type "File"
+
+FileTransferService
+WASX7351I: The parents command cannot be used to find the parents of type "FileTransferService"
+
+FilterFactoryProfile
+EventInfrastructureProvider
+
+ForeignCell
+WASX7351I: The parents command cannot be used to find the parents of type "ForeignCell"
+
+GenericChannelData
+WASX7351I: The parents command cannot be used to find the parents of type "GenericChannelData"
+
+GenericChannelFactory
+WASX7351I: The parents command cannot be used to find the parents of type "GenericChannelFactory"
+
+GenericClusterRoute
+WASX7351I: The parents command cannot be used to find the parents of type "GenericClusterRoute"
+
+GenericInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "GenericInboundChannel"
+
+GenericJMSConnectionFactory
+JMSProvider
+
+GenericJMSDestination
+JMSProvider
+
+GenericOutboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "GenericOutboundChannel"
+
+GenericServerCluster
+Cell
+ServerCluster
+
+GenericServerEndpoint
+WASX7351I: The parents command cannot be used to find the parents of type "GenericServerEndpoint"
+
+GroupExt
+WASX7351I: The parents command cannot be used to find the parents of type "GroupExt"
+
+HAManagerPolicy
+WASX7351I: The parents command cannot be used to find the parents of type "HAManagerPolicy"
+
+HAManagerService
+Server
+
+HTTPAccessLoggingService
+WASX7351I: The parents command cannot be used to find the parents of type "HTTPAccessLoggingService"
+
+HTTPConnector
+WASX7351I: The parents command cannot be used to find the parents of type "HTTPConnector"
+
+HTTPInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "HTTPInboundChannel"
+
+HTTPOutboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "HTTPOutboundChannel"
+
+HTTPTransport
+WASX7351I: The parents command cannot be used to find the parents of type "HTTPTransport"
+
+HTTPTunnelInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "HTTPTunnelInboundChannel"
+
+HTTPTunnelOutboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "HTTPTunnelOutboundChannel"
+
+HostAlias
+WASX7351I: The parents command cannot be used to find the parents of type "HostAlias"
+
+I18NService
+WASX7351I: The parents command cannot be used to find the parents of type "I18NService"
+
+IIOPLayer
+WASX7351I: The parents command cannot be used to find the parents of type "IIOPLayer"
+
+IIOPSecurityProtocol
+WASX7351I: The parents command cannot be used to find the parents of type "IIOPSecurityProtocol"
+
+IIOPTransport
+WASX7351I: The parents command cannot be used to find the parents of type "IIOPTransport"
+
+IPSprayer
+WASX7351I: The parents command cannot be used to find the parents of type "IPSprayer"
+
+IconType
+WASX7351I: The parents command cannot be used to find the parents of type "IconType"
+
+Identity
+WASX7351I: The parents command cannot be used to find the parents of type "Identity"
+
+IdentityAssertionLayer
+WASX7351I: The parents command cannot be used to find the parents of type "IdentityAssertionLayer"
+
+IdentityAssertionQOP
+WASX7351I: The parents command cannot be used to find the parents of type "IdentityAssertionQOP"
+
+IdentityAssertionTypeAssociation
+WASX7351I: The parents command cannot be used to find the parents of type "IdentityAssertionTypeAssociation"
+
+InboundResourceAdapter
+WASX7351I: The parents command cannot be used to find the parents of type "InboundResourceAdapter"
+
+InboundTransportChannel
+WASX7351I: The parents command cannot be used to find the parents of type "InboundTransportChannel"
+
+IndirectLookupNameSpaceBinding
+Cell
+Node
+Server
+ServerCluster
+
+InstancePool
+WASX7351I: The parents command cannot be used to find the parents of type "InstancePool"
+
+Interceptor
+WASX7351I: The parents command cannot be used to find the parents of type "Interceptor"
+
+InvalidationSchedule
+WASX7351I: The parents command cannot be used to find the parents of type "InvalidationSchedule"
+
+J2CActivationSpec
+J2CResourceAdapter
+
+J2CAdminObject
+J2CResourceAdapter
+
+J2CConnectionFactory
+J2CResourceAdapter
+
+J2CResourceAdapter
+Cell
+Deployment
+Node
+Server
+ServerCluster
+
+J2EEEAttribute
+WASX7351I: The parents command cannot be used to find the parents of type "J2EEEAttribute"
+
+J2EEEObject
+WASX7351I: The parents command cannot be used to find the parents of type "J2EEEObject"
+
+J2EEResourceFactory
+WASX7351I: The parents command cannot be used to find the parents of type "J2EEResourceFactory"
+
+J2EEResourceProperty
+WASX7351I: The parents command cannot be used to find the parents of type "J2EEResourceProperty"
+
+J2EEResourcePropertySet
+WASX7351I: The parents command cannot be used to find the parents of type "J2EEResourcePropertySet"
+
+J2EEResourceProvider
+WASX7351I: The parents command cannot be used to find the parents of type "J2EEResourceProvider"
+
+JAASAuthData
+WASX7351I: The parents command cannot be used to find the parents of type "JAASAuthData"
+
+JAASConfiguration
+WASX7351I: The parents command cannot be used to find the parents of type "JAASConfiguration"
+
+JAASConfigurationEntry
+WASX7351I: The parents command cannot be used to find the parents of type "JAASConfigurationEntry"
+
+JAASLoginModule
+WASX7351I: The parents command cannot be used to find the parents of type "JAASLoginModule"
+
+JAXRPCHandler
+Cell
+
+JAXRPCHandlerList
+Cell
+
+JAXRPCHeader
+WASX7351I: The parents command cannot be used to find the parents of type "JAXRPCHeader"
+
+JDBCProvider
+Cell
+Deployment
+Node
+Server
+ServerCluster
+
+JFAPFactory
+WASX7351I: The parents command cannot be used to find the parents of type "JFAPFactory"
+
+JFAPInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "JFAPInboundChannel"
+
+JFAPOutboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "JFAPOutboundChannel"
+
+JMSConnectionFactory
+WASX7351I: The parents command cannot be used to find the parents of type "JMSConnectionFactory"
+
+JMSConnector
+WASX7351I: The parents command cannot be used to find the parents of type "JMSConnector"
+
+JMSDestination
+WASX7351I: The parents command cannot be used to find the parents of type "JMSDestination"
+
+JMSProvider
+Cell
+Deployment
+Node
+Server
+ServerCluster
+
+JMSServer
+Server
+
+JMSTransmissionProfile
+EventInfrastructureProvider
+
+JMSTransport
+WASX7351I: The parents command cannot be used to find the parents of type "JMSTransport"
+
+JMXConnector
+WASX7351I: The parents command cannot be used to find the parents of type "JMXConnector"
+
+JNDIEnvRefsGroup
+WASX7351I: The parents command cannot be used to find the parents of type "JNDIEnvRefsGroup"
+
+JavaProcessDef
+WASX7351I: The parents command cannot be used to find the parents of type "JavaProcessDef"
+
+JavaVirtualMachine
+WASX7351I: The parents command cannot be used to find the parents of type "JavaVirtualMachine"
+
+Key
+WASX7351I: The parents command cannot be used to find the parents of type "Key"
+
+KeyManager
+WASX7351I: The parents command cannot be used to find the parents of type "KeyManager"
+
+KeyReference
+WASX7351I: The parents command cannot be used to find the parents of type "KeyReference"
+
+KeySet
+WASX7351I: The parents command cannot be used to find the parents of type "KeySet"
+
+KeySetGroup
+WASX7351I: The parents command cannot be used to find the parents of type "KeySetGroup"
+
+KeyStore
+WASX7351I: The parents command cannot be used to find the parents of type "KeyStore"
+
+KeyStoreFile
+WASX7351I: The parents command cannot be used to find the parents of type "KeyStoreFile"
+
+LDAPSearchFilter
+WASX7351I: The parents command cannot be used to find the parents of type "LDAPSearchFilter"
+
+LDAPUserRegistry
+WASX7351I: The parents command cannot be used to find the parents of type "LDAPUserRegistry"
+
+LSDConnection
+WASX7351I: The parents command cannot be used to find the parents of type "LSDConnection"
+
+LTPA
+WASX7351I: The parents command cannot be used to find the parents of type "LTPA"
+
+Library
+Cell
+Node
+Server
+
+LibraryRef
+WASX7351I: The parents command cannot be used to find the parents of type "LibraryRef"
+
+License
+WASX7351I: The parents command cannot be used to find the parents of type "License"
+
+Listener
+WASX7351I: The parents command cannot be used to find the parents of type "Listener"
+
+ListenerPort
+WASX7351I: The parents command cannot be used to find the parents of type "ListenerPort"
+
+LocalOSUserRegistry
+WASX7351I: The parents command cannot be used to find the parents of type "LocalOSUserRegistry"
+
+LocalRoute
+WASX7351I: The parents command cannot be used to find the parents of type "LocalRoute"
+
+LogFile
+WASX7351I: The parents command cannot be used to find the parents of type "LogFile"
+
+LooseApplication
+WASX7351I: The parents command cannot be used to find the parents of type "LooseApplication"
+
+LooseArchive
+WASX7351I: The parents command cannot be used to find the parents of type "LooseArchive"
+
+LooseConfiguration
+WASX7351I: The parents command cannot be used to find the parents of type "LooseConfiguration"
+
+LooseLibrary
+WASX7351I: The parents command cannot be used to find the parents of type "LooseLibrary"
+
+LooseModule
+WASX7351I: The parents command cannot be used to find the parents of type "LooseModule"
+
+LooseWARFile
+WASX7351I: The parents command cannot be used to find the parents of type "LooseWARFile"
+
+MOfNPolicy
+WASX7351I: The parents command cannot be used to find the parents of type "MOfNPolicy"
+
+MQConnectionFactory
+JMSProvider
+
+MQFAPInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "MQFAPInboundChannel"
+
+MQFAPOutboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "MQFAPOutboundChannel"
+
+MQQueue
+JMSProvider
+
+MQQueueConnectionFactory
+JMSProvider
+
+MQTopic
+JMSProvider
+
+MQTopicConnectionFactory
+JMSProvider
+
+MailProvider
+Cell
+Deployment
+Node
+Server
+ServerCluster
+
+MailSession
+MailProvider
+
+ManagedObject
+WASX7351I: The parents command cannot be used to find the parents of type "ManagedObject"
+
+ManagementScope
+WASX7351I: The parents command cannot be used to find the parents of type "ManagementScope"
+
+MappingModule
+WASX7351I: The parents command cannot be used to find the parents of type "MappingModule"
+
+MatchCriteria
+WASX7351I: The parents command cannot be used to find the parents of type "MatchCriteria"
+
+MessageAdapter
+WASX7351I: The parents command cannot be used to find the parents of type "MessageAdapter"
+
+MessageCondition
+WASX7351I: The parents command cannot be used to find the parents of type "MessageCondition"
+
+MessageDestination
+WASX7351I: The parents command cannot be used to find the parents of type "MessageDestination"
+
+MessageDestinationRef
+WASX7351I: The parents command cannot be used to find the parents of type "MessageDestinationRef"
+
+MessageLayer
+WASX7351I: The parents command cannot be used to find the parents of type "MessageLayer"
+
+MessageListener
+WASX7351I: The parents command cannot be used to find the parents of type "MessageListener"
+
+MessageListenerService
+WASX7351I: The parents command cannot be used to find the parents of type "MessageListenerService"
+
+MessageQOP
+WASX7351I: The parents command cannot be used to find the parents of type "MessageQOP"
+
+MethodMessageCondition
+WASX7351I: The parents command cannot be used to find the parents of type "MethodMessageCondition"
+
+MimeEntry
+WASX7351I: The parents command cannot be used to find the parents of type "MimeEntry"
+
+ModuleConfig
+WASX7351I: The parents command cannot be used to find the parents of type "ModuleConfig"
+
+ModuleDeployment
+WASX7351I: The parents command cannot be used to find the parents of type "ModuleDeployment"
+
+ModuleFile
+WASX7351I: The parents command cannot be used to find the parents of type "ModuleFile"
+
+ModuleRef
+WASX7351I: The parents command cannot be used to find the parents of type "ModuleRef"
+
+ModuleShare
+WASX7351I: The parents command cannot be used to find the parents of type "ModuleShare"
+
+MonitoringPolicy
+WASX7351I: The parents command cannot be used to find the parents of type "MonitoringPolicy"
+
+MultiBrokerRoutingEntry
+WASX7351I: The parents command cannot be used to find the parents of type "MultiBrokerRoutingEntry"
+
+MultibrokerDomain
+Cell
+
+NameBinding
+WASX7351I: The parents command cannot be used to find the parents of type "NameBinding"
+
+NameServer
+Server
+
+NameSpaceBinding
+WASX7351I: The parents command cannot be used to find the parents of type "NameSpaceBinding"
+
+NamedEndPoint
+WASX7351I: The parents command cannot be used to find the parents of type "NamedEndPoint"
+
+NamingContext
+Cell
+Node
+
+NoOpPolicy
+WASX7351I: The parents command cannot be used to find the parents of type "NoOpPolicy"
+
+Node
+Cell
+
+NodeAgent
+Server
+
+NodeGroup
+Cell
+
+NodeGroupMember
+WASX7351I: The parents command cannot be used to find the parents of type "NodeGroupMember"
+
+ORBInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "ORBInboundChannel"
+
+ORBPlugin
+WASX7351I: The parents command cannot be used to find the parents of type "ORBPlugin"
+
+ObjectCacheInstance
+CacheProvider
+
+ObjectPool
+WASX7351I: The parents command cannot be used to find the parents of type "ObjectPool"
+
+ObjectPoolManagerInfo
+ObjectPoolProvider
+
+ObjectPoolProvider
+Cell
+Node
+Server
+ServerCluster
+
+ObjectPoolService
+WASX7351I: The parents command cannot be used to find the parents of type "ObjectPoolService"
+
+ObjectRequestBroker
+WASX7351I: The parents command cannot be used to find the parents of type "ObjectRequestBroker"
+
+OnDemandRouter
+Server
+
+OneOfNPolicy
+WASX7351I: The parents command cannot be used to find the parents of type "OneOfNPolicy"
+
+OutboundResourceAdapter
+WASX7351I: The parents command cannot be used to find the parents of type "OutboundResourceAdapter"
+
+OutboundTransportChannel
+WASX7351I: The parents command cannot be used to find the parents of type "OutboundTransportChannel"
+
+OutputRedirect
+WASX7351I: The parents command cannot be used to find the parents of type "OutputRedirect"
+
+PME502ServerExtension
+Server
+
+PME51ServerExtension
+Server
+
+PMEClusterExtension
+ServerCluster
+
+PMEServerExtension
+Server
+
+PMIModule
+Server
+
+PMIRMFilter
+WASX7351I: The parents command cannot be used to find the parents of type "PMIRMFilter"
+
+PMIRMFilterValue
+WASX7351I: The parents command cannot be used to find the parents of type "PMIRMFilterValue"
+
+PMIRequestMetrics
+Cell
+
+PMIService
+WASX7351I: The parents command cannot be used to find the parents of type "PMIService"
+
+ParamValue
+WASX7351I: The parents command cannot be used to find the parents of type "ParamValue"
+
+PeerAccessPoint
+WASX7351I: The parents command cannot be used to find the parents of type "PeerAccessPoint"
+
+PluginConfigPolicy
+WASX7351I: The parents command cannot be used to find the parents of type "PluginConfigPolicy"
+
+PluginConfigService
+WASX7351I: The parents command cannot be used to find the parents of type "PluginConfigService"
+
+PluginProperties
+WASX7351I: The parents command cannot be used to find the parents of type "PluginProperties"
+
+PluginServerClusterProperties
+WASX7351I: The parents command cannot be used to find the parents of type "PluginServerClusterProperties"
+
+PortletContainer
+WASX7351I: The parents command cannot be used to find the parents of type "PortletContainer"
+
+PreferredServerPolicy
+WASX7351I: The parents command cannot be used to find the parents of type "PreferredServerPolicy"
+
+PrimaryAdminExt
+WASX7351I: The parents command cannot be used to find the parents of type "PrimaryAdminExt"
+
+ProcessDef
+WASX7351I: The parents command cannot be used to find the parents of type "ProcessDef"
+
+ProcessExecution
+WASX7351I: The parents command cannot be used to find the parents of type "ProcessExecution"
+
+Property
+WASX7351I: The parents command cannot be used to find the parents of type "Property"
+
+PropertySet
+WASX7351I: The parents command cannot be used to find the parents of type "PropertySet"
+
+ProtocolProvider
+WASX7351I: The parents command cannot be used to find the parents of type "ProtocolProvider"
+
+Proxy
+Server
+
+ProxyInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "ProxyInboundChannel"
+
+ProxyOverrides
+WASX7351I: The parents command cannot be used to find the parents of type "ProxyOverrides"
+
+ProxyServer
+Server
+
+ProxySettings
+Server
+ServerCluster
+
+QName
+WASX7351I: The parents command cannot be used to find the parents of type "QName"
+
+QualityOfProtection
+WASX7351I: The parents command cannot be used to find the parents of type "QualityOfProtection"
+
+RARFile
+WASX7351I: The parents command cannot be used to find the parents of type "RARFile"
+
+RASLoggingService
+WASX7351I: The parents command cannot be used to find the parents of type "RASLoggingService"
+
+RMIConnector
+WASX7351I: The parents command cannot be used to find the parents of type "RMIConnector"
+
+RMQChannelFactory
+WASX7351I: The parents command cannot be used to find the parents of type "RMQChannelFactory"
+
+RMQOutboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "RMQOutboundChannel"
+
+ReadOnlyDirectory
+WASX7351I: The parents command cannot be used to find the parents of type "ReadOnlyDirectory"
+
+RecoveryLog
+WASX7351I: The parents command cannot be used to find the parents of type "RecoveryLog"
+
+RedirectRoute
+WASX7351I: The parents command cannot be used to find the parents of type "RedirectRoute"
+
+Referenceable
+WASX7351I: The parents command cannot be used to find the parents of type "Referenceable"
+
+RemoteCellOverrides
+Cell
+ServerCluster
+
+RepositoryService
+WASX7351I: The parents command cannot be used to find the parents of type "RepositoryService"
+
+RequiredConfigPropertyType
+WASX7351I: The parents command cannot be used to find the parents of type "RequiredConfigPropertyType"
+
+ResourceAdapter
+WASX7351I: The parents command cannot be used to find the parents of type "ResourceAdapter"
+
+ResourceEnvEntry
+CacheProvider
+EventInfrastructureProvider
+ObjectPoolProvider
+ResourceEnvironmentProvider
+SchedulerProvider
+TimerManagerProvider
+WorkManagerProvider
+
+ResourceEnvRef
+WASX7351I: The parents command cannot be used to find the parents of type "ResourceEnvRef"
+
+ResourceEnvironmentProvider
+Cell
+Deployment
+Node
+Server
+ServerCluster
+
+ResourceRef
+WASX7351I: The parents command cannot be used to find the parents of type "ResourceRef"
+
+RewritingPolicy
+WASX7351I: The parents command cannot be used to find the parents of type "RewritingPolicy"
+
+RewritingRule
+WASX7351I: The parents command cannot be used to find the parents of type "RewritingRule"
+
+RoleAssignmentExt
+WASX7351I: The parents command cannot be used to find the parents of type "RoleAssignmentExt"
+
+RoleBasedAuthorization
+WASX7351I: The parents command cannot be used to find the parents of type "RoleBasedAuthorization"
+
+Route
+WASX7351I: The parents command cannot be used to find the parents of type "Route"
+
+RoutingPolicy
+WASX7351I: The parents command cannot be used to find the parents of type "RoutingPolicy"
+
+RoutingRule
+WASX7351I: The parents command cannot be used to find the parents of type "RoutingRule"
+
+RunAsSpecifiedIdentity
+WASX7351I: The parents command cannot be used to find the parents of type "RunAsSpecifiedIdentity"
+
+SIBAbstractDestination
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAbstractDestination"
+
+SIBAuthAlias
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthAlias"
+
+SIBAuthBrowser
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthBrowser"
+
+SIBAuthBusConnect
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthBusConnect"
+
+SIBAuthCreator
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthCreator"
+
+SIBAuthDefault
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthDefault"
+
+SIBAuthForeignBus
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthForeignBus"
+
+SIBAuthForeignDestination
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthForeignDestination"
+
+SIBAuthGroup
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthGroup"
+
+SIBAuthIdentityAdopter
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthIdentityAdopter"
+
+SIBAuthPort
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthPort"
+
+SIBAuthQueue
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthQueue"
+
+SIBAuthReceiver
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthReceiver"
+
+SIBAuthSender
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthSender"
+
+SIBAuthSpace
+SIBus
+
+SIBAuthTopic
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthTopic"
+
+SIBAuthTopicSpace
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthTopicSpace"
+
+SIBAuthTopicSpaceBase
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthTopicSpaceBase"
+
+SIBAuthTopicSpaceRoot
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthTopicSpaceRoot"
+
+SIBAuthUser
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthUser"
+
+SIBAuthWebService
+WASX7351I: The parents command cannot be used to find the parents of type "SIBAuthWebService"
+
+SIBContextInfo
+WASX7351I: The parents command cannot be used to find the parents of type "SIBContextInfo"
+
+SIBDatastore
+WASX7351I: The parents command cannot be used to find the parents of type "SIBDatastore"
+
+SIBDestination
+WASX7351I: The parents command cannot be used to find the parents of type "SIBDestination"
+
+SIBDestinationAlias
+SIBus
+
+SIBDestinationDefault
+WASX7351I: The parents command cannot be used to find the parents of type "SIBDestinationDefault"
+
+SIBDestinationForeign
+SIBus
+
+SIBDestinationMediation
+SIBus
+
+SIBDestinationMediationRef
+WASX7351I: The parents command cannot be used to find the parents of type "SIBDestinationMediationRef"
+
+SIBFilestore
+WASX7351I: The parents command cannot be used to find the parents of type "SIBFilestore"
+
+SIBForeignBus
+WASX7351I: The parents command cannot be used to find the parents of type "SIBForeignBus"
+
+SIBGatewayLink
+WASX7351I: The parents command cannot be used to find the parents of type "SIBGatewayLink"
+
+SIBJMSConnectionFactory
+WASX7351I: The parents command cannot be used to find the parents of type "SIBJMSConnectionFactory"
+
+SIBJMSProvider
+WASX7351I: The parents command cannot be used to find the parents of type "SIBJMSProvider"
+
+SIBJMSQueue
+WASX7351I: The parents command cannot be used to find the parents of type "SIBJMSQueue"
+
+SIBJMSQueueConnectionFactory
+WASX7351I: The parents command cannot be used to find the parents of type "SIBJMSQueueConnectionFactory"
+
+SIBJMSTopic
+WASX7351I: The parents command cannot be used to find the parents of type "SIBJMSTopic"
+
+SIBJMSTopicConnectionFactory
+WASX7351I: The parents command cannot be used to find the parents of type "SIBJMSTopicConnectionFactory"
+
+SIBLinkRef
+WASX7351I: The parents command cannot be used to find the parents of type "SIBLinkRef"
+
+SIBLocalizationPoint
+WASX7351I: The parents command cannot be used to find the parents of type "SIBLocalizationPoint"
+
+SIBLocalizationPointRef
+WASX7351I: The parents command cannot be used to find the parents of type "SIBLocalizationPointRef"
+
+SIBMQClientLink
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMQClientLink"
+
+SIBMQClientLinkAdvancedProperties
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMQClientLinkAdvancedProperties"
+
+SIBMQLink
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMQLink"
+
+SIBMQLinkReceiverChannel
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMQLinkReceiverChannel"
+
+SIBMQLinkSenderChannel
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMQLinkSenderChannel"
+
+SIBMQLinkSenderChannelLocalizationPoint
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMQLinkSenderChannelLocalizationPoint"
+
+SIBMQLocalizationPointProxy
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMQLocalizationPointProxy"
+
+SIBMQMediationPointProxy
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMQMediationPointProxy"
+
+SIBMQQueueLocalizationPointProxy
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMQQueueLocalizationPointProxy"
+
+SIBMQServer
+Cell
+
+SIBMQServerBusMember
+SIBus
+
+SIBMediation
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMediation"
+
+SIBMediationExecutionPoint
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMediationExecutionPoint"
+
+SIBMediationInstance
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMediationInstance"
+
+SIBMediationLocalizationPoint
+WASX7351I: The parents command cannot be used to find the parents of type "SIBMediationLocalizationPoint"
+
+SIBMessagingEngine
+Server
+ServerCluster
+
+SIBPSBBrokerProfile
+WASX7351I: The parents command cannot be used to find the parents of type "SIBPSBBrokerProfile"
+
+SIBPSBBrokerTransactionality
+WASX7351I: The parents command cannot be used to find the parents of type "SIBPSBBrokerTransactionality"
+
+SIBPSBTopicMapping
+WASX7351I: The parents command cannot be used to find the parents of type "SIBPSBTopicMapping"
+
+SIBPSBTopicTransactionality
+WASX7351I: The parents command cannot be used to find the parents of type "SIBPSBTopicTransactionality"
+
+SIBPermittedChain
+WASX7351I: The parents command cannot be used to find the parents of type "SIBPermittedChain"
+
+SIBPort
+SIBus
+
+SIBQualifiedDestinationName
+WASX7351I: The parents command cannot be used to find the parents of type "SIBQualifiedDestinationName"
+
+SIBQueue
+SIBus
+
+SIBQueueLocalizationPoint
+WASX7351I: The parents command cannot be used to find the parents of type "SIBQueueLocalizationPoint"
+
+SIBService
+Server
+
+SIBTopicSpace
+SIBus
+
+SIBTopicSpaceLocalizationPoint
+WASX7351I: The parents command cannot be used to find the parents of type "SIBTopicSpaceLocalizationPoint"
+
+SIBTopicSpaceMapEntry
+WASX7351I: The parents command cannot be used to find the parents of type "SIBTopicSpaceMapEntry"
+
+SIBTopicSpaceMapping
+WASX7351I: The parents command cannot be used to find the parents of type "SIBTopicSpaceMapping"
+
+SIBVirtualGatewayLink
+WASX7351I: The parents command cannot be used to find the parents of type "SIBVirtualGatewayLink"
+
+SIBVirtualLink
+WASX7351I: The parents command cannot be used to find the parents of type "SIBVirtualLink"
+
+SIBVirtualMQLink
+WASX7351I: The parents command cannot be used to find the parents of type "SIBVirtualMQLink"
+
+SIBWSBusConnectionProperty
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSBusConnectionProperty"
+
+SIBWSEndpointListener
+Server
+ServerCluster
+
+SIBWSEndpointListenerReference
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSEndpointListenerReference"
+
+SIBWSInboundPort
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSInboundPort"
+
+SIBWSInboundPortReference
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSInboundPortReference"
+
+SIBWSInboundService
+SIBus
+
+SIBWSOutboundPort
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSOutboundPort"
+
+SIBWSOutboundService
+SIBus
+
+SIBWSSecurityInboundConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSSecurityInboundConfig"
+
+SIBWSSecurityOutboundConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSSecurityOutboundConfig"
+
+SIBWSSecurityRequestConsumerBindingConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSSecurityRequestConsumerBindingConfig"
+
+SIBWSSecurityRequestGeneratorBindingConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSSecurityRequestGeneratorBindingConfig"
+
+SIBWSSecurityRequestReceiverBindingConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSSecurityRequestReceiverBindingConfig"
+
+SIBWSSecurityRequestSenderBindingConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSSecurityRequestSenderBindingConfig"
+
+SIBWSSecurityResponseConsumerBindingConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSSecurityResponseConsumerBindingConfig"
+
+SIBWSSecurityResponseGeneratorBindingConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSSecurityResponseGeneratorBindingConfig"
+
+SIBWSSecurityResponseReceiverBindingConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSSecurityResponseReceiverBindingConfig"
+
+SIBWSSecurityResponseSenderBindingConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSSecurityResponseSenderBindingConfig"
+
+SIBWSUDDIPublication
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSUDDIPublication"
+
+SIBWSWSDLLocation
+WASX7351I: The parents command cannot be used to find the parents of type "SIBWSWSDLLocation"
+
+SIBWebService
+SIBus
+
+SIBus
+Cell
+
+SIBusMember
+WASX7351I: The parents command cannot be used to find the parents of type "SIBusMember"
+
+SIBusMemberTarget
+WASX7351I: The parents command cannot be used to find the parents of type "SIBusMemberTarget"
+
+SIPContainer
+WASX7351I: The parents command cannot be used to find the parents of type "SIPContainer"
+
+SIPContainerInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "SIPContainerInboundChannel"
+
+SIPInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "SIPInboundChannel"
+
+SIPMessageCondition
+WASX7351I: The parents command cannot be used to find the parents of type "SIPMessageCondition"
+
+SIPOutboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "SIPOutboundChannel"
+
+SIPProxyInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "SIPProxyInboundChannel"
+
+SIPProxySettings
+Server
+ServerCluster
+
+SIPRoutingRule
+WASX7351I: The parents command cannot be used to find the parents of type "SIPRoutingRule"
+
+SOAPConnector
+WASX7351I: The parents command cannot be used to find the parents of type "SOAPConnector"
+
+SSLConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SSLConfig"
+
+SSLConfigGroup
+WASX7351I: The parents command cannot be used to find the parents of type "SSLConfigGroup"
+
+SSLInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "SSLInboundChannel"
+
+SSLOutboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "SSLOutboundChannel"
+
+SWAMAuthentication
+WASX7351I: The parents command cannot be used to find the parents of type "SWAMAuthentication"
+
+SchedulerConfiguration
+SchedulerProvider
+
+SchedulerProvider
+Cell
+Node
+Server
+ServerCluster
+
+SchedulerService
+WASX7351I: The parents command cannot be used to find the parents of type "SchedulerService"
+
+SecureAssociationService
+WASX7351I: The parents command cannot be used to find the parents of type "SecureAssociationService"
+
+SecureSocketLayer
+WASX7351I: The parents command cannot be used to find the parents of type "SecureSocketLayer"
+
+Security
+Cell
+Server
+
+SecurityIdentity
+WASX7351I: The parents command cannot be used to find the parents of type "SecurityIdentity"
+
+SecurityPermission
+WASX7351I: The parents command cannot be used to find the parents of type "SecurityPermission"
+
+SecurityProtocolConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SecurityProtocolConfig"
+
+SecurityProtocolQOP
+WASX7351I: The parents command cannot be used to find the parents of type "SecurityProtocolQOP"
+
+SecurityRole
+WASX7351I: The parents command cannot be used to find the parents of type "SecurityRole"
+
+SecurityRoleExt
+WASX7351I: The parents command cannot be used to find the parents of type "SecurityRoleExt"
+
+SecurityRoleRef
+WASX7351I: The parents command cannot be used to find the parents of type "SecurityRoleRef"
+
+SecurityServer
+Server
+
+Server
+Node
+ServerCluster
+
+ServerCluster
+Cell
+
+ServerComponent
+WASX7351I: The parents command cannot be used to find the parents of type "ServerComponent"
+
+ServerEntry
+WASX7351I: The parents command cannot be used to find the parents of type "ServerEntry"
+
+ServerExt
+WASX7351I: The parents command cannot be used to find the parents of type "ServerExt"
+
+ServerIdentity
+WASX7351I: The parents command cannot be used to find the parents of type "ServerIdentity"
+
+ServerIndex
+Node
+
+ServerInstance
+WASX7351I: The parents command cannot be used to find the parents of type "ServerInstance"
+
+ServerTarget
+WASX7351I: The parents command cannot be used to find the parents of type "ServerTarget"
+
+Service
+WASX7351I: The parents command cannot be used to find the parents of type "Service"
+
+ServiceContext
+WASX7351I: The parents command cannot be used to find the parents of type "ServiceContext"
+
+ServiceLog
+WASX7351I: The parents command cannot be used to find the parents of type "ServiceLog"
+
+ServletCacheInstance
+CacheProvider
+
+SessionBeanConfig
+WASX7351I: The parents command cannot be used to find the parents of type "SessionBeanConfig"
+
+SessionDatabasePersistence
+WASX7351I: The parents command cannot be used to find the parents of type "SessionDatabasePersistence"
+
+SessionManager
+WASX7351I: The parents command cannot be used to find the parents of type "SessionManager"
+
+SingleSignon
+WASX7351I: The parents command cannot be used to find the parents of type "SingleSignon"
+
+SpecialSubjectExt
+WASX7351I: The parents command cannot be used to find the parents of type "SpecialSubjectExt"
+
+StartupBeansService
+WASX7351I: The parents command cannot be used to find the parents of type "StartupBeansService"
+
+StateManageable
+WASX7351I: The parents command cannot be used to find the parents of type "StateManageable"
+
+StatefulSessionBeanConfig
+WASX7351I: The parents command cannot be used to find the parents of type "StatefulSessionBeanConfig"
+
+StaticCachePolicy
+WASX7351I: The parents command cannot be used to find the parents of type "StaticCachePolicy"
+
+StaticCacheRule
+WASX7351I: The parents command cannot be used to find the parents of type "StaticCacheRule"
+
+StaticPolicy
+WASX7351I: The parents command cannot be used to find the parents of type "StaticPolicy"
+
+StatisticsProvider
+WASX7351I: The parents command cannot be used to find the parents of type "StatisticsProvider"
+
+StreamRedirect
+WASX7351I: The parents command cannot be used to find the parents of type "StreamRedirect"
+
+StringNameSpaceBinding
+Cell
+Node
+Server
+ServerCluster
+
+SubjectExt
+WASX7351I: The parents command cannot be used to find the parents of type "SubjectExt"
+
+SystemMessageServer
+Server
+
+TAInterceptor
+WASX7351I: The parents command cannot be used to find the parents of type "TAInterceptor"
+
+TCPFactory
+WASX7351I: The parents command cannot be used to find the parents of type "TCPFactory"
+
+TCPInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "TCPInboundChannel"
+
+TCPOutboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "TCPOutboundChannel"
+
+TPVService
+WASX7351I: The parents command cannot be used to find the parents of type "TPVService"
+
+TaskProvider
+WASX7351I: The parents command cannot be used to find the parents of type "TaskProvider"
+
+ThreadPool
+WASX7351I: The parents command cannot be used to find the parents of type "ThreadPool"
+
+ThreadPoolManager
+WASX7351I: The parents command cannot be used to find the parents of type "ThreadPoolManager"
+
+TimerManagerInfo
+TimerManagerProvider
+
+TimerManagerProvider
+Cell
+Node
+Server
+ServerCluster
+
+TivoliPerfViewer
+WASX7351I: The parents command cannot be used to find the parents of type "TivoliPerfViewer"
+
+TraceLog
+WASX7351I: The parents command cannot be used to find the parents of type "TraceLog"
+
+TraceService
+WASX7351I: The parents command cannot be used to find the parents of type "TraceService"
+
+TransactionService
+WASX7351I: The parents command cannot be used to find the parents of type "TransactionService"
+
+Transport
+WASX7351I: The parents command cannot be used to find the parents of type "Transport"
+
+TransportChannel
+WASX7351I: The parents command cannot be used to find the parents of type "TransportChannel"
+
+TransportChannelFactory
+WASX7351I: The parents command cannot be used to find the parents of type "TransportChannelFactory"
+
+TransportChannelService
+WASX7351I: The parents command cannot be used to find the parents of type "TransportChannelService"
+
+TransportLayer
+WASX7351I: The parents command cannot be used to find the parents of type "TransportLayer"
+
+TransportQOP
+WASX7351I: The parents command cannot be used to find the parents of type "TransportQOP"
+
+TrustAssociation
+WASX7351I: The parents command cannot be used to find the parents of type "TrustAssociation"
+
+TrustManager
+WASX7351I: The parents command cannot be used to find the parents of type "TrustManager"
+
+TuningParams
+WASX7351I: The parents command cannot be used to find the parents of type "TuningParams"
+
+TypedProperty
+WASX7351I: The parents command cannot be used to find the parents of type "TypedProperty"
+
+UDDIConfig
+WASX7351I: The parents command cannot be used to find the parents of type "UDDIConfig"
+
+UDDIReference
+Cell
+
+UDPInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "UDPInboundChannel"
+
+UDPOutboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "UDPOutboundChannel"
+
+URIGroup
+Cell
+ServerCluster
+
+URL
+URLProvider
+
+URLProvider
+Cell
+Deployment
+Node
+Server
+ServerCluster
+
+UseCallerIdentity
+WASX7351I: The parents command cannot be used to find the parents of type "UseCallerIdentity"
+
+UserExt
+WASX7351I: The parents command cannot be used to find the parents of type "UserExt"
+
+UserRegistry
+WASX7351I: The parents command cannot be used to find the parents of type "UserRegistry"
+
+VariableMap
+Cell
+Deployment
+Node
+Server
+ServerCluster
+
+VariableSubstitutionEntry
+WASX7351I: The parents command cannot be used to find the parents of type "VariableSubstitutionEntry"
+
+VirtualHost
+Cell
+Node
+
+WARFile
+WASX7351I: The parents command cannot be used to find the parents of type "WARFile"
+
+WAS40ConnectionPool
+WASX7351I: The parents command cannot be used to find the parents of type "WAS40ConnectionPool"
+
+WAS40DataSource
+JDBCProvider
+
+WASQueue
+JMSProvider
+
+WASQueueConnectionFactory
+JMSProvider
+
+WASTopic
+JMSProvider
+
+WASTopicConnectionFactory
+JMSProvider
+
+WIMUserRegistry
+WASX7351I: The parents command cannot be used to find the parents of type "WIMUserRegistry"
+
+WLMCoreGroupBridgePlugin
+WASX7351I: The parents command cannot be used to find the parents of type "WLMCoreGroupBridgePlugin"
+
+WSByteBufferService
+WASX7351I: The parents command cannot be used to find the parents of type "WSByteBufferService"
+
+WSCertificateExpirationMonitor
+WASX7351I: The parents command cannot be used to find the parents of type "WSCertificateExpirationMonitor"
+
+WSGWGatewayService
+WASX7351I: The parents command cannot be used to find the parents of type "WSGWGatewayService"
+
+WSGWInstance
+SIBus
+
+WSGWProxyService
+WASX7351I: The parents command cannot be used to find the parents of type "WSGWProxyService"
+
+WSGWTargetService
+WASX7351I: The parents command cannot be used to find the parents of type "WSGWTargetService"
+
+WSNAdministeredSubscriber
+WASX7351I: The parents command cannot be used to find the parents of type "WSNAdministeredSubscriber"
+
+WSNInstanceDocument
+WASX7351I: The parents command cannot be used to find the parents of type "WSNInstanceDocument"
+
+WSNService
+SIBus
+
+WSNServicePoint
+WASX7351I: The parents command cannot be used to find the parents of type "WSNServicePoint"
+
+WSNTopicNamespace
+WASX7351I: The parents command cannot be used to find the parents of type "WSNTopicNamespace"
+
+WSNotification
+WASX7351I: The parents command cannot be used to find the parents of type "WSNotification"
+
+WSPassword
+WASX7351I: The parents command cannot be used to find the parents of type "WSPassword"
+
+WSPasswordEncryption
+WASX7351I: The parents command cannot be used to find the parents of type "WSPasswordEncryption"
+
+WSPasswordLocator
+WASX7351I: The parents command cannot be used to find the parents of type "WSPasswordLocator"
+
+WSSchedule
+WASX7351I: The parents command cannot be used to find the parents of type "WSSchedule"
+
+WebContainer
+WASX7351I: The parents command cannot be used to find the parents of type "WebContainer"
+
+WebContainerInboundChannel
+WASX7351I: The parents command cannot be used to find the parents of type "WebContainerInboundChannel"
+
+WebModuleConfig
+WASX7351I: The parents command cannot be used to find the parents of type "WebModuleConfig"
+
+WebModuleDeployment
+WASX7351I: The parents command cannot be used to find the parents of type "WebModuleDeployment"
+
+WebModuleRef
+WASX7351I: The parents command cannot be used to find the parents of type "WebModuleRef"
+
+WebServer
+Server
+
+WebserverPluginSettings
+WASX7351I: The parents command cannot be used to find the parents of type "WebserverPluginSettings"
+
+WeightAdvisor
+WASX7351I: The parents command cannot be used to find the parents of type "WeightAdvisor"
+
+WorkAreaPartition
+WASX7351I: The parents command cannot be used to find the parents of type "WorkAreaPartition"
+
+WorkAreaPartitionService
+WASX7351I: The parents command cannot be used to find the parents of type "WorkAreaPartitionService"
+
+WorkAreaService
+WASX7351I: The parents command cannot be used to find the parents of type "WorkAreaService"
+
+WorkManagerInfo
+WorkManagerProvider
+
+WorkManagerProvider
+Cell
+Node
+Server
+ServerCluster
+
+WorkManagerService
+WASX7351I: The parents command cannot be used to find the parents of type "WorkManagerService"
+
+WorkloadManagementServer
+Server
+

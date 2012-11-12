@@ -1,0 +1,46 @@
+---
+ACTION: Modify
+OBJECTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+"
+ATTRIBUTES:
+    systemProperties: []
+---
+ACTION: Modify
+OBJECTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+"
+ATTRIBUTES:
+    systemProperties: 
+        - name: com.ibm.ws.cache.CacheConfig.filterInactivityInvalidation
+          value: "true"
+        - name: com.ibm.ws.cache.CacheConfig.useServerClassLoader
+          value: "true"
+        - name: com.ibm.websphere.xs.dynacache.disable_recursive_invalidate
+          value: "true"
+        - name: com.ibm.websphere.xs.dynacache.ignore_value_in_change_event
+          value: "true"
+        - name: com.ibm.websphere.xs.dynacache.enable_compression
+          value: "true"
+        - name: com.ibm.websphere.xs.dynacache.topology
+          value: remote
+        - name: com.ibm.ws.cache.CacheConfig.cacheProviderName
+          value: com.ibm.ws.objectgrid.dynacache.CacheProviderImpl
+---
+ACTION: Create
+TYPE: Property
+PARENTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+"
+ATTRIBUTES:
+    name: com.ibm.ws.cache.CacheConfig.cacheProviderName
+    value: com.ibm.ws.objectgrid.dynacache.CacheProviderImpl
+---
+ACTION: Delete
+OBJECTS: "Property{JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"}[
+              name='com.ibm.ws.cache.CacheConfig.filterInactivityInvalidation' |
+              name='com.ibm.ws.cache.CacheConfig.useServerClassLoader' |
+              name='com.ibm.websphere.xs.dynacache.disable_recursive_invalidate' |
+              name='com.ibm.websphere.xs.dynacache.ignore_value_in_change_event' |
+              name='com.ibm.websphere.xs.dynacache.enable_compression' |
+              name='com.ibm.websphere.xs.dynacache.topology' |
+              name='com.ibm.ws.cache.CacheConfig.cacheProviderName'
+          ]"
+...

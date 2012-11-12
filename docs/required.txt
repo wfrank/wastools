@@ -1,0 +1,1989 @@
+AccessPointGroup
+Attribute                       Type
+name                            String
+
+ActivationSpec
+WASX7361I: No required attribute found for type "ActivationSpec".
+
+ActivationSpecTemplateProps
+WASX7361I: No required attribute found for type "ActivationSpecTemplateProps".
+
+ActivitySessionService
+Attribute                       Type
+defaultTimeout                  int
+
+AdminObject
+WASX7361I: No required attribute found for type "AdminObject".
+
+AdminObjectTemplateProps
+WASX7361I: No required attribute found for type "AdminObjectTemplateProps".
+
+AdminServerAuthentication
+WASX7361I: No required attribute found for type "AdminServerAuthentication".
+
+AdminService
+WASX7361I: No required attribute found for type "AdminService".
+
+Agent
+WASX7361I: No required attribute found for type "Agent".
+
+AllActivePolicy
+Attribute                       Type
+name                            String
+policyFactory                   String
+isAlivePeriodSec                int
+
+AllAuthenticatedUsersExt
+WASX7361I: No required attribute found for type "AllAuthenticatedUsersExt".
+
+Application
+WASX7361I: No required attribute found for type "Application".
+
+ApplicationClientFile
+WASX7361I: No required attribute found for type "ApplicationClientFile".
+
+ApplicationConfig
+WASX7361I: No required attribute found for type "ApplicationConfig".
+
+ApplicationContainer
+WASX7361I: No required attribute found for type "ApplicationContainer".
+
+ApplicationDeployment
+Attribute                       Type
+deploymentId                    String
+startingWeight                  int
+binariesURL                     String
+warClassLoaderPolicy            ENUM(MULTIPLE, SINGLE)
+
+ApplicationManagementService
+WASX7361I: No required attribute found for type "ApplicationManagementService".
+
+ApplicationProfileService
+WASX7361I: No required attribute found for type "ApplicationProfileService".
+
+ApplicationServer
+WASX7361I: No required attribute found for type "ApplicationServer".
+
+Archive
+WASX7361I: No required attribute found for type "Archive".
+
+AuthMechanism
+WASX7361I: No required attribute found for type "AuthMechanism".
+
+AuthenticationMechanism
+WASX7361I: No required attribute found for type "AuthenticationMechanism".
+
+AuthenticationTarget
+WASX7361I: No required attribute found for type "AuthenticationTarget".
+
+AuthorizationConfig
+WASX7361I: No required attribute found for type "AuthorizationConfig".
+
+AuthorizationGroup
+WASX7361I: No required attribute found for type "AuthorizationGroup".
+
+AuthorizationGroupMember
+WASX7361I: No required attribute found for type "AuthorizationGroupMember".
+
+AuthorizationProvider
+Attribute                       Type
+name                            String
+
+AuthorizationTableExt
+WASX7361I: No required attribute found for type "AuthorizationTableExt".
+
+AuthorizationTableImpl
+WASX7361I: No required attribute found for type "AuthorizationTableImpl".
+
+BackupCluster
+Attribute                       Type
+backupClusterName               String
+
+BridgeInterface
+Attribute                       Type
+node                            String
+server                          String
+chain                           String
+
+CMPConnectorFactory
+Attribute                       Type
+name                            String
+jndiName                        String
+connectionDefinition            ConnectionDefinition@
+
+CORBAObjectNameSpaceBinding
+Attribute                       Type
+name                            String
+nameInNameSpace                 String
+corbanameUrl                    String
+
+CacheInstance
+Attribute                       Type
+name                            String
+jndiName                        String
+defaultPriority                 int
+cacheSize                       int
+enableDiskOffload               boolean
+
+CacheInstanceService
+WASX7361I: No required attribute found for type "CacheInstanceService".
+
+CacheProvider
+Attribute                       Type
+name                            String
+
+Cell
+WASX7361I: No required attribute found for type "Cell".
+
+CellManager
+Attribute                       Type
+name                            String
+
+CellRoute
+WASX7361I: No required attribute found for type "CellRoute".
+
+Chain
+Attribute                       Type
+name                            String
+
+Classloader
+WASX7361I: No required attribute found for type "Classloader".
+
+ClientModuleRef
+WASX7361I: No required attribute found for type "ClientModuleRef".
+
+ClusterAdvisor
+WASX7361I: No required attribute found for type "ClusterAdvisor".
+
+ClusterMember
+Attribute                       Type
+memberName                      String
+
+ClusteredTarget
+WASX7361I: No required attribute found for type "ClusteredTarget".
+
+CommonSecureInterop
+WASX7361I: No required attribute found for type "CommonSecureInterop".
+
+CompatibilityDescriptionGroup
+WASX7361I: No required attribute found for type "CompatibilityDescriptionGroup".
+
+CompensationService
+WASX7361I: No required attribute found for type "CompensationService".
+
+Component
+WASX7361I: No required attribute found for type "Component".
+
+ConfigProperty
+WASX7361I: No required attribute found for type "ConfigProperty".
+
+ConfigSynchronizationService
+Attribute                       Type
+synchInterval                   int
+
+ConnectionDefTemplateProps
+WASX7361I: No required attribute found for type "ConnectionDefTemplateProps".
+
+ConnectionDefinition
+WASX7361I: No required attribute found for type "ConnectionDefinition".
+
+ConnectionFactory
+WASX7361I: No required attribute found for type "ConnectionFactory".
+
+ConnectionPool
+WASX7361I: No required attribute found for type "ConnectionPool".
+
+ConnectionTest
+WASX7361I: No required attribute found for type "ConnectionTest".
+
+Connector
+WASX7361I: No required attribute found for type "Connector".
+
+ConnectorModuleDeployment
+WASX7361I: No required attribute found for type "ConnectorModuleDeployment".
+
+ConnectorModuleRef
+WASX7361I: No required attribute found for type "ConnectorModuleRef".
+
+Container
+WASX7361I: No required attribute found for type "Container".
+
+Cookie
+WASX7361I: No required attribute found for type "Cookie".
+
+CoreGroup
+Attribute                       Type
+name                            String
+numCoordinators                 int
+
+CoreGroupAccessPoint
+Attribute                       Type
+name                            String
+coreGroup                       String
+
+CoreGroupBridgeService
+WASX7361I: No required attribute found for type "CoreGroupBridgeService".
+
+CoreGroupBridgeSettings
+WASX7361I: No required attribute found for type "CoreGroupBridgeSettings".
+
+CoreGroupServer
+Attribute                       Type
+nodeName                        String
+serverName                      String
+
+CryptoHardwareToken
+WASX7361I: No required attribute found for type "CryptoHardwareToken".
+
+CustomAuthMechanism
+WASX7361I: No required attribute found for type "CustomAuthMechanism".
+
+CustomErrorPagePolicy
+WASX7361I: No required attribute found for type "CustomErrorPagePolicy".
+
+CustomService
+Attribute                       Type
+classname                       String
+displayName                     String
+classpath                       String
+
+CustomUserRegistry
+WASX7361I: No required attribute found for type "CustomUserRegistry".
+
+DCSInboundChannel
+Attribute                       Type
+name                            String
+
+DRSConnectionPool
+WASX7361I: No required attribute found for type "DRSConnectionPool".
+
+DRSPartition
+WASX7361I: No required attribute found for type "DRSPartition".
+
+DRSSerialization
+WASX7361I: No required attribute found for type "DRSSerialization".
+
+DRSSettings
+WASX7361I: No required attribute found for type "DRSSettings".
+
+DataReplication
+WASX7361I: No required attribute found for type "DataReplication".
+
+DataReplicationDomain
+Attribute                       Type
+name                            String
+
+DataSource
+Attribute                       Type
+name                            String
+
+DataStoreProfile
+Attribute                       Type
+name                            String
+jndiName                        String
+
+DebugService
+Attribute                       Type
+jvmDebugPort                    int
+jvmDebugArgs                    String
+BSFDebugPort                    int
+
+DeployedObject
+WASX7361I: No required attribute found for type "DeployedObject".
+
+DeployedObjectConfig
+WASX7361I: No required attribute found for type "DeployedObjectConfig".
+
+DeployedObjectProxyConfig
+WASX7361I: No required attribute found for type "DeployedObjectProxyConfig".
+
+Deployment
+WASX7361I: No required attribute found for type "Deployment".
+
+DeploymentTarget
+WASX7361I: No required attribute found for type "DeploymentTarget".
+
+DeploymentTargetMapping
+WASX7361I: No required attribute found for type "DeploymentTargetMapping".
+
+Description
+WASX7361I: No required attribute found for type "Description".
+
+DescriptionGroup
+WASX7361I: No required attribute found for type "DescriptionGroup".
+
+DescriptiveProperty
+Attribute                       Type
+name                            String
+value                           String
+
+DiagnosticProviderService
+WASX7361I: No required attribute found for type "DiagnosticProviderService".
+
+DiskCacheCustomPerformanceSettings
+WASX7361I: No required attribute found for type "DiskCacheCustomPerformanceSettings".
+
+DiskCacheEvictionPolicy
+WASX7361I: No required attribute found for type "DiskCacheEvictionPolicy".
+
+DisplayName
+WASX7361I: No required attribute found for type "DisplayName".
+
+DistributionQueue
+WASX7361I: No required attribute found for type "DistributionQueue".
+
+DynamicCache
+Attribute                       Type
+defaultPriority                 int
+cacheSize                       int
+
+DynamicSSLConfigSelection
+WASX7361I: No required attribute found for type "DynamicSSLConfigSelection".
+
+EARFile
+WASX7361I: No required attribute found for type "EARFile".
+
+EJBCache
+WASX7361I: No required attribute found for type "EJBCache".
+
+EJBContainer
+Attribute                       Type
+passivationDirectory            String
+
+EJBDeployment
+WASX7361I: No required attribute found for type "EJBDeployment".
+
+EJBJarFile
+WASX7361I: No required attribute found for type "EJBJarFile".
+
+EJBLocalRef
+WASX7361I: No required attribute found for type "EJBLocalRef".
+
+EJBModuleConfiguration
+WASX7361I: No required attribute found for type "EJBModuleConfiguration".
+
+EJBModuleDeployment
+Attribute                       Type
+deploymentId                    String
+startingWeight                  int
+uri                             String
+
+EJBModuleRef
+WASX7361I: No required attribute found for type "EJBModuleRef".
+
+EJBTimer
+WASX7361I: No required attribute found for type "EJBTimer".
+
+EjbNameSpaceBinding
+Attribute                       Type
+name                            String
+nameInNameSpace                 String
+ejbJndiName                     String
+applicationServerName           String
+
+EjbRef
+WASX7361I: No required attribute found for type "EjbRef".
+
+EmailNotifications
+WASX7361I: No required attribute found for type "EmailNotifications".
+
+EmitterFactoryProfile
+Attribute                       Type
+name                            String
+jndiName                        String
+
+EndPoint
+Attribute                       Type
+host                            String
+port                            int
+
+EndPointRef
+WASX7361I: No required attribute found for type "EndPointRef".
+
+EnterpriseBeanConfig
+WASX7361I: No required attribute found for type "EnterpriseBeanConfig".
+
+EnvEntry
+WASX7361I: No required attribute found for type "EnvEntry".
+
+EventBusTransmissionProfile
+Attribute                       Type
+name                            String
+jndiName                        String
+
+EventGroupProfile
+WASX7361I: No required attribute found for type "EventGroupProfile".
+
+EventGroupProfileList
+Attribute                       Type
+name                            String
+jndiName                        String
+
+EventInfrastructureProvider
+Attribute                       Type
+name                            String
+
+EventInfrastructureService
+WASX7361I: No required attribute found for type "EventInfrastructureService".
+
+EventServerProfile
+Attribute                       Type
+name                            String
+jndiName                        String
+
+EveryoneExt
+WASX7361I: No required attribute found for type "EveryoneExt".
+
+Extension
+WASX7361I: No required attribute found for type "Extension".
+
+ExtensionMBean
+WASX7361I: No required attribute found for type "ExtensionMBean".
+
+ExtensionMBeanProvider
+Attribute                       Type
+name                            String
+
+ExternalCacheGroup
+WASX7361I: No required attribute found for type "ExternalCacheGroup".
+
+ExternalCacheGroupMember
+Attribute                       Type
+address                         String
+adapterBeanName                 String
+
+ExternalDomain
+WASX7361I: No required attribute found for type "ExternalDomain".
+
+ExternallyManagedHTTPServer
+WASX7361I: No required attribute found for type "ExternallyManagedHTTPServer".
+
+FailRoute
+WASX7361I: No required attribute found for type "FailRoute".
+
+File
+WASX7361I: No required attribute found for type "File".
+
+FileTransferService
+Attribute                       Type
+retriesCount                    int
+retryWaitTime                   int
+
+FilterFactoryProfile
+Attribute                       Type
+name                            String
+jndiName                        String
+
+ForeignCell
+Attribute                       Type
+name                            String
+
+GenericChannelData
+WASX7361I: No required attribute found for type "GenericChannelData".
+
+GenericChannelFactory
+WASX7361I: No required attribute found for type "GenericChannelFactory".
+
+GenericClusterRoute
+WASX7361I: No required attribute found for type "GenericClusterRoute".
+
+GenericInboundChannel
+Attribute                       Type
+name                            String
+
+GenericJMSConnectionFactory
+Attribute                       Type
+name                            String
+jndiName                        String
+externalJNDIName                String
+
+GenericJMSDestination
+Attribute                       Type
+name                            String
+jndiName                        String
+externalJNDIName                String
+
+GenericOutboundChannel
+WASX7361I: No required attribute found for type "GenericOutboundChannel".
+
+GenericServerCluster
+WASX7361I: No required attribute found for type "GenericServerCluster".
+
+GenericServerEndpoint
+WASX7361I: No required attribute found for type "GenericServerEndpoint".
+
+GroupExt
+WASX7361I: No required attribute found for type "GroupExt".
+
+HAManagerPolicy
+Attribute                       Type
+name                            String
+policyFactory                   String
+isAlivePeriodSec                int
+
+HAManagerService
+Attribute                       Type
+isAlivePeriodSec                int
+transportBufferSize             int
+coreGroupName                   String
+
+HTTPAccessLoggingService
+WASX7361I: No required attribute found for type "HTTPAccessLoggingService".
+
+HTTPConnector
+WASX7361I: No required attribute found for type "HTTPConnector".
+
+HTTPInboundChannel
+Attribute                       Type
+name                            String
+maximumPersistentRequests       int
+readTimeout                     int
+writeTimeout                    int
+persistentTimeout               int
+
+HTTPOutboundChannel
+WASX7361I: No required attribute found for type "HTTPOutboundChannel".
+
+HTTPTransport
+WASX7361I: No required attribute found for type "HTTPTransport".
+
+HTTPTunnelInboundChannel
+Attribute                       Type
+name                            String
+
+HTTPTunnelOutboundChannel
+WASX7361I: No required attribute found for type "HTTPTunnelOutboundChannel".
+
+HostAlias
+Attribute                       Type
+hostname                        String
+port                            String
+
+I18NService
+WASX7361I: No required attribute found for type "I18NService".
+
+IIOPLayer
+WASX7361I: No required attribute found for type "IIOPLayer".
+
+IIOPSecurityProtocol
+WASX7361I: No required attribute found for type "IIOPSecurityProtocol".
+
+IIOPTransport
+WASX7361I: No required attribute found for type "IIOPTransport".
+
+IPSprayer
+WASX7361I: No required attribute found for type "IPSprayer".
+
+IconType
+WASX7361I: No required attribute found for type "IconType".
+
+Identity
+WASX7361I: No required attribute found for type "Identity".
+
+IdentityAssertionLayer
+WASX7361I: No required attribute found for type "IdentityAssertionLayer".
+
+IdentityAssertionQOP
+WASX7361I: No required attribute found for type "IdentityAssertionQOP".
+
+IdentityAssertionTypeAssociation
+WASX7361I: No required attribute found for type "IdentityAssertionTypeAssociation".
+
+InboundResourceAdapter
+WASX7361I: No required attribute found for type "InboundResourceAdapter".
+
+InboundTransportChannel
+WASX7361I: No required attribute found for type "InboundTransportChannel".
+
+IndirectLookupNameSpaceBinding
+Attribute                       Type
+name                            String
+nameInNameSpace                 String
+providerURL                     String
+jndiName                        String
+
+InstancePool
+WASX7361I: No required attribute found for type "InstancePool".
+
+Interceptor
+WASX7361I: No required attribute found for type "Interceptor".
+
+InvalidationSchedule
+WASX7361I: No required attribute found for type "InvalidationSchedule".
+
+J2CActivationSpec
+Attribute                       Type
+name                            String
+
+J2CAdminObject
+Attribute                       Type
+name                            String
+
+J2CConnectionFactory
+Attribute                       Type
+name                            String
+jndiName                        String
+connectionDefinition            ConnectionDefinition@
+
+J2CResourceAdapter
+WASX7361I: No required attribute found for type "J2CResourceAdapter".
+
+J2EEEAttribute
+WASX7361I: No required attribute found for type "J2EEEAttribute".
+
+J2EEEObject
+WASX7361I: No required attribute found for type "J2EEEObject".
+
+J2EEResourceFactory
+WASX7361I: No required attribute found for type "J2EEResourceFactory".
+
+J2EEResourceProperty
+Attribute                       Type
+name                            String
+
+J2EEResourcePropertySet
+WASX7361I: No required attribute found for type "J2EEResourcePropertySet".
+
+J2EEResourceProvider
+WASX7361I: No required attribute found for type "J2EEResourceProvider".
+
+JAASAuthData
+Attribute                       Type
+alias                           String
+userId                          String
+password                        String
+
+JAASConfiguration
+WASX7361I: No required attribute found for type "JAASConfiguration".
+
+JAASConfigurationEntry
+Attribute                       Type
+alias                           String
+
+JAASLoginModule
+Attribute                       Type
+moduleClassName                 String
+
+JAXRPCHandler
+WASX7361I: No required attribute found for type "JAXRPCHandler".
+
+JAXRPCHandlerList
+WASX7361I: No required attribute found for type "JAXRPCHandlerList".
+
+JAXRPCHeader
+WASX7361I: No required attribute found for type "JAXRPCHeader".
+
+JDBCProvider
+Attribute                       Type
+name                            String
+implementationClassName         String
+
+JFAPFactory
+WASX7361I: No required attribute found for type "JFAPFactory".
+
+JFAPInboundChannel
+WASX7361I: No required attribute found for type "JFAPInboundChannel".
+
+JFAPOutboundChannel
+WASX7361I: No required attribute found for type "JFAPOutboundChannel".
+
+JMSConnectionFactory
+WASX7361I: No required attribute found for type "JMSConnectionFactory".
+
+JMSConnector
+WASX7361I: No required attribute found for type "JMSConnector".
+
+JMSDestination
+WASX7361I: No required attribute found for type "JMSDestination".
+
+JMSProvider
+Attribute                       Type
+name                            String
+externalInitialContextFactory   String
+externalProviderURL             String
+
+JMSServer
+WASX7361I: No required attribute found for type "JMSServer".
+
+JMSTransmissionProfile
+Attribute                       Type
+name                            String
+jndiName                        String
+
+JMSTransport
+WASX7361I: No required attribute found for type "JMSTransport".
+
+JMXConnector
+WASX7361I: No required attribute found for type "JMXConnector".
+
+JNDIEnvRefsGroup
+WASX7361I: No required attribute found for type "JNDIEnvRefsGroup".
+
+JavaProcessDef
+Attribute                       Type
+workingDirectory                String
+
+JavaVirtualMachine
+WASX7361I: No required attribute found for type "JavaVirtualMachine".
+
+Key
+WASX7361I: No required attribute found for type "Key".
+
+KeyManager
+WASX7361I: No required attribute found for type "KeyManager".
+
+KeyReference
+WASX7361I: No required attribute found for type "KeyReference".
+
+KeySet
+WASX7361I: No required attribute found for type "KeySet".
+
+KeySetGroup
+WASX7361I: No required attribute found for type "KeySetGroup".
+
+KeyStore
+WASX7361I: No required attribute found for type "KeyStore".
+
+KeyStoreFile
+WASX7361I: No required attribute found for type "KeyStoreFile".
+
+LDAPSearchFilter
+WASX7361I: No required attribute found for type "LDAPSearchFilter".
+
+LDAPUserRegistry
+WASX7361I: No required attribute found for type "LDAPUserRegistry".
+
+LSDConnection
+WASX7361I: No required attribute found for type "LSDConnection".
+
+LTPA
+Attribute                       Type
+timeout                         long
+password                        String
+
+Library
+Attribute                       Type
+name                            String
+classPath                       String*
+
+LibraryRef
+WASX7361I: No required attribute found for type "LibraryRef".
+
+License
+WASX7361I: No required attribute found for type "License".
+
+Listener
+WASX7361I: No required attribute found for type "Listener".
+
+ListenerPort
+Attribute                       Type
+name                            String
+connectionFactoryJNDIName       String
+destinationJNDIName             String
+
+LocalOSUserRegistry
+WASX7361I: No required attribute found for type "LocalOSUserRegistry".
+
+LocalRoute
+WASX7361I: No required attribute found for type "LocalRoute".
+
+LogFile
+WASX7361I: No required attribute found for type "LogFile".
+
+LooseApplication
+WASX7361I: No required attribute found for type "LooseApplication".
+
+LooseArchive
+WASX7361I: No required attribute found for type "LooseArchive".
+
+LooseConfiguration
+WASX7361I: No required attribute found for type "LooseConfiguration".
+
+LooseLibrary
+WASX7361I: No required attribute found for type "LooseLibrary".
+
+LooseModule
+WASX7361I: No required attribute found for type "LooseModule".
+
+LooseWARFile
+WASX7361I: No required attribute found for type "LooseWARFile".
+
+MOfNPolicy
+Attribute                       Type
+name                            String
+policyFactory                   String
+isAlivePeriodSec                int
+numActive                       int
+
+MQConnectionFactory
+Attribute                       Type
+name                            String
+jndiName                        String
+
+MQFAPInboundChannel
+WASX7361I: No required attribute found for type "MQFAPInboundChannel".
+
+MQFAPOutboundChannel
+WASX7361I: No required attribute found for type "MQFAPOutboundChannel".
+
+MQQueue
+Attribute                       Type
+name                            String
+jndiName                        String
+baseQueueName                   String
+
+MQQueueConnectionFactory
+Attribute                       Type
+name                            String
+jndiName                        String
+
+MQTopic
+Attribute                       Type
+name                            String
+jndiName                        String
+baseTopicName                   String
+
+MQTopicConnectionFactory
+Attribute                       Type
+name                            String
+jndiName                        String
+
+MailProvider
+Attribute                       Type
+name                            String
+
+MailSession
+Attribute                       Type
+name                            String
+jndiName                        String
+
+ManagedObject
+WASX7361I: No required attribute found for type "ManagedObject".
+
+ManagementScope
+WASX7361I: No required attribute found for type "ManagementScope".
+
+MappingModule
+WASX7361I: No required attribute found for type "MappingModule".
+
+MatchCriteria
+WASX7361I: No required attribute found for type "MatchCriteria".
+
+MessageAdapter
+WASX7361I: No required attribute found for type "MessageAdapter".
+
+MessageCondition
+WASX7361I: No required attribute found for type "MessageCondition".
+
+MessageDestination
+WASX7361I: No required attribute found for type "MessageDestination".
+
+MessageDestinationRef
+WASX7361I: No required attribute found for type "MessageDestinationRef".
+
+MessageLayer
+WASX7361I: No required attribute found for type "MessageLayer".
+
+MessageListener
+WASX7361I: No required attribute found for type "MessageListener".
+
+MessageListenerService
+WASX7361I: No required attribute found for type "MessageListenerService".
+
+MessageQOP
+WASX7361I: No required attribute found for type "MessageQOP".
+
+MethodMessageCondition
+WASX7361I: No required attribute found for type "MethodMessageCondition".
+
+MimeEntry
+Attribute                       Type
+type                            String
+
+ModuleConfig
+WASX7361I: No required attribute found for type "ModuleConfig".
+
+ModuleDeployment
+WASX7361I: No required attribute found for type "ModuleDeployment".
+
+ModuleFile
+WASX7361I: No required attribute found for type "ModuleFile".
+
+ModuleRef
+WASX7361I: No required attribute found for type "ModuleRef".
+
+ModuleShare
+WASX7361I: No required attribute found for type "ModuleShare".
+
+MonitoringPolicy
+Attribute                       Type
+maximumStartupAttempts          int
+pingTimeout                     int
+
+MultiBrokerRoutingEntry
+Attribute                       Type
+brokerName                      String
+
+MultibrokerDomain
+WASX7361I: No required attribute found for type "MultibrokerDomain".
+
+NameBinding
+WASX7361I: No required attribute found for type "NameBinding".
+
+NameServer
+WASX7361I: No required attribute found for type "NameServer".
+
+NameSpaceBinding
+WASX7361I: No required attribute found for type "NameSpaceBinding".
+
+NamedEndPoint
+WASX7361I: No required attribute found for type "NamedEndPoint".
+
+NamingContext
+WASX7361I: No required attribute found for type "NamingContext".
+
+NoOpPolicy
+Attribute                       Type
+name                            String
+policyFactory                   String
+isAlivePeriodSec                int
+
+Node
+WASX7361I: No required attribute found for type "Node".
+
+NodeAgent
+WASX7361I: No required attribute found for type "NodeAgent".
+
+NodeGroup
+Attribute                       Type
+name                            String
+
+NodeGroupMember
+WASX7361I: No required attribute found for type "NodeGroupMember".
+
+ORBInboundChannel
+WASX7361I: No required attribute found for type "ORBInboundChannel".
+
+ORBPlugin
+WASX7361I: No required attribute found for type "ORBPlugin".
+
+ObjectCacheInstance
+Attribute                       Type
+name                            String
+jndiName                        String
+defaultPriority                 int
+cacheSize                       int
+enableDiskOffload               boolean
+
+ObjectPool
+Attribute                       Type
+poolClassName                   String
+poolImplClassName               String
+
+ObjectPoolManagerInfo
+Attribute                       Type
+name                            String
+jndiName                        String
+
+ObjectPoolProvider
+Attribute                       Type
+name                            String
+
+ObjectPoolService
+WASX7361I: No required attribute found for type "ObjectPoolService".
+
+ObjectRequestBroker
+Attribute                       Type
+requestTimeout                  int
+requestRetriesCount             int
+requestRetriesDelay             int
+connectionCacheMaximum          int
+connectionCacheMinimum          int
+locateRequestTimeout            int
+
+OnDemandRouter
+WASX7361I: No required attribute found for type "OnDemandRouter".
+
+OneOfNPolicy
+Attribute                       Type
+name                            String
+policyFactory                   String
+isAlivePeriodSec                int
+
+OutboundResourceAdapter
+WASX7361I: No required attribute found for type "OutboundResourceAdapter".
+
+OutboundTransportChannel
+WASX7361I: No required attribute found for type "OutboundTransportChannel".
+
+OutputRedirect
+Attribute                       Type
+stdoutFilename                  String
+stderrFilename                  String
+
+PME502ServerExtension
+WASX7361I: No required attribute found for type "PME502ServerExtension".
+
+PME51ServerExtension
+WASX7361I: No required attribute found for type "PME51ServerExtension".
+
+PMEClusterExtension
+WASX7361I: No required attribute found for type "PMEClusterExtension".
+
+PMEServerExtension
+WASX7361I: No required attribute found for type "PMEServerExtension".
+
+PMIModule
+WASX7361I: No required attribute found for type "PMIModule".
+
+PMIRMFilter
+WASX7361I: No required attribute found for type "PMIRMFilter".
+
+PMIRMFilterValue
+Attribute                       Type
+value                           String
+
+PMIRequestMetrics
+WASX7361I: No required attribute found for type "PMIRequestMetrics".
+
+PMIService
+WASX7361I: No required attribute found for type "PMIService".
+
+ParamValue
+WASX7361I: No required attribute found for type "ParamValue".
+
+PeerAccessPoint
+Attribute                       Type
+name                            String
+cell                            String
+coreGroup                       String
+coreGroupAccessPoint            String
+
+PluginConfigPolicy
+WASX7361I: No required attribute found for type "PluginConfigPolicy".
+
+PluginConfigService
+WASX7361I: No required attribute found for type "PluginConfigService".
+
+PluginProperties
+WASX7361I: No required attribute found for type "PluginProperties".
+
+PluginServerClusterProperties
+WASX7361I: No required attribute found for type "PluginServerClusterProperties".
+
+PortletContainer
+WASX7361I: No required attribute found for type "PortletContainer".
+
+PreferredServerPolicy
+Attribute                       Type
+name                            String
+policyFactory                   String
+isAlivePeriodSec                int
+
+PrimaryAdminExt
+WASX7361I: No required attribute found for type "PrimaryAdminExt".
+
+ProcessDef
+Attribute                       Type
+workingDirectory                String
+
+ProcessExecution
+WASX7361I: No required attribute found for type "ProcessExecution".
+
+Property
+Attribute                       Type
+name                            String
+value                           String
+
+PropertySet
+WASX7361I: No required attribute found for type "PropertySet".
+
+ProtocolProvider
+Attribute                       Type
+protocol                        String
+classname                       String
+
+Proxy
+WASX7361I: No required attribute found for type "Proxy".
+
+ProxyInboundChannel
+WASX7361I: No required attribute found for type "ProxyInboundChannel".
+
+ProxyOverrides
+WASX7361I: No required attribute found for type "ProxyOverrides".
+
+ProxyServer
+WASX7361I: No required attribute found for type "ProxyServer".
+
+ProxySettings
+WASX7361I: No required attribute found for type "ProxySettings".
+
+QName
+WASX7361I: No required attribute found for type "QName".
+
+QualityOfProtection
+WASX7361I: No required attribute found for type "QualityOfProtection".
+
+RARFile
+WASX7361I: No required attribute found for type "RARFile".
+
+RASLoggingService
+WASX7361I: No required attribute found for type "RASLoggingService".
+
+RMIConnector
+WASX7361I: No required attribute found for type "RMIConnector".
+
+RMQChannelFactory
+WASX7361I: No required attribute found for type "RMQChannelFactory".
+
+RMQOutboundChannel
+WASX7361I: No required attribute found for type "RMQOutboundChannel".
+
+ReadOnlyDirectory
+WASX7361I: No required attribute found for type "ReadOnlyDirectory".
+
+RecoveryLog
+WASX7361I: No required attribute found for type "RecoveryLog".
+
+RedirectRoute
+WASX7361I: No required attribute found for type "RedirectRoute".
+
+Referenceable
+Attribute                       Type
+factoryClassname                String
+classname                       String
+
+RemoteCellOverrides
+WASX7361I: No required attribute found for type "RemoteCellOverrides".
+
+RepositoryService
+WASX7361I: No required attribute found for type "RepositoryService".
+
+RequiredConfigPropertyType
+WASX7361I: No required attribute found for type "RequiredConfigPropertyType".
+
+ResourceAdapter
+WASX7361I: No required attribute found for type "ResourceAdapter".
+
+ResourceEnvEntry
+Attribute                       Type
+name                            String
+jndiName                        String
+
+ResourceEnvRef
+WASX7361I: No required attribute found for type "ResourceEnvRef".
+
+ResourceEnvironmentProvider
+Attribute                       Type
+name                            String
+
+ResourceRef
+WASX7361I: No required attribute found for type "ResourceRef".
+
+RewritingPolicy
+WASX7361I: No required attribute found for type "RewritingPolicy".
+
+RewritingRule
+WASX7361I: No required attribute found for type "RewritingRule".
+
+RoleAssignmentExt
+WASX7361I: No required attribute found for type "RoleAssignmentExt".
+
+RoleBasedAuthorization
+WASX7361I: No required attribute found for type "RoleBasedAuthorization".
+
+Route
+WASX7361I: No required attribute found for type "Route".
+
+RoutingPolicy
+WASX7361I: No required attribute found for type "RoutingPolicy".
+
+RoutingRule
+WASX7361I: No required attribute found for type "RoutingRule".
+
+RunAsSpecifiedIdentity
+WASX7361I: No required attribute found for type "RunAsSpecifiedIdentity".
+
+SIBAbstractDestination
+WASX7361I: No required attribute found for type "SIBAbstractDestination".
+
+SIBAuthAlias
+WASX7361I: No required attribute found for type "SIBAuthAlias".
+
+SIBAuthBrowser
+WASX7361I: No required attribute found for type "SIBAuthBrowser".
+
+SIBAuthBusConnect
+WASX7361I: No required attribute found for type "SIBAuthBusConnect".
+
+SIBAuthCreator
+WASX7361I: No required attribute found for type "SIBAuthCreator".
+
+SIBAuthDefault
+WASX7361I: No required attribute found for type "SIBAuthDefault".
+
+SIBAuthForeignBus
+WASX7361I: No required attribute found for type "SIBAuthForeignBus".
+
+SIBAuthForeignDestination
+WASX7361I: No required attribute found for type "SIBAuthForeignDestination".
+
+SIBAuthGroup
+WASX7361I: No required attribute found for type "SIBAuthGroup".
+
+SIBAuthIdentityAdopter
+WASX7361I: No required attribute found for type "SIBAuthIdentityAdopter".
+
+SIBAuthPort
+WASX7361I: No required attribute found for type "SIBAuthPort".
+
+SIBAuthQueue
+WASX7361I: No required attribute found for type "SIBAuthQueue".
+
+SIBAuthReceiver
+WASX7361I: No required attribute found for type "SIBAuthReceiver".
+
+SIBAuthSender
+WASX7361I: No required attribute found for type "SIBAuthSender".
+
+SIBAuthSpace
+WASX7361I: No required attribute found for type "SIBAuthSpace".
+
+SIBAuthTopic
+WASX7361I: No required attribute found for type "SIBAuthTopic".
+
+SIBAuthTopicSpace
+WASX7361I: No required attribute found for type "SIBAuthTopicSpace".
+
+SIBAuthTopicSpaceBase
+WASX7361I: No required attribute found for type "SIBAuthTopicSpaceBase".
+
+SIBAuthTopicSpaceRoot
+WASX7361I: No required attribute found for type "SIBAuthTopicSpaceRoot".
+
+SIBAuthUser
+WASX7361I: No required attribute found for type "SIBAuthUser".
+
+SIBAuthWebService
+WASX7361I: No required attribute found for type "SIBAuthWebService".
+
+SIBContextInfo
+WASX7361I: No required attribute found for type "SIBContextInfo".
+
+SIBDatastore
+WASX7361I: No required attribute found for type "SIBDatastore".
+
+SIBDestination
+WASX7361I: No required attribute found for type "SIBDestination".
+
+SIBDestinationAlias
+WASX7361I: No required attribute found for type "SIBDestinationAlias".
+
+SIBDestinationDefault
+WASX7361I: No required attribute found for type "SIBDestinationDefault".
+
+SIBDestinationForeign
+WASX7361I: No required attribute found for type "SIBDestinationForeign".
+
+SIBDestinationMediation
+WASX7361I: No required attribute found for type "SIBDestinationMediation".
+
+SIBDestinationMediationRef
+WASX7361I: No required attribute found for type "SIBDestinationMediationRef".
+
+SIBFilestore
+WASX7361I: No required attribute found for type "SIBFilestore".
+
+SIBForeignBus
+WASX7361I: No required attribute found for type "SIBForeignBus".
+
+SIBGatewayLink
+WASX7361I: No required attribute found for type "SIBGatewayLink".
+
+SIBJMSConnectionFactory
+WASX7361I: No required attribute found for type "SIBJMSConnectionFactory".
+
+SIBJMSProvider
+WASX7361I: No required attribute found for type "SIBJMSProvider".
+
+SIBJMSQueue
+WASX7361I: No required attribute found for type "SIBJMSQueue".
+
+SIBJMSQueueConnectionFactory
+WASX7361I: No required attribute found for type "SIBJMSQueueConnectionFactory".
+
+SIBJMSTopic
+WASX7361I: No required attribute found for type "SIBJMSTopic".
+
+SIBJMSTopicConnectionFactory
+WASX7361I: No required attribute found for type "SIBJMSTopicConnectionFactory".
+
+SIBLinkRef
+WASX7361I: No required attribute found for type "SIBLinkRef".
+
+SIBLocalizationPoint
+WASX7361I: No required attribute found for type "SIBLocalizationPoint".
+
+SIBLocalizationPointRef
+WASX7361I: No required attribute found for type "SIBLocalizationPointRef".
+
+SIBMQClientLink
+WASX7361I: No required attribute found for type "SIBMQClientLink".
+
+SIBMQClientLinkAdvancedProperties
+WASX7361I: No required attribute found for type "SIBMQClientLinkAdvancedProperties".
+
+SIBMQLink
+WASX7361I: No required attribute found for type "SIBMQLink".
+
+SIBMQLinkReceiverChannel
+WASX7361I: No required attribute found for type "SIBMQLinkReceiverChannel".
+
+SIBMQLinkSenderChannel
+WASX7361I: No required attribute found for type "SIBMQLinkSenderChannel".
+
+SIBMQLinkSenderChannelLocalizationPoint
+WASX7361I: No required attribute found for type "SIBMQLinkSenderChannelLocalizationPoint".
+
+SIBMQLocalizationPointProxy
+WASX7361I: No required attribute found for type "SIBMQLocalizationPointProxy".
+
+SIBMQMediationPointProxy
+WASX7361I: No required attribute found for type "SIBMQMediationPointProxy".
+
+SIBMQQueueLocalizationPointProxy
+WASX7361I: No required attribute found for type "SIBMQQueueLocalizationPointProxy".
+
+SIBMQServer
+WASX7361I: No required attribute found for type "SIBMQServer".
+
+SIBMQServerBusMember
+WASX7361I: No required attribute found for type "SIBMQServerBusMember".
+
+SIBMediation
+WASX7361I: No required attribute found for type "SIBMediation".
+
+SIBMediationExecutionPoint
+WASX7361I: No required attribute found for type "SIBMediationExecutionPoint".
+
+SIBMediationInstance
+WASX7361I: No required attribute found for type "SIBMediationInstance".
+
+SIBMediationLocalizationPoint
+WASX7361I: No required attribute found for type "SIBMediationLocalizationPoint".
+
+SIBMessagingEngine
+WASX7361I: No required attribute found for type "SIBMessagingEngine".
+
+SIBPSBBrokerProfile
+WASX7361I: No required attribute found for type "SIBPSBBrokerProfile".
+
+SIBPSBBrokerTransactionality
+WASX7361I: No required attribute found for type "SIBPSBBrokerTransactionality".
+
+SIBPSBTopicMapping
+WASX7361I: No required attribute found for type "SIBPSBTopicMapping".
+
+SIBPSBTopicTransactionality
+WASX7361I: No required attribute found for type "SIBPSBTopicTransactionality".
+
+SIBPermittedChain
+WASX7361I: No required attribute found for type "SIBPermittedChain".
+
+SIBPort
+WASX7361I: No required attribute found for type "SIBPort".
+
+SIBQualifiedDestinationName
+WASX7361I: No required attribute found for type "SIBQualifiedDestinationName".
+
+SIBQueue
+WASX7361I: No required attribute found for type "SIBQueue".
+
+SIBQueueLocalizationPoint
+WASX7361I: No required attribute found for type "SIBQueueLocalizationPoint".
+
+SIBService
+WASX7361I: No required attribute found for type "SIBService".
+
+SIBTopicSpace
+WASX7361I: No required attribute found for type "SIBTopicSpace".
+
+SIBTopicSpaceLocalizationPoint
+WASX7361I: No required attribute found for type "SIBTopicSpaceLocalizationPoint".
+
+SIBTopicSpaceMapEntry
+WASX7361I: No required attribute found for type "SIBTopicSpaceMapEntry".
+
+SIBTopicSpaceMapping
+WASX7361I: No required attribute found for type "SIBTopicSpaceMapping".
+
+SIBVirtualGatewayLink
+WASX7361I: No required attribute found for type "SIBVirtualGatewayLink".
+
+SIBVirtualLink
+WASX7361I: No required attribute found for type "SIBVirtualLink".
+
+SIBVirtualMQLink
+WASX7361I: No required attribute found for type "SIBVirtualMQLink".
+
+SIBWSBusConnectionProperty
+WASX7361I: No required attribute found for type "SIBWSBusConnectionProperty".
+
+SIBWSEndpointListener
+WASX7361I: No required attribute found for type "SIBWSEndpointListener".
+
+SIBWSEndpointListenerReference
+WASX7361I: No required attribute found for type "SIBWSEndpointListenerReference".
+
+SIBWSInboundPort
+WASX7361I: No required attribute found for type "SIBWSInboundPort".
+
+SIBWSInboundPortReference
+WASX7361I: No required attribute found for type "SIBWSInboundPortReference".
+
+SIBWSInboundService
+WASX7361I: No required attribute found for type "SIBWSInboundService".
+
+SIBWSOutboundPort
+WASX7361I: No required attribute found for type "SIBWSOutboundPort".
+
+SIBWSOutboundService
+WASX7361I: No required attribute found for type "SIBWSOutboundService".
+
+SIBWSSecurityInboundConfig
+WASX7361I: No required attribute found for type "SIBWSSecurityInboundConfig".
+
+SIBWSSecurityOutboundConfig
+WASX7361I: No required attribute found for type "SIBWSSecurityOutboundConfig".
+
+SIBWSSecurityRequestConsumerBindingConfig
+WASX7361I: No required attribute found for type "SIBWSSecurityRequestConsumerBindingConfig".
+
+SIBWSSecurityRequestGeneratorBindingConfig
+WASX7361I: No required attribute found for type "SIBWSSecurityRequestGeneratorBindingConfig".
+
+SIBWSSecurityRequestReceiverBindingConfig
+WASX7361I: No required attribute found for type "SIBWSSecurityRequestReceiverBindingConfig".
+
+SIBWSSecurityRequestSenderBindingConfig
+WASX7361I: No required attribute found for type "SIBWSSecurityRequestSenderBindingConfig".
+
+SIBWSSecurityResponseConsumerBindingConfig
+WASX7361I: No required attribute found for type "SIBWSSecurityResponseConsumerBindingConfig".
+
+SIBWSSecurityResponseGeneratorBindingConfig
+WASX7361I: No required attribute found for type "SIBWSSecurityResponseGeneratorBindingConfig".
+
+SIBWSSecurityResponseReceiverBindingConfig
+WASX7361I: No required attribute found for type "SIBWSSecurityResponseReceiverBindingConfig".
+
+SIBWSSecurityResponseSenderBindingConfig
+WASX7361I: No required attribute found for type "SIBWSSecurityResponseSenderBindingConfig".
+
+SIBWSUDDIPublication
+WASX7361I: No required attribute found for type "SIBWSUDDIPublication".
+
+SIBWSWSDLLocation
+WASX7361I: No required attribute found for type "SIBWSWSDLLocation".
+
+SIBWebService
+WASX7361I: No required attribute found for type "SIBWebService".
+
+SIBus
+WASX7361I: No required attribute found for type "SIBus".
+
+SIBusMember
+WASX7361I: No required attribute found for type "SIBusMember".
+
+SIBusMemberTarget
+WASX7361I: No required attribute found for type "SIBusMemberTarget".
+
+SIPContainer
+WASX7361I: No required attribute found for type "SIPContainer".
+
+SIPContainerInboundChannel
+WASX7361I: No required attribute found for type "SIPContainerInboundChannel".
+
+SIPInboundChannel
+WASX7361I: No required attribute found for type "SIPInboundChannel".
+
+SIPMessageCondition
+WASX7361I: No required attribute found for type "SIPMessageCondition".
+
+SIPOutboundChannel
+WASX7361I: No required attribute found for type "SIPOutboundChannel".
+
+SIPProxyInboundChannel
+WASX7361I: No required attribute found for type "SIPProxyInboundChannel".
+
+SIPProxySettings
+WASX7361I: No required attribute found for type "SIPProxySettings".
+
+SIPRoutingRule
+WASX7361I: No required attribute found for type "SIPRoutingRule".
+
+SOAPConnector
+WASX7361I: No required attribute found for type "SOAPConnector".
+
+SSLConfig
+Attribute                       Type
+alias                           String
+
+SSLConfigGroup
+WASX7361I: No required attribute found for type "SSLConfigGroup".
+
+SSLInboundChannel
+Attribute                       Type
+name                            String
+
+SSLOutboundChannel
+WASX7361I: No required attribute found for type "SSLOutboundChannel".
+
+SWAMAuthentication
+WASX7361I: No required attribute found for type "SWAMAuthentication".
+
+SchedulerConfiguration
+Attribute                       Type
+name                            String
+jndiName                        String
+datasourceJNDIName              String
+tablePrefix                     String
+pollInterval                    int
+
+SchedulerProvider
+Attribute                       Type
+name                            String
+
+SchedulerService
+WASX7361I: No required attribute found for type "SchedulerService".
+
+SecureAssociationService
+WASX7361I: No required attribute found for type "SecureAssociationService".
+
+SecureSocketLayer
+WASX7361I: No required attribute found for type "SecureSocketLayer".
+
+Security
+Attribute                       Type
+cacheTimeout                    int
+activeProtocol                  ENUM(CSI, IBM, BOTH)
+
+SecurityIdentity
+WASX7361I: No required attribute found for type "SecurityIdentity".
+
+SecurityPermission
+WASX7361I: No required attribute found for type "SecurityPermission".
+
+SecurityProtocolConfig
+WASX7361I: No required attribute found for type "SecurityProtocolConfig".
+
+SecurityProtocolQOP
+WASX7361I: No required attribute found for type "SecurityProtocolQOP".
+
+SecurityRole
+WASX7361I: No required attribute found for type "SecurityRole".
+
+SecurityRoleExt
+WASX7361I: No required attribute found for type "SecurityRoleExt".
+
+SecurityRoleRef
+WASX7361I: No required attribute found for type "SecurityRoleRef".
+
+SecurityServer
+WASX7361I: No required attribute found for type "SecurityServer".
+
+Server
+Attribute                       Type
+name                            String
+
+ServerCluster
+Attribute                       Type
+name                            String
+
+ServerComponent
+WASX7361I: No required attribute found for type "ServerComponent".
+
+ServerEntry
+WASX7361I: No required attribute found for type "ServerEntry".
+
+ServerExt
+WASX7361I: No required attribute found for type "ServerExt".
+
+ServerIdentity
+WASX7361I: No required attribute found for type "ServerIdentity".
+
+ServerIndex
+WASX7361I: No required attribute found for type "ServerIndex".
+
+ServerInstance
+WASX7361I: No required attribute found for type "ServerInstance".
+
+ServerTarget
+WASX7361I: No required attribute found for type "ServerTarget".
+
+Service
+WASX7361I: No required attribute found for type "Service".
+
+ServiceContext
+WASX7361I: No required attribute found for type "ServiceContext".
+
+ServiceLog
+WASX7361I: No required attribute found for type "ServiceLog".
+
+ServletCacheInstance
+Attribute                       Type
+name                            String
+jndiName                        String
+defaultPriority                 int
+cacheSize                       int
+enableDiskOffload               boolean
+
+SessionBeanConfig
+WASX7361I: No required attribute found for type "SessionBeanConfig".
+
+SessionDatabasePersistence
+Attribute                       Type
+datasourceJNDIName              String
+
+SessionManager
+WASX7361I: No required attribute found for type "SessionManager".
+
+SingleSignon
+WASX7361I: No required attribute found for type "SingleSignon".
+
+SpecialSubjectExt
+WASX7361I: No required attribute found for type "SpecialSubjectExt".
+
+StartupBeansService
+WASX7361I: No required attribute found for type "StartupBeansService".
+
+StateManageable
+WASX7361I: No required attribute found for type "StateManageable".
+
+StatefulSessionBeanConfig
+WASX7361I: No required attribute found for type "StatefulSessionBeanConfig".
+
+StaticCachePolicy
+WASX7361I: No required attribute found for type "StaticCachePolicy".
+
+StaticCacheRule
+WASX7361I: No required attribute found for type "StaticCacheRule".
+
+StaticPolicy
+Attribute                       Type
+name                            String
+policyFactory                   String
+isAlivePeriodSec                int
+
+StatisticsProvider
+WASX7361I: No required attribute found for type "StatisticsProvider".
+
+StreamRedirect
+WASX7361I: No required attribute found for type "StreamRedirect".
+
+StringNameSpaceBinding
+Attribute                       Type
+name                            String
+nameInNameSpace                 String
+stringToBind                    String
+
+SubjectExt
+WASX7361I: No required attribute found for type "SubjectExt".
+
+SystemMessageServer
+WASX7361I: No required attribute found for type "SystemMessageServer".
+
+TAInterceptor
+Attribute                       Type
+interceptorClassName            String
+
+TCPFactory
+WASX7361I: No required attribute found for type "TCPFactory".
+
+TCPInboundChannel
+Attribute                       Type
+name                            String
+maxOpenConnections              int
+inactivityTimeout               int
+
+TCPOutboundChannel
+WASX7361I: No required attribute found for type "TCPOutboundChannel".
+
+TPVService
+WASX7361I: No required attribute found for type "TPVService".
+
+TaskProvider
+WASX7361I: No required attribute found for type "TaskProvider".
+
+ThreadPool
+Attribute                       Type
+minimumSize                     int
+maximumSize                     int
+inactivityTimeout               int
+
+ThreadPoolManager
+WASX7361I: No required attribute found for type "ThreadPoolManager".
+
+TimerManagerInfo
+Attribute                       Type
+name                            String
+jndiName                        String
+numAlarmThreads                 int
+
+TimerManagerProvider
+Attribute                       Type
+name                            String
+
+TivoliPerfViewer
+WASX7361I: No required attribute found for type "TivoliPerfViewer".
+
+TraceLog
+WASX7361I: No required attribute found for type "TraceLog".
+
+TraceService
+Attribute                       Type
+memoryBufferSize                int
+
+TransactionService
+Attribute                       Type
+totalTranLifetimeTimeout        int
+clientInactivityTimeout         int
+maximumTransactionTimeout       int
+heuristicRetryLimit             int
+heuristicRetryWait              int
+propogatedOrBMTTranLifetimeTimeout  int
+asyncResponseTimeout            int
+
+Transport
+WASX7361I: No required attribute found for type "Transport".
+
+TransportChannel
+WASX7361I: No required attribute found for type "TransportChannel".
+
+TransportChannelFactory
+WASX7361I: No required attribute found for type "TransportChannelFactory".
+
+TransportChannelService
+WASX7361I: No required attribute found for type "TransportChannelService".
+
+TransportLayer
+WASX7361I: No required attribute found for type "TransportLayer".
+
+TransportQOP
+WASX7361I: No required attribute found for type "TransportQOP".
+
+TrustAssociation
+WASX7361I: No required attribute found for type "TrustAssociation".
+
+TrustManager
+WASX7361I: No required attribute found for type "TrustManager".
+
+TuningParams
+WASX7361I: No required attribute found for type "TuningParams".
+
+TypedProperty
+Attribute                       Type
+name                            String
+value                           String
+
+UDDIConfig
+WASX7361I: No required attribute found for type "UDDIConfig".
+
+UDDIReference
+WASX7361I: No required attribute found for type "UDDIReference".
+
+UDPInboundChannel
+WASX7361I: No required attribute found for type "UDPInboundChannel".
+
+UDPOutboundChannel
+WASX7361I: No required attribute found for type "UDPOutboundChannel".
+
+URIGroup
+WASX7361I: No required attribute found for type "URIGroup".
+
+URL
+Attribute                       Type
+name                            String
+jndiName                        String
+spec                            String
+
+URLProvider
+Attribute                       Type
+name                            String
+streamHandlerClassName          String
+protocol                        String
+
+UseCallerIdentity
+WASX7361I: No required attribute found for type "UseCallerIdentity".
+
+UserExt
+WASX7361I: No required attribute found for type "UserExt".
+
+UserRegistry
+WASX7361I: No required attribute found for type "UserRegistry".
+
+VariableMap
+WASX7361I: No required attribute found for type "VariableMap".
+
+VariableSubstitutionEntry
+Attribute                       Type
+symbolicName                    String
+
+VirtualHost
+Attribute                       Type
+name                            String
+
+WARFile
+WASX7361I: No required attribute found for type "WARFile".
+
+WAS40ConnectionPool
+Attribute                       Type
+minimumPoolSize                 int
+maximumPoolSize                 int
+connectionTimeout               int
+idleTimeout                     int
+orphanTimeout                   int
+statementCacheSize              int
+
+WAS40DataSource
+Attribute                       Type
+name                            String
+
+WASQueue
+Attribute                       Type
+name                            String
+jndiName                        String
+
+WASQueueConnectionFactory
+Attribute                       Type
+name                            String
+jndiName                        String
+
+WASTopic
+Attribute                       Type
+name                            String
+jndiName                        String
+topic                           String
+
+WASTopicConnectionFactory
+Attribute                       Type
+name                            String
+jndiName                        String
+port                            ENUM(DIRECT, QUEUED)
+
+WIMUserRegistry
+WASX7361I: No required attribute found for type "WIMUserRegistry".
+
+WLMCoreGroupBridgePlugin
+WASX7361I: No required attribute found for type "WLMCoreGroupBridgePlugin".
+
+WSByteBufferService
+WASX7361I: No required attribute found for type "WSByteBufferService".
+
+WSCertificateExpirationMonitor
+WASX7361I: No required attribute found for type "WSCertificateExpirationMonitor".
+
+WSGWGatewayService
+WASX7361I: No required attribute found for type "WSGWGatewayService".
+
+WSGWInstance
+WASX7361I: No required attribute found for type "WSGWInstance".
+
+WSGWProxyService
+WASX7361I: No required attribute found for type "WSGWProxyService".
+
+WSGWTargetService
+WASX7361I: No required attribute found for type "WSGWTargetService".
+
+WSNAdministeredSubscriber
+WASX7361I: No required attribute found for type "WSNAdministeredSubscriber".
+
+WSNInstanceDocument
+WASX7361I: No required attribute found for type "WSNInstanceDocument".
+
+WSNService
+WASX7361I: No required attribute found for type "WSNService".
+
+WSNServicePoint
+WASX7361I: No required attribute found for type "WSNServicePoint".
+
+WSNTopicNamespace
+WASX7361I: No required attribute found for type "WSNTopicNamespace".
+
+WSNotification
+WASX7361I: No required attribute found for type "WSNotification".
+
+WSPassword
+WASX7361I: No required attribute found for type "WSPassword".
+
+WSPasswordEncryption
+WASX7361I: No required attribute found for type "WSPasswordEncryption".
+
+WSPasswordLocator
+WASX7361I: No required attribute found for type "WSPasswordLocator".
+
+WSSchedule
+WASX7361I: No required attribute found for type "WSSchedule".
+
+WebContainer
+WASX7361I: No required attribute found for type "WebContainer".
+
+WebContainerInboundChannel
+Attribute                       Type
+name                            String
+writeBufferSize                 int
+
+WebModuleConfig
+WASX7361I: No required attribute found for type "WebModuleConfig".
+
+WebModuleDeployment
+Attribute                       Type
+deploymentId                    String
+startingWeight                  int
+uri                             String
+
+WebModuleRef
+WASX7361I: No required attribute found for type "WebModuleRef".
+
+WebServer
+WASX7361I: No required attribute found for type "WebServer".
+
+WebserverPluginSettings
+WASX7361I: No required attribute found for type "WebserverPluginSettings".
+
+WeightAdvisor
+WASX7361I: No required attribute found for type "WeightAdvisor".
+
+WorkAreaPartition
+Attribute                       Type
+name                            String
+maxSendSize                     int
+maxReceiveSize                  int
+
+WorkAreaPartitionService
+WASX7361I: No required attribute found for type "WorkAreaPartitionService".
+
+WorkAreaService
+Attribute                       Type
+maxSendSize                     int
+maxReceiveSize                  int
+
+WorkManagerInfo
+Attribute                       Type
+name                            String
+jndiName                        String
+minThreads                      int
+maxThreads                      int
+threadPriority                  int
+numAlarmThreads                 int
+
+WorkManagerProvider
+Attribute                       Type
+name                            String
+
+WorkManagerService
+WASX7361I: No required attribute found for type "WorkManagerService".
+
+WorkloadManagementServer
+WASX7361I: No required attribute found for type "WorkloadManagementServer".
+

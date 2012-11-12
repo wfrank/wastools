@@ -1,0 +1,4876 @@
+AccessPointGroup
+AccessPointGroup AccessPointGroup@*
+coreGroupAccessPointRefs CoreGroupAccessPoint@*
+name String
+peerAccessPointRefs PeerAccessPoint@*
+properties Property(TypedProperty, DescriptiveProperty)*
+
+ActivationSpec
+activationSpecClass String
+requiredConfigProperties RequiredConfigPropertyType*
+
+ActivationSpecTemplateProps
+activationSpec ActivationSpec@
+complexPropertySet J2EEResourcePropertySet
+resourceProperties J2EEResourceProperty*
+
+ActivitySessionService
+context ServiceContext@
+defaultTimeout int
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+AdminObject
+adminObjectClass String
+adminObjectInterface String
+configProperties ConfigProperty*
+
+AdminObjectTemplateProps
+adminObject AdminObject@
+properties J2EEResourceProperty*
+
+AdminServerAuthentication
+password String
+userid String
+
+AdminService
+configRepository RepositoryService
+connectors JMXConnector(HTTPConnector, JMSConnector, RMIConnector, SOAPConnector)*
+context ServiceContext@
+enable boolean
+extensionMBeanProviders ExtensionMBeanProvider*
+pluginConfigService PluginConfigService
+preferredConnector JMXConnector@
+properties Property(TypedProperty, DescriptiveProperty)*
+standalone boolean
+
+Agent
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+AllActivePolicy
+MatchCriteria MatchCriteria*
+customProperties Property(TypedProperty, DescriptiveProperty)*
+description String
+isAlivePeriodSec int
+name String
+policyFactory String
+quorumEnabled boolean
+
+AllAuthenticatedUsersExt
+PrimaryAdminExt PrimaryAdminExt@*
+accessId String
+name String
+
+Application
+description String
+displayName String
+largeIcon String
+smallIcon String
+
+ApplicationClientFile
+URI String
+container Container@
+deploymentDescriptor ApplicationClient@
+directoryEntry boolean
+files File(Archive, EJBJarFile, WARFile, EARFile, ApplicationClientFile, ModuleFile, Container, ReadOnlyDirectory, RARFile)*
+lastModified long
+loadingContainer Container@
+originalURI String
+size long
+types String*
+
+ApplicationConfig
+drsSettings DRSSettings
+enableSFSBFailover boolean
+overrideDefaultDRSSettings boolean
+sessionManagement SessionManager
+
+ApplicationContainer
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+ApplicationDeployment
+allowDispatchRemoteInclude boolean
+allowServiceRemoteInclude boolean
+appContextIDForSecurity String
+backgroundApplication boolean
+binariesURL String
+classloader Classloader
+configs DeployedObjectConfig(ApplicationConfig, ModuleConfig, WebModuleConfig, EJBModuleConfiguration)*
+createMBeansForResources boolean
+deploymentId String
+enableDistribution boolean
+filePermission String
+modules ModuleDeployment(WebModuleDeployment, EJBModuleDeployment, ConnectorModuleDeployment)*
+properties Property(TypedProperty, DescriptiveProperty)*
+reloadEnabled boolean
+reloadInterval long
+startingWeight int
+targetMappings DeploymentTargetMapping*
+useMetadataFromBinaries boolean
+warClassLoaderPolicy ENUM(MULTIPLE, SINGLE)
+zeroBinaryCopy boolean
+zeroEarCopy boolean
+
+ApplicationManagementService
+context ServiceContext@
+enable boolean
+enableBinaryDistribution boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+taskProviders TaskProvider*
+
+ApplicationProfileService
+compatibility boolean
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+ApplicationServer
+applicationClassLoaderPolicy ENUM(MULTIPLE, SINGLE)
+applicationClassLoadingMode ENUM(PARENT_FIRST, PARENT_LAST)
+classloaders Classloader*
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+id long
+locationServiceDaemon LSDConnection
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+webserverPluginSettings WebserverPluginSettings
+
+Archive
+URI String
+container Container@
+directoryEntry boolean
+files File(Archive, EJBJarFile, WARFile, EARFile, ApplicationClientFile, ModuleFile, Container, ReadOnlyDirectory, RARFile)*
+lastModified long
+loadingContainer Container@
+originalURI String
+size long
+types String*
+
+AuthMechanism
+OID String
+authConfig String
+authContextImplClass String
+authValidationConfig String
+isCredentialForwardable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+simpleAuthConfig String
+singleSignon SingleSignon
+trustAssociation TrustAssociation
+
+AuthenticationMechanism
+authenticationMechanism String
+authenticationMechanismType ENUM(Kerbv5, BasicPassword)
+credentialInterface String
+customAuthMechType String
+description String
+descriptions Description*
+
+AuthenticationTarget
+authMechanism AuthMechanism@
+enabled boolean
+password String
+realmName String
+userId String
+
+AuthorizationConfig
+authorizationProviders AuthorizationProvider*
+defaultAuthorizationProvider AuthorizationProvider@
+useJACCProvider boolean
+useNativeAuthorization boolean
+
+AuthorizationGroup
+description String
+groupProperties Property(TypedProperty, DescriptiveProperty)*
+memberProperties Property(TypedProperty, DescriptiveProperty)*
+members AuthorizationGroupMember(AuthorizationGroup)*
+name String
+resourceName String
+resourceType String
+
+AuthorizationGroupMember
+memberProperties Property(TypedProperty, DescriptiveProperty)*
+resourceName String
+resourceType String
+
+AuthorizationProvider
+description String
+initializeJACCProviderClassName String
+j2eePolicyImplClassName String
+name String
+policyConfigurationFactoryImplClassName String
+policyConfigurationImplClassName String
+properties Property(TypedProperty, DescriptiveProperty)*
+required boolean
+requiresEJBArgumentsPolicyContextHandler boolean
+roleAssignmentConfigImplClassName String
+roleConfigurationFactoryImplClassName String
+supportedPermissions String*
+supportsDynamicModuleUpdates boolean
+
+AuthorizationTableExt
+authorizations RoleAssignmentExt*
+context String
+fileName String
+roles SecurityRoleExt*
+
+AuthorizationTableImpl
+className String
+
+BackupCluster
+backupClusterName String
+domainBootstrapAddress EndPoint
+
+BridgeInterface
+chain String
+node String
+properties Property(TypedProperty, DescriptiveProperty)*
+server String
+
+CMPConnectorFactory
+authDataAlias String
+authMechanismPreference ENUM(BASIC_PASSWORD, KERBEROS)
+category String
+cmpDatasource DataSource@
+connectionDefinition ConnectionDefinition@
+connectionPool ConnectionPool
+customProperties Property(TypedProperty, DescriptiveProperty)*
+description String
+diagnoseConnectionUsage boolean
+jndiName String
+logMissingTransactionContext boolean
+manageCachedHandles boolean
+mapping MappingModule
+name String
+preTestConfig ConnectionTest
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+xaRecoveryAuthAlias String
+
+CORBAObjectNameSpaceBinding
+corbanameUrl String
+federatedContext boolean
+name String
+nameInNameSpace String
+
+CacheInstance
+cacheReplication DRSSettings
+cacheSize int
+category String
+defaultPriority int
+description String
+diskCacheCleanupFrequency int
+diskCacheCustomPerformanceSettings DiskCacheCustomPerformanceSettings
+diskCacheEntrySizeInMB int
+diskCacheEvictionPolicy DiskCacheEvictionPolicy
+diskCachePerformanceLevel ENUM(HIGH, CUSTOM, BALANCED, LOW)
+diskCacheSizeInEntries int
+diskCacheSizeInGB int
+diskOffloadLocation String
+enableCacheReplication boolean
+enableDiskOffload boolean
+flushToDiskOnStop boolean
+hashSize int
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+pushFrequency int
+referenceable Referenceable@
+replicationType ENUM(PULL, PUSH, PUSH_PULL, NONE)
+useListenerContext boolean
+
+CacheInstanceService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+CacheProvider
+classpath String*
+description String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+referenceables Referenceable*
+
+Cell
+cellDiscoveryProtocol ENUM(UDP, TCP, MULTICAST)
+cellType ENUM(DISTRIBUTED, STANDALONE)
+discoveryAddressEndpointName String
+foreignCells ForeignCell*
+multicastDiscoveryAddressEndpointName String
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+shortName String
+
+CellManager
+CELL_DISCOVERY_ADDRESS EndPoint
+CELL_MULTICAST_DISCOVERY_ADDRESS EndPoint
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+CellRoute
+peerAccessPointName String
+
+Chain
+enable boolean
+name String
+transportChannels TransportChannel@*
+
+Classloader
+libraries LibraryRef*
+mode ENUM(PARENT_FIRST, PARENT_LAST)
+
+ClientModuleRef
+earFile EARFile@
+module Module@
+moduleFile ModuleFile@
+
+ClusterAdvisor
+
+
+ClusterMember
+adjustPort Boolean
+cluster ServerCluster@
+memberName String
+nodeName String
+uniqueId String
+weight int
+
+ClusteredTarget
+name String
+
+CommonSecureInterop
+layers IIOPLayer(TransportLayer, MessageLayer, IdentityAssertionLayer)*
+sessionGCIdleTime int
+sessionGCInterval int
+stateful boolean
+targetRequires SecurityProtocolQOP
+
+CompatibilityDescriptionGroup
+description String
+descriptions Description*
+displayName String
+displayNames DisplayName*
+icons IconType*
+largeIcon String
+smallIcon String
+
+CompensationService
+compensationHandlerRetryInterval int
+compensationHandlerRetryLimit int
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+recoveryLogDirectory String
+recoveryLogFileSize int
+
+Component
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+ConfigProperty
+description String
+descriptions Description*
+name String
+type String
+value String
+
+ConfigSynchronizationService
+autoSynchEnabled boolean
+context ServiceContext@
+enable boolean
+exclusions String*
+properties Property(TypedProperty, DescriptiveProperty)*
+synchInterval int
+synchOnServerStartup boolean
+
+ConnectionDefTemplateProps
+ConnectionDefinition ConnectionDefinition@
+resourceProperties J2EEResourceProperty*
+
+ConnectionDefinition
+configProperties ConfigProperty*
+connectionFactoryImplClass String
+connectionFactoryInterface String
+connectionImplClass String
+connectionInterface String
+managedConnectionFactoryClass String
+
+ConnectionFactory
+authDataAlias String
+authMechanismPreference ENUM(BASIC_PASSWORD, KERBEROS)
+category String
+connectionPool ConnectionPool
+description String
+diagnoseConnectionUsage boolean
+jndiName String
+logMissingTransactionContext boolean
+manageCachedHandles boolean
+mapping MappingModule
+name String
+preTestConfig ConnectionTest
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+xaRecoveryAuthAlias String
+
+ConnectionPool
+agedTimeout long
+connectionTimeout long
+freePoolDistributionTableSize int
+maxConnections int
+minConnections int
+numberOfFreePoolPartitions int
+numberOfSharedPoolPartitions int
+numberOfUnsharedPoolPartitions int
+properties Property(TypedProperty, DescriptiveProperty)*
+purgePolicy ENUM(EntirePool, FailingConnectionOnly)
+reapTime long
+stuckThreshold int
+stuckTime int
+stuckTimerTime int
+surgeCreationInterval int
+surgeThreshold int
+testConnection boolean
+testConnectionInterval int
+unusedTimeout long
+
+ConnectionTest
+preTestConnection boolean
+retryInterval int
+retryLimit int
+
+Connector
+description String
+descriptions Description*
+displayName String
+displayNames DisplayName*
+eisType String
+icons IconType*
+largeIcon String
+license License
+resourceAdapter ResourceAdapter
+smallIcon String
+specVersion String
+vendorName String
+version String
+
+ConnectorModuleDeployment
+altDD String
+applicationDeployment ApplicationDeployment@
+classloader Classloader
+configs DeployedObjectConfig(ApplicationConfig, ModuleConfig, WebModuleConfig, EJBModuleConfiguration)*
+deploymentId String
+resourceAdapter J2CResourceAdapter
+startingWeight int
+targetMappings DeploymentTargetMapping*
+uri String
+
+ConnectorModuleRef
+earFile EARFile@
+module Module@
+moduleFile ModuleFile@
+
+Container
+URI String
+container Container@
+directoryEntry boolean
+files File(Archive, EJBJarFile, WARFile, EARFile, ApplicationClientFile, ModuleFile, Container, ReadOnlyDirectory, RARFile)*
+lastModified long
+loadingContainer Container@
+originalURI String
+size long
+
+Cookie
+domain String
+maximumAge int
+name String
+path String
+secure boolean
+
+CoreGroup
+channelChainName String
+coreGroupServers CoreGroupServer*
+coreGroupUID String
+customProperties Property(TypedProperty, DescriptiveProperty)*
+description String
+multiCastGroupIPEnd String
+multiCastGroupIPStart String
+multiCastPort int
+name String
+numCoordinators int
+policies HAManagerPolicy(AllActivePolicy, NoOpPolicy, PreferredServerPolicy, MOfNPolicy, OneOfNPolicy, StaticPolicy)*
+preferredCoordinatorServers CoreGroupServer@*
+protocolVersion String
+transportType ENUM(UNICAST, MULTICAST, CHANNEL_FRAMEWORK)
+
+CoreGroupAccessPoint
+AccessPointGroup AccessPointGroup@*
+bridgeInterfaces BridgeInterface*
+coreGroup String
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+CoreGroupBridgeService
+context ServiceContext@
+enable boolean
+enableBridge boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+CoreGroupBridgeSettings
+accessPointGroups AccessPointGroup*
+coreGroupAccessPoints CoreGroupAccessPoint*
+peerAccessPoints PeerAccessPoint*
+properties Property(TypedProperty, DescriptiveProperty)*
+wlmCoreGroupBridgePlugins WLMCoreGroupBridgePlugin*
+
+CoreGroupServer
+customProperties Property(TypedProperty, DescriptiveProperty)*
+nodeName String
+preferredIPAddress String
+serverName String
+
+CryptoHardwareToken
+libraryFile String
+password String
+tokenType String
+
+CustomAuthMechanism
+OID String
+authConfig String
+authContextImplClass String
+authValidationConfig String
+isCredentialForwardable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+simpleAuthConfig String
+singleSignon SingleSignon
+trustAssociation TrustAssociation
+
+CustomErrorPagePolicy
+errorPageAppURI String
+forwardHeaders String*
+handleRemoteErrors boolean
+statusCodes String*
+
+CustomService
+classname String
+classpath String
+context ServiceContext@
+description String
+displayName String
+enable boolean
+externalConfigURL String
+prerequisiteServices CustomService@*
+properties Property(TypedProperty, DescriptiveProperty)*
+
+CustomUserRegistry
+customRegistryClassName String
+ignoreCase boolean
+limit int
+primaryAdminId String
+properties Property(TypedProperty, DescriptiveProperty)*
+realm String
+serverId String
+serverPassword String
+useRegistryServerId boolean
+
+DCSInboundChannel
+discriminationWeight int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+DRSConnectionPool
+poolConnections boolean
+size int
+
+DRSPartition
+partitionOnEntry boolean
+size int
+
+DRSSerialization
+entrySerializationKind ENUM(BYTES, OBJECT)
+propertySerializationKind ENUM(BYTES, OBJECT)
+
+DRSSettings
+dataReplicationMode ENUM(SERVER, CLIENT, BOTH)
+ids Integer*
+messageBrokerDomainName String
+overrideHostConnectionPoints String*
+preferredLocalDRSBrokerName String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+DataReplication
+encryptionKeyValue String
+encryptionType ENUM(DES, TRIPLE_DES, NONE)
+messageBrokerName String
+numberOfReplicas int
+partition DRSPartition
+password String
+pooling DRSConnectionPool
+requestTimeout int
+serialization DRSSerialization
+ssl SecureSocketLayer
+useSSL boolean
+userId String
+
+DataReplicationDomain
+defaultDataReplicationSettings DataReplication
+name String
+
+DataSource
+authDataAlias String
+authMechanismPreference ENUM(BASIC_PASSWORD, KERBEROS)
+category String
+connectionPool ConnectionPool
+datasourceHelperClassname String
+description String
+diagnoseConnectionUsage boolean
+jndiName String
+logMissingTransactionContext boolean
+manageCachedHandles boolean
+mapping MappingModule
+name String
+preTestConfig ConnectionTest
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+relationalResourceAdapter J2CResourceAdapter@
+statementCacheSize int
+xaRecoveryAuthAlias String
+
+DataStoreProfile
+category String
+description String
+jndiName String
+maxConnectionRetries int
+maxPurgeTransactionSize int
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+queryThreshold int
+referenceable Referenceable@
+schemaName String
+sqlCacheSize int
+
+DebugService
+BSFDebugPort int
+BSFLoggingLevel int
+context ServiceContext@
+debugClassFilters String*
+enable boolean
+jvmDebugArgs String
+jvmDebugPort int
+properties Property(TypedProperty, DescriptiveProperty)*
+
+DeployedObject
+classloader Classloader
+configs DeployedObjectConfig(ApplicationConfig, ModuleConfig, WebModuleConfig, EJBModuleConfiguration)*
+deploymentId String
+startingWeight int
+targetMappings DeploymentTargetMapping*
+
+DeployedObjectConfig
+
+
+DeployedObjectProxyConfig
+deployedObjectConfigName String
+enableProxy boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+transportProtocol ENUM(ClientProtocol, HTTPS, HTTP)
+
+Deployment
+deployedObject DeployedObject(WebModuleDeployment, ModuleDeployment, ApplicationDeployment, EJBModuleDeployment, ConnectorModuleDeployment)
+deploymentTargets DeploymentTarget(ClusteredTarget, ServerTarget)*
+
+DeploymentTarget
+name String
+
+DeploymentTargetMapping
+DeployedObject DeployedObject@
+config DeployedObjectConfig@
+enable boolean
+target DeploymentTarget@
+
+Description
+lang String
+value String
+
+DescriptionGroup
+descriptions Description*
+displayNames DisplayName*
+icons IconType*
+
+DescriptiveProperty
+description String
+displayNameKey String
+firstClass boolean
+hoverHelpKey String
+inclusive boolean
+name String
+nlsRangeKey String
+range String
+required boolean
+type String
+validationExpression String
+value String
+
+DiagnosticProviderService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+startupStateCollectionSpec String
+
+DiskCacheCustomPerformanceSettings
+maxBufferedCacheIdsPerMetaEntry int
+maxBufferedDependencyIds int
+maxBufferedTemplates int
+
+DiskCacheEvictionPolicy
+algorithm ENUM(RANDOM, SIZE, NONE)
+highThreshold int
+lowThreshold int
+
+DisplayName
+lang String
+value String
+
+DistributionQueue
+queueConnectionFactoryJNDIName String
+queueJNDIName String
+
+DynamicCache
+cacheGroups ExternalCacheGroup*
+cacheReplication DRSSettings
+cacheSize int
+context ServiceContext@
+defaultPriority int
+diskCacheCleanupFrequency int
+diskCacheCustomPerformanceSettings DiskCacheCustomPerformanceSettings
+diskCacheEntrySizeInMB int
+diskCacheEvictionPolicy DiskCacheEvictionPolicy
+diskCachePerformanceLevel ENUM(HIGH, CUSTOM, BALANCED, LOW)
+diskCacheSizeInEntries int
+diskCacheSizeInGB int
+diskOffloadLocation String
+enable boolean
+enableCacheReplication boolean
+enableDiskOffload boolean
+enableTagLevelCaching boolean
+flushToDiskOnStop boolean
+hashSize int
+properties Property(TypedProperty, DescriptiveProperty)*
+pushFrequency int
+replicationType ENUM(PULL, PUSH, PUSH_PULL, NONE)
+
+DynamicSSLConfigSelection
+certificateAlias String
+description String
+dynamicSelectionInfo String
+managementScope ManagementScope@
+name String
+sslConfig SSLConfig@
+
+EARFile
+URI String
+container Container@
+deploymentDescriptor Application@
+directoryEntry boolean
+files File(Archive, EJBJarFile, WARFile, EARFile, ApplicationClientFile, ModuleFile, Container, ReadOnlyDirectory, RARFile)*
+lastModified long
+loadingContainer Container@
+moduleRefs ModuleRef(EJBModuleRef, WebModuleRef, ClientModuleRef, ConnectorModuleRef)*
+originalURI String
+size long
+types String*
+
+EJBCache
+cacheSize long
+cleanupInterval long
+
+EJBContainer
+EJBTimer EJBTimer@*
+cacheSettings EJBCache
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+defaultDatasourceJNDIName String
+drsSettings DRSSettings
+enableSFSBFailover boolean
+inactivePoolCleanupInterval long
+name String
+parentComponent Component@
+passivationDirectory String
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+timerSettings EJBTimer
+
+EJBDeployment
+ejbName String
+
+EJBJarFile
+URI String
+container Container@
+deploymentDescriptor EJBJar@
+directoryEntry boolean
+files File(Archive, EJBJarFile, WARFile, EARFile, ApplicationClientFile, ModuleFile, Container, ReadOnlyDirectory, RARFile)*
+lastModified long
+loadingContainer Container@
+originalURI String
+size long
+types String*
+
+EJBLocalRef
+description String
+descriptions Description*
+home String
+link String
+local String
+localHome String
+name String
+remote String
+type ENUM(Session, Entity)
+
+EJBModuleConfiguration
+description String
+drsSettings DRSSettings
+enableSFSBFailover boolean
+enterpriseBeanConfigs EnterpriseBeanConfig(SessionBeanConfig, StatefulSessionBeanConfig)*
+name String
+overrideDefaultDRSSettings boolean
+
+EJBModuleDeployment
+altDD String
+applicationDeployment ApplicationDeployment@
+classloader Classloader
+configs DeployedObjectConfig(ApplicationConfig, ModuleConfig, WebModuleConfig, EJBModuleConfiguration)*
+deploymentId String
+ejbDeployments EJBDeployment*
+startingWeight int
+targetMappings DeploymentTargetMapping*
+uri String
+
+EJBModuleRef
+earFile EARFile@
+module Module@
+moduleFile ModuleFile@
+
+EJBTimer
+datasourceAlias String
+datasourceJNDIName String
+numAlarmThreads long
+pollInterval long
+schedulerJNDIName String
+tablePrefix String
+
+EjbNameSpaceBinding
+applicationNodeName String
+applicationServerName String
+bindingLocation ENUM(SINGLESERVER, SERVERCLUSTER)
+ejbJndiName String
+name String
+nameInNameSpace String
+
+EjbRef
+description String
+descriptions Description*
+home String
+link String
+name String
+remote String
+type ENUM(Session, Entity)
+
+EmailNotifications
+emailAddresses String*
+enabled boolean
+port int
+transportHostName String
+transportPassword String
+transportUserId String
+
+EmitterFactoryProfile
+asynchronousTransmissionProfileJNDIName String
+category String
+description String
+filterFactoryJNDIName String
+filteringEnabled boolean
+jndiName String
+name String
+preferredSynchronizationMode boolean
+preferredTransactionMode boolean
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+referenceable Referenceable@
+synchronousTransmissionProfileJNDIName String
+
+EndPoint
+host String
+port int
+
+EndPointRef
+endPointName String
+
+EnterpriseBeanConfig
+ejbName String
+instancePool InstancePool
+
+EnvEntry
+description String
+descriptions Description*
+name String
+type ENUM(Short, Float, Integer, Byte, Boolean, Long, Character, String, Double)
+value String
+
+EventBusTransmissionProfile
+category String
+description String
+eventBusJNDIName String
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+referenceable Referenceable@
+
+EventGroupProfile
+distributionQueues DistributionQueue*
+eventGroupName String
+eventSelectorString String
+persistEvents boolean
+propertySet J2EEResourcePropertySet
+topicConnectionFactoryJNDIName String
+topicJNDIName String
+
+EventGroupProfileList
+category String
+description String
+eventGroupProfiles EventGroupProfile*
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+referenceable Referenceable@
+
+EventInfrastructureProvider
+classpath String*
+description String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+referenceables Referenceable*
+
+EventInfrastructureService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+EventServerProfile
+category String
+dataStoreJNDIName String
+dataStoreProfileJNDIName String
+description String
+enableDataStore boolean
+enableEventDistribution boolean
+eventGroupProfileListJNDIName String
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+referenceable Referenceable@
+
+EveryoneExt
+PrimaryAdminExt PrimaryAdminExt@*
+accessId String
+name String
+
+Extension
+configURI String
+name String
+
+ExtensionMBean
+descriptorURI String
+type String
+
+ExtensionMBeanProvider
+classpath String*
+description String
+extensionMBeans ExtensionMBean*
+name String
+
+ExternalCacheGroup
+members ExternalCacheGroupMember*
+name String
+type ENUM(SHARED, NOT_SHARED)
+
+ExternalCacheGroupMember
+adapterBeanName String
+address String
+
+ExternalDomain
+distinguishedName String
+domainName String
+host String
+port int
+properties Property(TypedProperty, DescriptiveProperty)*
+protocol ENUM(UDP, TCP, TLS)
+
+ExternallyManagedHTTPServer
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+FailRoute
+failStatusCode int
+
+File
+URI String
+container Container@
+directoryEntry boolean
+lastModified long
+loadingContainer Container@
+originalURI String
+size long
+
+FileTransferService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+retriesCount int
+retryWaitTime int
+
+FilterFactoryProfile
+category String
+description String
+filterConfigurationString String
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+referenceable Referenceable@
+
+ForeignCell
+bootstrapAddress EndPoint
+bootstrapAddresses EndPoint*
+name String
+
+GenericChannelData
+configURI String
+jarFile String
+typeID String
+
+GenericChannelFactory
+configURI String
+jarFile String
+properties Property(TypedProperty, DescriptiveProperty)*
+typeID String
+
+GenericClusterRoute
+genericServerClusterName String
+
+GenericInboundChannel
+configURI String
+discriminationWeight int
+jarFile String
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+typeID String
+
+GenericJMSConnectionFactory
+XAEnabled boolean
+authDataAlias String
+authMechanismPreference ENUM(BASIC_PASSWORD, KERBEROS)
+category String
+connectionPool ConnectionPool
+description String
+diagnoseConnectionUsage boolean
+externalJNDIName String
+jndiName String
+logMissingTransactionContext boolean
+manageCachedHandles boolean
+mapping MappingModule
+name String
+preTestConfig ConnectionTest
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+sessionPool ConnectionPool
+type ENUM(QUEUE, TOPIC, UNIFIED)
+xaRecoveryAuthAlias String
+
+GenericJMSDestination
+category String
+description String
+externalJNDIName String
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+type ENUM(QUEUE, TOPIC)
+
+GenericOutboundChannel
+configURI String
+jarFile String
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+typeID String
+
+GenericServerCluster
+cacheInstanceName String
+cacheUpdateUri String
+connectionPoolEnable boolean
+enableCaching boolean
+genericServerEndpoints GenericServerEndpoint*
+maxConnectionsPerServer int
+name String
+outboundSSLAlias String
+override ProxyOverrides(RemoteCellOverrides, GenericServerCluster)
+properties Property(TypedProperty, DescriptiveProperty)*
+protocol ENUM(HTTPS, HTTP)
+sslCacheEnable boolean
+
+GenericServerEndpoint
+host String
+port int
+properties Property(TypedProperty, DescriptiveProperty)*
+protocol ENUM(HTTPS, HTTP)
+weight int
+
+GroupExt
+accessId String
+name String
+
+HAManagerPolicy
+MatchCriteria MatchCriteria*
+customProperties Property(TypedProperty, DescriptiveProperty)*
+description String
+isAlivePeriodSec int
+name String
+policyFactory String
+quorumEnabled boolean
+
+HAManagerService
+activateEnabled boolean
+context ServiceContext@
+coreGroupName String
+description String
+enable boolean
+isAlivePeriodSec int
+properties Property(TypedProperty, DescriptiveProperty)*
+threadPool ThreadPool
+transportBufferSize int
+
+HTTPAccessLoggingService
+accessLog LogFile
+accessLogFormat ENUM(COMBINED, COMMON)
+context ServiceContext@
+enable boolean
+enableAccessLogging boolean
+enableErrorLogging boolean
+errorLog LogFile
+errorLogLevel ENUM(WARNING, DEBUG, INFO, ERROR, CRITICAL)
+properties Property(TypedProperty, DescriptiveProperty)*
+
+HTTPConnector
+properties Property(TypedProperty, DescriptiveProperty)*
+
+HTTPInboundChannel
+discriminationWeight int
+enableLogging boolean
+keepAlive boolean
+maximumPersistentRequests int
+name String
+persistentTimeout int
+properties Property(TypedProperty, DescriptiveProperty)*
+readTimeout int
+writeTimeout int
+
+HTTPOutboundChannel
+keepAlive boolean
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+readTimeout int
+writeTimeout int
+
+HTTPTransport
+address EndPoint
+adjustPort Boolean
+external boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+sslConfig String
+sslEnabled boolean
+
+HTTPTunnelInboundChannel
+discriminationWeight int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+HTTPTunnelOutboundChannel
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+HostAlias
+hostname String
+port String
+
+I18NService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+IIOPLayer
+requiredQOP QualityOfProtection(MessageQOP, IdentityAssertionQOP, SecurityProtocolQOP, TransportQOP)
+supportedQOP QualityOfProtection(MessageQOP, IdentityAssertionQOP, SecurityProtocolQOP, TransportQOP)
+useClaim boolean
+
+IIOPSecurityProtocol
+claims SecurityProtocolConfig(SecureAssociationService, CommonSecureInterop)
+performs SecurityProtocolConfig(SecureAssociationService, CommonSecureInterop)
+
+IIOPTransport
+address EndPoint
+external boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+sslConfig String
+sslEnabled boolean
+
+IPSprayer
+host String
+isEnabled boolean
+port int
+properties Property(TypedProperty, DescriptiveProperty)*
+
+IconType
+lang String
+largeIcon String
+smallIcon String
+
+Identity
+description String
+descriptions Description*
+roleName String
+
+IdentityAssertionLayer
+requiredQOP QualityOfProtection(MessageQOP, IdentityAssertionQOP, SecurityProtocolQOP, TransportQOP)
+requiredType IdentityAssertionTypeAssociation@
+supportedQOP QualityOfProtection(MessageQOP, IdentityAssertionQOP, SecurityProtocolQOP, TransportQOP)
+supportedTypes IdentityAssertionTypeAssociation*
+trustedServers ServerIdentity*
+useClaim boolean
+
+IdentityAssertionQOP
+enable boolean
+trustedId String
+trustedPassword String
+
+IdentityAssertionTypeAssociation
+type ENUM(ITTPrincipal)
+
+InboundResourceAdapter
+messageAdapter MessageAdapter
+
+InboundTransportChannel
+discriminationWeight int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+IndirectLookupNameSpaceBinding
+initialContextFactory String
+jndiName String
+name String
+nameInNameSpace String
+otherCtxProperties Property(TypedProperty, DescriptiveProperty)*
+providerURL String
+
+InstancePool
+maxSize int
+minSize int
+
+Interceptor
+name String
+
+InvalidationSchedule
+firstHour int
+secondHour int
+
+J2CActivationSpec
+activationSpec ActivationSpec@
+authenticationAlias String
+description String
+destinationJndiName String
+jndiName String
+name String
+resourceProperties J2EEResourceProperty*
+
+J2CAdminObject
+adminObject AdminObject@
+description String
+jndiName String
+name String
+properties J2EEResourceProperty*
+
+J2CConnectionFactory
+authDataAlias String
+authMechanismPreference ENUM(BASIC_PASSWORD, KERBEROS)
+category String
+connectionDefinition ConnectionDefinition@
+connectionPool ConnectionPool
+customProperties Property(TypedProperty, DescriptiveProperty)*
+description String
+diagnoseConnectionUsage boolean
+jndiName String
+logMissingTransactionContext boolean
+manageCachedHandles boolean
+mapping MappingModule
+name String
+preTestConfig ConnectionTest
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+xaRecoveryAuthAlias String
+
+J2CResourceAdapter
+activationSpecTemplateProps ActivationSpecTemplateProps*
+adminObjectTemplateProps AdminObjectTemplateProps*
+archivePath String
+classpath String*
+connectionDefTemplateProps ConnectionDefTemplateProps*
+deploymentDescriptor Connector
+description String
+j2cActivationSpec J2CActivationSpec*
+j2cAdminObjects J2CAdminObject*
+jaasLoginConfiguration JAASConfigurationEntry*
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+threadPoolAlias String
+
+J2EEEAttribute
+changeable boolean
+defaultValueLiteral String
+derived boolean
+eAnnotations EAnnotation*
+eContainingClass EClass@
+eType EClassifier@
+iD boolean
+lowerBound int
+name String
+ordered boolean
+transient boolean
+unique boolean
+unsettable boolean
+upperBound int
+volatile boolean
+
+J2EEEObject
+
+
+J2EEResourceFactory
+category String
+description String
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+
+J2EEResourceProperty
+description String
+name String
+required boolean
+type String
+value String
+
+J2EEResourcePropertySet
+resourceProperties J2EEResourceProperty*
+
+J2EEResourceProvider
+classpath String*
+description String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+
+JAASAuthData
+alias String
+description String
+password String
+userId String
+
+JAASConfiguration
+entries JAASConfigurationEntry*
+
+JAASConfigurationEntry
+alias String
+loginModules JAASLoginModule*
+
+JAASLoginModule
+authenticationStrategy ENUM(OPTIONAL, REQUISITE, REQUIRED, SUFFICIENT)
+callbackHandlerClassName String
+moduleClassName String
+options Property(TypedProperty, DescriptiveProperty)*
+
+JAXRPCHandler
+JAXRPCHeader JAXRPCHeader*
+description String
+handlerClassName String
+name String
+property Property(TypedProperty, DescriptiveProperty)*
+soapRoles String*
+
+JAXRPCHandlerList
+description String
+handlerName String*
+name String
+
+JAXRPCHeader
+localPart String
+namespaceURI String
+
+JDBCProvider
+classpath String*
+description String
+implementationClassName String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+xa boolean
+
+JFAPFactory
+properties Property(TypedProperty, DescriptiveProperty)*
+
+JFAPInboundChannel
+discriminationWeight int
+heartbeatInterval int
+heartbeatTimeout int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+JFAPOutboundChannel
+heartbeatInterval int
+heartbeatTimeout int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+JMSConnectionFactory
+XAEnabled boolean
+authDataAlias String
+authMechanismPreference ENUM(BASIC_PASSWORD, KERBEROS)
+category String
+connectionPool ConnectionPool
+description String
+diagnoseConnectionUsage boolean
+jndiName String
+logMissingTransactionContext boolean
+manageCachedHandles boolean
+mapping MappingModule
+name String
+preTestConfig ConnectionTest
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+sessionPool ConnectionPool
+xaRecoveryAuthAlias String
+
+JMSConnector
+properties Property(TypedProperty, DescriptiveProperty)*
+
+JMSDestination
+category String
+description String
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+
+JMSProvider
+classpath String*
+description String
+externalInitialContextFactory String
+externalProviderURL String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+supportsASF boolean
+
+JMSServer
+JMSSERVER_DIRECT_ADDRESS EndPoint
+JMSSERVER_QUEUED_ADDRESS EndPoint
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+description String
+name String
+numThreads int
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+queueNames String*
+securityPort EndPoint
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+JMSTransmissionProfile
+category String
+description String
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+queueConnectionFactoryJNDIName String
+queueJNDIName String
+referenceable Referenceable@
+
+JMSTransport
+address EndPoint
+external boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+sslConfig String
+sslEnabled boolean
+
+JMXConnector
+properties Property(TypedProperty, DescriptiveProperty)*
+
+JNDIEnvRefsGroup
+description String
+descriptions Description*
+displayName String
+displayNames DisplayName*
+ejbLocalRefs EJBLocalRef*
+ejbRefs EjbRef(EJBLocalRef)*
+environmentProperties EnvEntry*
+icons IconType*
+largeIcon String
+messageDestinationRefs MessageDestinationRef*
+resourceEnvRefs ResourceEnvRef*
+resourceRefs ResourceRef*
+serviceRefs ServiceRef*
+smallIcon String
+
+JavaProcessDef
+environment Property(TypedProperty, DescriptiveProperty)*
+executableArguments String*
+executableName String
+executableTarget String
+executableTargetKind ENUM(EXECUTABLE_JAR, JAVA_CLASS)
+execution ProcessExecution
+ioRedirect OutputRedirect
+jvmEntries JavaVirtualMachine*
+monitoringPolicy MonitoringPolicy
+processType String
+startCommand String
+startCommandArgs String*
+stopCommand String
+stopCommandArgs String*
+terminateCommand String
+terminateCommandArgs String*
+workingDirectory String
+
+JavaVirtualMachine
+bootClasspath String*
+classpath String*
+debugArgs String
+debugMode boolean
+disableJIT boolean
+executableJarFileName String
+genericJvmArguments String
+hprofArguments String
+initialHeapSize int
+internalClassAccessMode ENUM(ALLOW, RESTRICT)
+maximumHeapSize int
+osName String
+runHProf boolean
+systemProperties Property(TypedProperty, DescriptiveProperty)*
+verboseModeClass boolean
+verboseModeGarbageCollection boolean
+verboseModeJNI boolean
+
+Key
+byteArray String
+
+KeyManager
+Property Property@*
+additionalKeyManagerAttrs DescriptiveProperty*
+algorithm String
+keyManagerClass String
+managementScope ManagementScope@
+name String
+provider String
+
+KeyReference
+keyAlias String
+password String
+version int
+
+KeySet
+additionalKeySetAttrs DescriptiveProperty*
+aliasPrefix String
+deleteOldKeys boolean
+isKeyPair boolean
+keyGenerationClass String
+keyReference KeyReference*
+keyStore KeyStore@
+managementScope ManagementScope@
+maxKeyReferences int
+name String
+password String
+
+KeySetGroup
+autoGenerate boolean
+keySet KeySet@*
+managementScope ManagementScope@
+name String
+wsSchedule WSSchedule@
+
+KeyStore
+additionalKeyStoreAttrs DescriptiveProperty*
+createStashFileForCMS boolean
+customProviderClass String
+fileBased boolean
+hostList String
+initializeAtStartup boolean
+location String
+managementScope ManagementScope@
+name String
+password String
+provider String
+readOnly boolean
+slot int
+type String
+useForAcceleration boolean
+
+KeyStoreFile
+directory String
+name String
+
+LDAPSearchFilter
+certificateFilter String
+certificateMapMode ENUM(CERTIFICATE_FILTER, EXACT_DN)
+groupFilter String
+groupIdMap String
+groupMemberIdMap String
+userFilter String
+userIdMap String
+
+LDAPUserRegistry
+baseDN String
+bindDN String
+bindPassword String
+hosts EndPoint*
+ignoreCase boolean
+limit int
+monitorInterval long
+primaryAdminId String
+properties Property(TypedProperty, DescriptiveProperty)*
+realm String
+reuseConnection boolean
+searchFilter LDAPSearchFilter
+searchTimeout long
+serverId String
+serverPassword String
+sslConfig String
+sslEnabled boolean
+type ENUM(NETSCAPE, DOMINO502, CUSTOM, ACTIVE_DIRECTORY, NDS, IBM_DIRECTORY_SERVER, IPLANET, SECUREWAY)
+useRegistryServerId boolean
+
+LSDConnection
+endPoint EndPoint
+mode ENUM(EXPLICIT_CLIENT, IMPLICIT_CLIENT, PROVIDER, NONE)
+
+LTPA
+OID String
+authConfig String
+authContextImplClass String
+authValidationConfig String
+isCredentialForwardable boolean
+keySetGroup KeySetGroup@
+password String
+private Key
+properties Property(TypedProperty, DescriptiveProperty)*
+public Key
+shared Key
+simpleAuthConfig String
+singleSignon SingleSignon
+timeout long
+trustAssociation TrustAssociation
+
+Library
+classPath String*
+description String
+name String
+nativePath String*
+
+LibraryRef
+libraryName String
+sharedClassloader boolean
+
+License
+description String
+descriptions Description*
+required boolean
+
+Listener
+description String
+descriptions Description*
+displayName String
+displayNames DisplayName*
+icons IconType*
+largeIcon String
+listenerClass JavaClass@
+smallIcon String
+
+ListenerPort
+connectionFactoryJNDIName String
+description String
+destinationJNDIName String
+maxMessages int
+maxRetries int
+maxSessions int
+name String
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+LocalOSUserRegistry
+ignoreCase boolean
+limit int
+primaryAdminId String
+properties Property(TypedProperty, DescriptiveProperty)*
+realm String
+serverId String
+serverPassword String
+useRegistryServerId boolean
+
+LocalRoute
+
+
+LogFile
+filePath String
+maximumSize int
+
+LooseApplication
+binariesPath String
+looseApp LooseApplication@
+looseArchives LooseArchive(LooseApplication, LooseLibrary, LooseModule, LooseWARFile)*
+resourcesPath String
+uri String
+
+LooseArchive
+binariesPath String
+looseApp LooseApplication@
+resourcesPath String
+uri String
+
+LooseConfiguration
+applications LooseApplication*
+
+LooseLibrary
+binariesPath String
+looseApp LooseApplication@
+looseWAR LooseWARFile@
+resourcesPath String
+uri String
+
+LooseModule
+altDD String
+binariesPath String
+looseApp LooseApplication@
+resourcesPath String
+uri String
+
+LooseWARFile
+altDD String
+binariesPath String
+looseApp LooseApplication@
+looseLibs LooseLibrary*
+resourcesPath String
+uri String
+
+MOfNPolicy
+MatchCriteria MatchCriteria*
+customProperties Property(TypedProperty, DescriptiveProperty)*
+description String
+failback boolean
+isAlivePeriodSec int
+name String
+numActive int
+policyFactory String
+preferredOnly boolean
+preferredServers CoreGroupServer@*
+quorumEnabled boolean
+
+MQConnectionFactory
+CCSID String
+XAEnabled boolean
+authDataAlias String
+authMechanismPreference ENUM(BASIC_PASSWORD, KERBEROS)
+brokerCCSubQ String
+brokerControlQueue String
+brokerPubQueue String
+brokerQueueManager String
+brokerSubQueue String
+brokerVersion ENUM(MA0C, MQSI)
+category String
+channel String
+clientID String
+cloneSupport boolean
+connectionPool ConnectionPool
+description String
+diagnoseConnectionUsage boolean
+directAuth ENUM(BASIC, CERTIFICATE)
+failIfQuiesce boolean
+host String
+jndiName String
+localAddress String
+logMissingTransactionContext boolean
+manageCachedHandles boolean
+mapping MappingModule
+msgRetention boolean
+msgSelection ENUM(CLIENT, BROKER)
+multicast ENUM(DISABLED, NOT_RELIABLE, RELIABLE, ENABLED)
+name String
+pollingInterval int
+port int
+preTestConfig ConnectionTest
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+proxyHostName String
+proxyPort int
+pubSubCleanup ENUM(STRONG, SAFE, ASPROP, NONE)
+pubSubCleanupInterval long
+publishAckInterval int
+queueManager String
+rescanInterval int
+sessionPool ConnectionPool
+sparseSubscriptions boolean
+sslCRL String
+sslCipherSuite String
+sslPeerName String
+statRefreshInterval int
+substore ENUM(QUEUE, MIGRATE, BROKER)
+tempModel String
+tempQueuePrefix String
+transportType ENUM(DIRECTHTTP, BINDINGS, DIRECT, CLIENT)
+useConnectionPooling boolean
+xaRecoveryAuthAlias String
+
+MQFAPInboundChannel
+discriminationWeight int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+MQFAPOutboundChannel
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+MQQueue
+CCSID int
+baseQueueManagerName String
+baseQueueName String
+category String
+decimalEncoding ENUM(Normal, Reversed)
+description String
+expiry ENUM(APPLICATION_DEFINED, SPECIFIED, UNLIMITED)
+floatingPointEncoding ENUM(IEEENormal, IEEEReversed, S390)
+integerEncoding ENUM(Normal, Reversed)
+jndiName String
+name String
+password String
+persistence ENUM(APPLICATION_DEFINED, NONPERSISTENT, PERSISTENT, QUEUE_DEFINED)
+priority ENUM(APPLICATION_DEFINED, SPECIFIED, QUEUE_DEFINED)
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+queueManagerHost String
+queueManagerPort int
+serverConnectionChannelName String
+specifiedExpiry long
+specifiedPriority int
+targetClient ENUM(JMS, MQ)
+useNativeEncoding boolean
+userName String
+
+MQQueueConnectionFactory
+CCSID String
+XAEnabled boolean
+authDataAlias String
+authMechanismPreference ENUM(BASIC_PASSWORD, KERBEROS)
+category String
+channel String
+clientID String
+connectionPool ConnectionPool
+description String
+diagnoseConnectionUsage boolean
+failIfQuiesce boolean
+host String
+jndiName String
+localAddress String
+logMissingTransactionContext boolean
+manageCachedHandles boolean
+mapping MappingModule
+msgRetention boolean
+name String
+pollingInterval int
+port int
+preTestConfig ConnectionTest
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+queueManager String
+rescanInterval int
+sessionPool ConnectionPool
+sslCRL String
+sslCipherSuite String
+sslPeerName String
+tempModel String
+tempQueuePrefix String
+transportType ENUM(DIRECTHTTP, BINDINGS, DIRECT, CLIENT)
+useConnectionPooling boolean
+xaRecoveryAuthAlias String
+
+MQTopic
+CCSID int
+baseTopicName String
+brokerCCDurSubQueue String
+brokerDurSubQueue String
+category String
+decimalEncoding ENUM(Normal, Reversed)
+description String
+expiry ENUM(APPLICATION_DEFINED, SPECIFIED, UNLIMITED)
+floatingPointEncoding ENUM(IEEENormal, IEEEReversed, S390)
+integerEncoding ENUM(Normal, Reversed)
+jndiName String
+multicast ENUM(AS_CF, DISABLED, NOT_RELIABLE, RELIABLE, ENABLED)
+name String
+persistence ENUM(APPLICATION_DEFINED, NONPERSISTENT, PERSISTENT, QUEUE_DEFINED)
+priority ENUM(APPLICATION_DEFINED, SPECIFIED, QUEUE_DEFINED)
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+specifiedExpiry long
+specifiedPriority int
+targetClient ENUM(JMS, MQ)
+useNativeEncoding boolean
+
+MQTopicConnectionFactory
+CCSID String
+XAEnabled boolean
+authDataAlias String
+authMechanismPreference ENUM(BASIC_PASSWORD, KERBEROS)
+brokerCCSubQ String
+brokerControlQueue String
+brokerPubQueue String
+brokerQueueManager String
+brokerSubQueue String
+brokerVersion ENUM(MA0C, MQSI)
+category String
+channel String
+clientID String
+cloneSupport boolean
+connectionPool ConnectionPool
+description String
+diagnoseConnectionUsage boolean
+directAuth ENUM(BASIC, CERTIFICATE)
+failIfQuiesce boolean
+host String
+jndiName String
+localAddress String
+logMissingTransactionContext boolean
+manageCachedHandles boolean
+mapping MappingModule
+msgSelection ENUM(CLIENT, BROKER)
+multicast ENUM(DISABLED, NOT_RELIABLE, RELIABLE, ENABLED)
+name String
+pollingInterval int
+port int
+preTestConfig ConnectionTest
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+proxyHostName String
+proxyPort int
+pubSubCleanup ENUM(STRONG, SAFE, ASPROP, NONE)
+pubSubCleanupInterval long
+publishAckInterval int
+queueManager String
+rescanInterval int
+sessionPool ConnectionPool
+sparseSubscriptions boolean
+sslCRL String
+sslCipherSuite String
+sslPeerName String
+statRefreshInterval int
+substore ENUM(QUEUE, MIGRATE, BROKER)
+tempModel String
+transportType ENUM(DIRECTHTTP, BINDINGS, DIRECT, CLIENT)
+useConnectionPooling boolean
+xaRecoveryAuthAlias String
+
+MailProvider
+classpath String*
+description String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+protocolProviders ProtocolProvider*
+providerType String
+
+MailSession
+category String
+debug boolean
+description String
+jndiName String
+mailFrom String
+mailStoreHost String
+mailStorePassword String
+mailStoreProtocol ProtocolProvider@
+mailStoreUser String
+mailTransportHost String
+mailTransportPassword String
+mailTransportProtocol ProtocolProvider@
+mailTransportUser String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+strict boolean
+
+ManagedObject
+name String
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+ManagementScope
+scopeName String
+scopeType String
+
+MappingModule
+authDataAlias String
+mappingConfigAlias String
+
+MatchCriteria
+description String
+name String
+value String
+
+MessageAdapter
+messageListeners MessageListener*
+
+MessageCondition
+properties Property(TypedProperty, DescriptiveProperty)*
+type ENUM(SOURCE_ADDR, TO, FROM, DEST_ADDR, REQUEST_URI)
+value String
+
+MessageDestination
+description String
+descriptions Description*
+displayName String
+displayNames DisplayName*
+icons IconType*
+largeIcon String
+name String
+smallIcon String
+
+MessageDestinationRef
+descriptions Description*
+link String
+name String
+type String
+usage ENUM(Produces, Consumes, ConsumesProduces)
+
+MessageLayer
+authenticationLayerRetryCount int
+isStateful boolean
+requiredQOP QualityOfProtection(MessageQOP, IdentityAssertionQOP, SecurityProtocolQOP, TransportQOP)
+requiresAuthTarget AuthenticationTarget@
+supportedAuthTargets AuthenticationTarget*
+supportedQOP QualityOfProtection(MessageQOP, IdentityAssertionQOP, SecurityProtocolQOP, TransportQOP)
+useClaim boolean
+
+MessageListener
+activationSpec ActivationSpec
+messageListenerType String
+
+MessageListenerService
+context ServiceContext@
+description String
+enable boolean
+listenerPorts ListenerPort*
+maxMDBListenerRetries int
+mdbListenerRecoveryInterval int
+mqJMSPoolingThreshold int
+mqJMSPoolingTimeout int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+threadPool ThreadPool
+
+MessageQOP
+enableOutOfSequenceDetection boolean
+enableReplayDetection boolean
+establishTrustInClient boolean
+
+MethodMessageCondition
+properties Property(TypedProperty, DescriptiveProperty)*
+value ENUM(INVITE, MESSAGE, INFO, PUBLISH, REGISTER, REFER, SUBSCRIBE, OPTIONS)
+
+MimeEntry
+extensions String*
+type String
+
+ModuleConfig
+description String
+name String
+
+ModuleDeployment
+altDD String
+applicationDeployment ApplicationDeployment@
+classloader Classloader
+configs DeployedObjectConfig(ApplicationConfig, ModuleConfig, WebModuleConfig, EJBModuleConfiguration)*
+deploymentId String
+startingWeight int
+targetMappings DeploymentTargetMapping*
+uri String
+
+ModuleFile
+URI String
+container Container@
+directoryEntry boolean
+files File(Archive, EJBJarFile, WARFile, EARFile, ApplicationClientFile, ModuleFile, Container, ReadOnlyDirectory, RARFile)*
+lastModified long
+loadingContainer Container@
+originalURI String
+size long
+types String*
+
+ModuleRef
+earFile EARFile@
+module Module@
+moduleFile ModuleFile@
+
+ModuleShare
+localModule ModuleRef(EJBModuleRef, WebModuleRef, ClientModuleRef, ConnectorModuleRef)
+sharedModules ModuleRef(EJBModuleRef, WebModuleRef, ClientModuleRef, ConnectorModuleRef)*
+
+MonitoringPolicy
+autoRestart boolean
+maximumStartupAttempts int
+nodeRestartState ENUM(PREVIOUS, STOPPED, RUNNING)
+pingInterval int
+pingTimeout int
+
+MultiBrokerRoutingEntry
+brokerEndPoint EndPoint
+brokerName String
+clientEndPoint EndPoint
+
+MultibrokerDomain
+defaultDataReplicationSettings DataReplication
+entries MultiBrokerRoutingEntry*
+name String
+
+NameBinding
+contextId String
+cosBindingType ENUM(nobject, ncontext)
+insURL String
+javaClassName String
+linkedNamingContextId String
+nameBindingType ENUM(objectJava, contextLinked, contextPrimary, objectURL, contextURL, objectIOR, contextIOR)
+nameComponent String
+primaryNamingContext NamingContext
+serializedBytesAsString String
+stringifiedIOR String
+
+NameServer
+BOOTSTRAP_ADDRESS EndPoint
+bootstrapServerAddress EndPoint
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+NameSpaceBinding
+name String
+nameInNameSpace String
+
+NamedEndPoint
+endPoint EndPoint
+endPointName String
+
+NamingContext
+contextId String
+nameBindings NameBinding*
+parentContextId String
+
+NoOpPolicy
+MatchCriteria MatchCriteria*
+customProperties Property(TypedProperty, DescriptiveProperty)*
+description String
+isAlivePeriodSec int
+name String
+policyFactory String
+quorumEnabled boolean
+
+Node
+discoveryProtocol ENUM(UDP, TCP, MULTICAST)
+hostName String
+maxFilePermissionForApps String
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+shortName String
+
+NodeAgent
+NODE_DISCOVERY_ADDRESS EndPoint
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+fileSynchronizationService ConfigSynchronizationService
+fileTransferService FileTransferService
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+NodeGroup
+description String
+members NodeGroupMember*
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+shortName String
+
+NodeGroupMember
+nodeName String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+ORBInboundChannel
+discriminationWeight int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+ORBPlugin
+name String
+
+ObjectCacheInstance
+cacheReplication DRSSettings
+cacheSize int
+category String
+defaultPriority int
+description String
+disableDependencyId boolean
+diskCacheCleanupFrequency int
+diskCacheCustomPerformanceSettings DiskCacheCustomPerformanceSettings
+diskCacheEntrySizeInMB int
+diskCacheEvictionPolicy DiskCacheEvictionPolicy
+diskCachePerformanceLevel ENUM(HIGH, CUSTOM, BALANCED, LOW)
+diskCacheSizeInEntries int
+diskCacheSizeInGB int
+diskOffloadLocation String
+enableCacheReplication boolean
+enableDiskOffload boolean
+flushToDiskOnStop boolean
+hashSize int
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+pushFrequency int
+referenceable Referenceable@
+replicationType ENUM(PULL, PUSH, PUSH_PULL, NONE)
+useListenerContext boolean
+
+ObjectPool
+poolClassName String
+poolImplClassName String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+ObjectPoolManagerInfo
+category String
+description String
+jndiName String
+name String
+objectPools ObjectPool*
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+referenceable Referenceable@
+
+ObjectPoolProvider
+classpath String*
+description String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+referenceables Referenceable*
+
+ObjectPoolService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+ObjectRequestBroker
+CSIV2_SSL_MUTUALAUTH_LISTENER_ADDRESS EndPoint
+CSIV2_SSL_SERVERAUTH_LISTENER_ADDRESS EndPoint
+ORB_LISTENER_ADDRESS EndPoint
+SAS_SSL_SERVERAUTH_LISTENER_ADDRESS EndPoint
+commTraceEnabled boolean
+connectionCacheMaximum int
+connectionCacheMinimum int
+context ServiceContext@
+enable boolean
+forceTunnel String
+interceptors Interceptor*
+locateRequestTimeout int
+lsdConnection LSDConnection
+noLocalCopies boolean
+plugins ORBPlugin*
+properties Property(TypedProperty, DescriptiveProperty)*
+requestRetriesCount int
+requestRetriesDelay int
+requestTimeout int
+threadPool ThreadPool
+tunnelAgentURL String
+useServerThreadPool boolean
+
+OnDemandRouter
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+OneOfNPolicy
+MatchCriteria MatchCriteria*
+customProperties Property(TypedProperty, DescriptiveProperty)*
+description String
+failback boolean
+isAlivePeriodSec int
+name String
+policyFactory String
+preferredOnly boolean
+preferredServers CoreGroupServer@*
+quorumEnabled boolean
+
+OutboundResourceAdapter
+authenticationMechanisms AuthenticationMechanism*
+connectionDefinitions ConnectionDefinition*
+reauthenticationSupport boolean
+transactionSupport ENUM(LocalTransaction, XATransaction, NoTransaction)
+
+OutboundTransportChannel
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+OutputRedirect
+stderrFilename String
+stdinFilename String
+stdoutFilename String
+
+PME502ServerExtension
+cacheInstanceService CacheInstanceService
+
+PME51ServerExtension
+compensationService CompensationService
+workAreaPartitionService WorkAreaPartitionService
+
+PMEClusterExtension
+advisors ClusterAdvisor(WeightAdvisor)*
+backupCluster BackupCluster
+
+PMEServerExtension
+activitySessionService ActivitySessionService
+applicationProfileService ApplicationProfileService
+i18nService I18NService
+objectPoolService ObjectPoolService
+schedulerService SchedulerService
+startupBeansService StartupBeansService
+workAreaService WorkAreaService
+workManagerService WorkManagerService
+
+PMIModule
+enable String
+moduleName String
+pmimodules PMIModule*
+type String
+
+PMIRMFilter
+enable boolean
+extendedType String
+filterValues PMIRMFilterValue*
+type ENUM(EJB, URI, JMS, WEB_SERVICES, EXTENDED, SOURCE_IP)
+
+PMIRMFilterValue
+enable boolean
+value String
+
+PMIRequestMetrics
+armCallback String
+armTransactionFactory String
+armType ENUM(ARM40, TIVOLI_ARM, EWLM_ARM)
+dynamicEnable boolean
+enable boolean
+enableARM boolean
+enableLog boolean
+enabledComponents String*
+filters PMIRMFilter*
+instrumentedComponents String*
+traceLevel ENUM(DEBUG, PERF_DEBUG, HOPS, NONE)
+
+PMIService
+context ServiceContext@
+enable boolean
+initialSpecLevel String
+properties Property(TypedProperty, DescriptiveProperty)*
+statisticSet String
+synchronizedUpdate boolean
+
+ParamValue
+description String
+descriptions Description*
+name String
+value String
+
+PeerAccessPoint
+cell String
+coreGroup String
+coreGroupAccessPoint String
+name String
+peerEndPoints EndPoint*
+properties Property(TypedProperty, DescriptiveProperty)*
+proxyPeerAccessPointRef PeerAccessPoint@
+
+PluginConfigPolicy
+pluginConfigChangeScript String
+pluginGenConfigScope ENUM(NODE, ALL, CELL, SERVER, NONE)
+properties Property(TypedProperty, DescriptiveProperty)*
+
+PluginConfigService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+PluginProperties
+ASDisableNagle boolean
+AcceptAllContent boolean
+AppServerPortPreference ENUM(WEBSERVERPORT, HOSTHEADER)
+ChunkedResponse boolean
+ConfigFilename String
+ESIEnable boolean
+ESIInvalidationMonitor boolean
+ESIMaxCacheSize int
+IISDisableNagle boolean
+IISPluginPriority ENUM(MEDIUM, HIGH, LOW)
+IgnoreDNSFailures boolean
+KeyRingFilename String
+LogFilename String
+LogLevel ENUM(DETAIL, DEBUG, ERROR, WARN, STATS, TRACE)
+PluginGeneration ENUM(MANUAL, AUTOMATIC)
+PluginInstallRoot String
+PluginPropagation ENUM(MANUAL, AUTOMATIC)
+RefreshInterval int
+RemoteConfigFilename String
+RemoteKeyRingFilename String
+ResponseChunkSize int
+VHostMatchingCompat boolean
+pluginServerClusterProperties PluginServerClusterProperties
+properties Property(TypedProperty, DescriptiveProperty)*
+
+PluginServerClusterProperties
+CloneSeparatorChange boolean
+LoadBalance ENUM(ROUND_ROBIN, RANDOM)
+PostBufferSize int
+PostSizeLimit int
+RemoveSpecialHeaders boolean
+RetryInterval int
+
+PortletContainer
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+enablePortletCaching boolean
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+PreferredServerPolicy
+MatchCriteria MatchCriteria*
+customProperties Property(TypedProperty, DescriptiveProperty)*
+description String
+failback boolean
+isAlivePeriodSec int
+name String
+policyFactory String
+preferredOnly boolean
+preferredServers CoreGroupServer@*
+quorumEnabled boolean
+
+PrimaryAdminExt
+PrimaryAdminExt PrimaryAdminExt@*
+SpecialSubjectExt SpecialSubjectExt@*
+accessId String
+name String
+
+ProcessDef
+environment Property(TypedProperty, DescriptiveProperty)*
+executableArguments String*
+executableName String
+execution ProcessExecution
+ioRedirect OutputRedirect
+monitoringPolicy MonitoringPolicy
+processType String
+startCommand String
+startCommandArgs String*
+stopCommand String
+stopCommandArgs String*
+terminateCommand String
+terminateCommandArgs String*
+workingDirectory String
+
+ProcessExecution
+processPriority int
+runAsGroup String
+runAsUser String
+runInProcessGroup int
+umask String
+
+Property
+description String
+name String
+required boolean
+validationExpression String
+value String
+
+PropertySet
+description String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+ProtocolProvider
+classname String
+classpath String*
+protocol String
+type ENUM(STORE, TRANSPORT)
+
+Proxy
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+ProxyInboundChannel
+discriminationWeight int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+ProxyOverrides
+cacheInstanceName String
+cacheUpdateUri String
+connectionPoolEnable boolean
+enableCaching boolean
+maxConnectionsPerServer int
+outboundSSLAlias String
+properties Property(TypedProperty, DescriptiveProperty)*
+sslCacheEnable boolean
+
+ProxyServer
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+ProxySettings
+cacheAccessLog String
+cacheInstanceName String
+cacheUpdateUri String
+connectionPoolEnable boolean
+enableAggressiveCaching boolean
+enableCaching boolean
+enableDynamicCache boolean
+enableESI boolean
+enableLogging boolean
+enableWebServicesSupport boolean
+errorPagePolicy CustomErrorPagePolicy
+excludeURIGroup String
+localAccessLog String
+maxConnectionsPerServer int
+maximumLogSize int
+methodsDisable String*
+outboundConnectTimeout int
+outboundRequestTimeout int
+outboundSSLAlias String
+pluginConfigPolicy PluginConfigPolicy
+properties Property(TypedProperty, DescriptiveProperty)*
+proxyAccessLog String
+rewritingPolicy RewritingPolicy
+routingPolicy RoutingPolicy
+serverHeader String
+sslCacheEnable boolean
+staticCachePolicy StaticCachePolicy
+trustedIntermediaryAddresses String*
+uriGroups URIGroup*
+
+QName
+combinedQName String
+internalPrefixOrNsURI String
+localPart String
+namespaceURI String
+
+QualityOfProtection
+
+
+RARFile
+URI String
+container Container@
+deploymentDescriptor Connector@
+directoryEntry boolean
+files File(Archive, EJBJarFile, WARFile, EARFile, ApplicationClientFile, ModuleFile, Container, ReadOnlyDirectory, RARFile)*
+lastModified long
+loadingContainer Container@
+originalURI String
+size long
+types String*
+
+RASLoggingService
+context ServiceContext@
+enable boolean
+enableCorrelationId boolean
+messageFilterLevel ENUM(WARNING, AUDIT, SERVICE, NONE)
+properties Property(TypedProperty, DescriptiveProperty)*
+serviceLog ServiceLog
+suppressStackTraces boolean
+
+RMIConnector
+properties Property(TypedProperty, DescriptiveProperty)*
+
+RMQChannelFactory
+properties Property(TypedProperty, DescriptiveProperty)*
+
+RMQOutboundChannel
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+ReadOnlyDirectory
+URI String
+container Container@
+directoryEntry boolean
+files File(Archive, EJBJarFile, WARFile, EARFile, ApplicationClientFile, ModuleFile, Container, ReadOnlyDirectory, RARFile)*
+lastModified long
+loadingContainer Container@
+originalURI String
+size long
+
+RecoveryLog
+compensationLogDirectory String
+compensationLogFileSize int
+transactionLogDirectory String
+
+RedirectRoute
+redirectURL String
+
+Referenceable
+classname String
+factoryClassname String
+
+RemoteCellOverrides
+cacheInstanceName String
+cacheUpdateUri String
+connectionPoolEnable boolean
+enableCaching boolean
+maxConnectionsPerServer int
+outboundSSLAlias String
+override ProxyOverrides(RemoteCellOverrides, GenericServerCluster)
+peerAccessPointName String
+properties Property(TypedProperty, DescriptiveProperty)*
+sslCacheEnable boolean
+
+RepositoryService
+auditEnabled boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+RequiredConfigPropertyType
+descriptions Description*
+name String
+
+ResourceAdapter
+adminObjects AdminObject*
+authenticationMechanisms AuthenticationMechanism*
+configProperties ConfigProperty*
+connectionFactoryImplClass String
+connectionFactoryInterface String
+connectionImplClass String
+connectionInterface String
+inboundResourceAdapter InboundResourceAdapter
+managedConnectionFactoryClass String
+outboundResourceAdapter OutboundResourceAdapter
+reauthenticationSupport boolean
+resourceAdapterClass String
+securityPermissions SecurityPermission*
+transactionSupport ENUM(LocalTransaction, XATransaction, NoTransaction)
+
+ResourceEnvEntry
+category String
+description String
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+referenceable Referenceable@
+
+ResourceEnvRef
+description String
+descriptions Description*
+name String
+type JavaClass@
+
+ResourceEnvironmentProvider
+classpath String*
+description String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+referenceables Referenceable*
+
+ResourceRef
+auth ENUM(Container, SERVLET, Application)
+description String
+descriptions Description*
+link String
+name String
+resSharingScope ENUM(Unshareable, Shareable)
+type String
+
+RewritingPolicy
+rewritingRules RewritingRule*
+
+RewritingRule
+fromURLPattern String
+properties Property(TypedProperty, DescriptiveProperty)*
+toURLPattern String
+
+RoleAssignmentExt
+groups GroupExt*
+role SecurityRoleExt@
+specialSubjects SpecialSubjectExt(PrimaryAdminExt, EveryoneExt, AllAuthenticatedUsersExt, ServerExt)*
+users UserExt*
+
+RoleBasedAuthorization
+name String
+
+Route
+
+
+RoutingPolicy
+routingRules RoutingRule*
+
+RoutingRule
+isEnabled boolean
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+routingAction Route(FailRoute, RedirectRoute, LocalRoute, GenericClusterRoute, CellRoute)
+uriGroup String
+virtualHostName String
+
+RunAsSpecifiedIdentity
+description String
+descriptions Description*
+identity Identity
+
+SIBAbstractDestination
+contextInfo SIBContextInfo*
+description String
+identifier String
+instanceType String
+uuid String
+
+SIBAuthAlias
+browser SIBAuthBrowser
+busName String
+identifier String
+identityAdopter SIBAuthIdentityAdopter
+inheritDefaults boolean
+receiver SIBAuthReceiver
+sender SIBAuthSender
+
+SIBAuthBrowser
+group SIBAuthGroup@*
+user SIBAuthUser@*
+
+SIBAuthBusConnect
+group SIBAuthGroup@*
+user SIBAuthUser@*
+
+SIBAuthCreator
+group SIBAuthGroup@*
+user SIBAuthUser@*
+
+SIBAuthDefault
+browser SIBAuthBrowser
+creator SIBAuthCreator
+identityAdopter SIBAuthIdentityAdopter
+receiver SIBAuthReceiver
+sender SIBAuthSender
+
+SIBAuthForeignBus
+busName String
+identityAdopter SIBAuthIdentityAdopter
+sender SIBAuthSender
+
+SIBAuthForeignDestination
+busName String
+destinationName String
+identityAdopter SIBAuthIdentityAdopter
+sender SIBAuthSender
+
+SIBAuthGroup
+identifier String
+
+SIBAuthIdentityAdopter
+group SIBAuthGroup@*
+user SIBAuthUser@*
+
+SIBAuthPort
+browser SIBAuthBrowser
+creator SIBAuthCreator
+identifier String
+identityAdopter SIBAuthIdentityAdopter
+inheritDefaults boolean
+receiver SIBAuthReceiver
+sender SIBAuthSender
+
+SIBAuthQueue
+browser SIBAuthBrowser
+creator SIBAuthCreator
+identifier String
+identityAdopter SIBAuthIdentityAdopter
+inheritDefaults boolean
+receiver SIBAuthReceiver
+sender SIBAuthSender
+
+SIBAuthReceiver
+group SIBAuthGroup@*
+user SIBAuthUser@*
+
+SIBAuthSender
+group SIBAuthGroup@*
+user SIBAuthUser@*
+
+SIBAuthSpace
+alias SIBAuthAlias*
+busConnect SIBAuthBusConnect
+default SIBAuthDefault
+foreignBus SIBAuthForeignBus*
+foreignDestination SIBAuthForeignDestination*
+group SIBAuthGroup*
+queue SIBAuthQueue(SIBAuthWebService, SIBAuthPort)*
+topicSpace SIBAuthTopicSpace*
+user SIBAuthUser*
+
+SIBAuthTopic
+identifier String
+identityAdopter SIBAuthIdentityAdopter
+inheritReceiver boolean
+inheritSender boolean
+receiver SIBAuthReceiver
+sender SIBAuthSender
+
+SIBAuthTopicSpace
+identifier String
+inheritDefaults boolean
+topic SIBAuthTopic*
+topicSpaceBase SIBAuthTopicSpaceBase
+topicSpaceRoot SIBAuthTopicSpaceRoot
+
+SIBAuthTopicSpaceBase
+identityAdopter SIBAuthIdentityAdopter
+receiver SIBAuthReceiver
+sender SIBAuthSender
+
+SIBAuthTopicSpaceRoot
+identityAdopter SIBAuthIdentityAdopter
+receiver SIBAuthReceiver
+sender SIBAuthSender
+
+SIBAuthUser
+identifier String
+
+SIBAuthWebService
+browser SIBAuthBrowser
+creator SIBAuthCreator
+identifier String
+identityAdopter SIBAuthIdentityAdopter
+inheritDefaults boolean
+receiver SIBAuthReceiver
+sender SIBAuthSender
+
+SIBContextInfo
+name String
+type ENUM(CHARACTER, LONG, INTEGER, BOOLEAN, STRING, DOUBLE, BYTE, FLOAT, SHORT)
+value String
+
+SIBDatastore
+authAlias String
+createTables boolean
+dataSourceName String
+permanentTables int
+schemaName String
+temporaryTables int
+uuid String
+
+SIBDestination
+contextInfo SIBContextInfo*
+defaultPriority int
+description String
+destinationMediationRef SIBDestinationMediationRef
+exceptionDestination String
+identifier String
+instanceType String
+localizationPointRefs SIBLocalizationPointRef*
+maintainStrictMessageOrder boolean
+maxFailedDeliveries int
+maxReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+overrideOfQOSByProducerAllowed boolean
+receiveAllowed boolean
+reliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+replyDestination SIBQualifiedDestinationName
+sendAllowed boolean
+uuid String
+
+SIBDestinationAlias
+bus String
+contextInfo SIBContextInfo*
+defaultForwardRoutingPath SIBQualifiedDestinationName*
+defaultPriority int
+delegateAuthorizationCheckToTarget boolean
+description String
+identifier String
+instanceType String
+maxReliability ENUM(INHERIT, BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+overrideOfQOSByProducerAllowed ENUM(INHERIT, TRUE, FALSE)
+receiveAllowed ENUM(INHERIT, TRUE, FALSE)
+reliability ENUM(INHERIT, BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+replyDestination SIBQualifiedDestinationName
+sendAllowed ENUM(INHERIT, TRUE, FALSE)
+targetBus String
+targetIdentifier String
+uuid String
+
+SIBDestinationDefault
+contextInfo SIBContextInfo*
+defaultPriority int
+maxReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+overrideOfQOSByProducerAllowed boolean
+reliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+sendAllowed boolean
+
+SIBDestinationForeign
+bus String
+contextInfo SIBContextInfo*
+defaultPriority int
+description String
+identifier String
+instanceType String
+maxReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+overrideOfQOSByProducerAllowed boolean
+reliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+sendAllowed boolean
+uuid String
+
+SIBDestinationMediation
+allowConcurrentMediation boolean
+contextInfo SIBContextInfo*
+description String
+discriminator String
+globalTransaction boolean
+handlerListName String
+mediationName String
+selector String
+uuid String
+
+SIBDestinationMediationRef
+enabled boolean
+executionPointRefs SIBLocalizationPointRef*
+externallyMediated boolean
+localizationPointRefs SIBLocalizationPointRef*
+mediationUuid String
+uuid String
+
+SIBFilestore
+logDirectory String
+logSize long
+maxPermanentStoreSize long
+maxTemporaryStoreSize long
+minPermanentStoreSize long
+minTemporaryStoreSize long
+permanentStoreDirectory String
+temporaryStoreDirectory String
+unlimitedPermanentStoreSize boolean
+unlimitedTemporaryStoreSize boolean
+uuid String
+
+SIBForeignBus
+description String
+destinationDefault SIBDestinationDefault
+name String
+nextHop SIBForeignBus@
+sendAllowed boolean
+uuid String
+virtualLink SIBVirtualLink(SIBVirtualGatewayLink, SIBVirtualMQLink)
+
+SIBGatewayLink
+authAlias String
+bootstrapEndpoints String
+description String
+initialState ENUM(STOPPED, STARTED)
+name String
+protocolName String
+remoteMessagingEngineName String
+targetUuid String
+uuid String
+
+SIBJMSConnectionFactory
+busName String
+category String
+clientId String
+description String
+durableSubscriptionHome String
+jndiName String
+meNames String
+name String
+nonPersistentMapping ENUM(EXPRESS, RELIABLE)
+password String
+portNumber int
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+readAhead ENUM(DEFAULT, ON, OFF)
+serverName String
+tempQueueModelName String
+tempTopicModelName String
+userName String
+
+SIBJMSProvider
+classpath String*
+description String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+
+SIBJMSQueue
+category String
+deliveryMode ENUM(NON_PERSISTENT, PERSISTENT, APP)
+description String
+jndiName String
+name String
+nonPersistentMapping ENUM(AS_CONNECTION, EXPRESS, RELIABLE)
+priority int
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+queueName String
+readAhead ENUM(AS_CONNECTION, ON, OFF)
+timeToLive long
+
+SIBJMSQueueConnectionFactory
+busName String
+category String
+clientId String
+description String
+jndiName String
+meNames String
+name String
+nonPersistentMapping ENUM(EXPRESS, RELIABLE)
+password String
+portNumber int
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+readAhead ENUM(DEFAULT, ON, OFF)
+serverName String
+tempQueueModelName String
+userName String
+
+SIBJMSTopic
+category String
+deliveryMode ENUM(NON_PERSISTENT, PERSISTENT, APP)
+description String
+jndiName String
+name String
+nonPersistentMapping ENUM(AS_CONNECTION, EXPRESS, RELIABLE)
+priority int
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+readAhead ENUM(AS_CONNECTION, ON, OFF)
+timeToLive long
+topicName String
+topicSpace String
+
+SIBJMSTopicConnectionFactory
+busName String
+category String
+clientId String
+description String
+durableSubscriptionHome String
+jndiName String
+meNames String
+name String
+nonPersistentMapping ENUM(EXPRESS, RELIABLE)
+password String
+portNumber int
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+readAhead ENUM(DEFAULT, ON, OFF)
+serverName String
+tempTopicModelName String
+userName String
+
+SIBLinkRef
+engine SIBusMemberTarget@
+name String
+
+SIBLocalizationPoint
+highMessageThreshold long
+identifier String
+sendAllowed boolean
+targetUuid String
+uuid String
+
+SIBLocalizationPointRef
+cluster String
+engineUuid String
+mqServer String
+node String
+server String
+
+SIBMQClientLink
+advancedProperties SIBMQClientLinkAdvancedProperties
+channelName String
+defaultQM boolean
+description String
+heartBeat int
+initialState ENUM(STOPPED, STARTED)
+maxMsgSize long
+migratedDefinition boolean
+name String
+qmName String
+uuid String
+
+SIBMQClientLinkAdvancedProperties
+brokerCCDurSubQ String
+brokerCCSubQ String
+brokerConQ String
+brokerDurSubQ String
+brokerPubQ String
+brokerSubQ String
+defaultTopicSpace String
+inboundNonPersistentReliability ENUM(EXPRESS, RELIABLE, BEST_EFFORT)
+inboundPersistentReliability ENUM(RELIABLE, ASSURED)
+
+SIBMQLink
+adoptable boolean
+batchSize int
+brokerProfile SIBPSBBrokerProfile*
+description String
+heartBeat int
+initialState ENUM(STOPPED, STARTED)
+maxMsgSize int
+name String
+nonPersistentMessageSpeed ENUM(NORMAL, FAST)
+qmName String
+receiverChannel SIBMQLinkReceiverChannel
+senderChannel SIBMQLinkSenderChannel
+sequenceWrap long
+targetUuid String
+uuid String
+
+SIBMQLinkReceiverChannel
+inboundNonPersistentReliability ENUM(EXPRESS, RELIABLE, BEST_EFFORT)
+inboundPersistentReliability ENUM(RELIABLE, ASSURED)
+receiverChannelInitialState ENUM(STOPPED, STARTED)
+receiverChannelName String
+
+SIBMQLinkSenderChannel
+discInterval int
+hostName String
+longRetryCount long
+longRetryInterval long
+port int
+protocolName String
+sendStream SIBMQLinkSenderChannelLocalizationPoint@
+senderChannelInitialState ENUM(STOPPED, STARTED)
+senderChannelName String
+shortRetryCount int
+shortRetryInterval int
+
+SIBMQLinkSenderChannelLocalizationPoint
+highMessageThreshold long
+identifier String
+sendAllowed boolean
+targetUuid String
+uuid String
+
+SIBMQLocalizationPointProxy
+enableRFH2Header boolean
+identifier String
+inboundNonPersistentReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+inboundPersistentReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+mqQueueName String
+targetUuid String
+uuid String
+
+SIBMQMediationPointProxy
+enableRFH2Header boolean
+identifier String
+inboundNonPersistentReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+inboundPersistentReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+mqQueueName String
+targetUuid String
+uuid String
+
+SIBMQQueueLocalizationPointProxy
+enableRFH2Header boolean
+identifier String
+inboundNonPersistentReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+inboundPersistentReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+mqQueueName String
+targetUuid String
+uuid String
+
+SIBMQServer
+channel String
+description String
+discoveryAuthAlias String
+discoveryReplyToQueue String
+enableAutoResourceDiscovery boolean
+enableBindingsTransportMode boolean
+host String
+messagingAuthAlias String
+name String
+port int
+serverName String
+transportChainName String
+trustMessageUserIdentifiers boolean
+type ENUM(MQ_QUEUE_MANAGER, MQ_QUEUE_SHARING_GROUP)
+uuid String
+
+SIBMQServerBusMember
+channel String
+host String
+localizationPoints SIBMQLocalizationPointProxy(SIBMQQueueLocalizationPointProxy, SIBMQMediationPointProxy)*
+messagingAuthAlias String
+mqServerUuid String
+name String
+overrideDefaultConnectionSettings boolean
+port int
+transportChainName String
+trustMessageUserIdentifiers boolean
+uuid String
+
+SIBMediation
+contextInfo SIBContextInfo*
+description String
+handlerListName String
+mediationName String
+uuid String
+
+SIBMediationExecutionPoint
+identifier String
+mediationInstance SIBMediationInstance
+targetUuid String
+uuid String
+
+SIBMediationInstance
+initialState ENUM(STOPPED, STARTED)
+mediationRefUuid String
+
+SIBMediationLocalizationPoint
+highMessageThreshold long
+identifier String
+mediationInstance SIBMediationInstance
+sendAllowed boolean
+targetUuid String
+uuid String
+
+SIBMessagingEngine
+busName String
+busUuid String
+customGroup String*
+dataStore SIBDatastore
+description String
+executionPoints SIBMediationExecutionPoint*
+fileStore SIBFilestore
+gatewayLink SIBGatewayLink*
+highMessageThreshold long
+initialState ENUM(STOPPED, STARTED)
+localizationPoints SIBLocalizationPoint(SIBQueueLocalizationPoint, SIBTopicSpaceLocalizationPoint, SIBMediationLocalizationPoint, SIBMQLinkSenderChannelLocalizationPoint)*
+mediationThreadPool ThreadPool
+messageStoreType ENUM(DATASTORE, FILESTORE)
+mqClientLink SIBMQClientLink*
+mqLink SIBMQLink*
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+uuid String
+
+SIBPSBBrokerProfile
+brokerQueueManager String
+description String
+name String
+topicMapping SIBPSBTopicMapping*
+transactionality SIBPSBBrokerTransactionality
+
+SIBPSBBrokerTransactionality
+batchSize int
+messageType ENUM(ALL, PERSISTENT)
+
+SIBPSBTopicMapping
+brokerStreamQueue String
+direction ENUM(TO_MQ, BI_DIRECTIONAL, FROM_MQ)
+subscriptionPoint String
+topicName String
+topicSpace String
+transactionality SIBPSBTopicTransactionality
+
+SIBPSBTopicTransactionality
+batchSize int
+messageType ENUM(INHERIT, ALL, PERSISTENT)
+
+SIBPermittedChain
+name String
+
+SIBPort
+contextInfo SIBContextInfo*
+defaultForwardRoutingPath SIBQualifiedDestinationName*
+defaultPriority int
+description String
+destinationMediationRef SIBDestinationMediationRef
+exceptionDestination String
+identifier String
+instanceType String
+localizationPointRefs SIBLocalizationPointRef*
+maintainStrictMessageOrder boolean
+maxFailedDeliveries int
+maxReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+overrideOfQOSByProducerAllowed boolean
+receiveAllowed boolean
+receiveExclusive boolean
+reliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+replyDestination SIBQualifiedDestinationName
+sendAllowed boolean
+uuid String
+
+SIBQualifiedDestinationName
+bus String
+destination String
+
+SIBQueue
+contextInfo SIBContextInfo*
+defaultForwardRoutingPath SIBQualifiedDestinationName*
+defaultPriority int
+description String
+destinationMediationRef SIBDestinationMediationRef
+exceptionDestination String
+identifier String
+instanceType String
+localizationPointRefs SIBLocalizationPointRef*
+maintainStrictMessageOrder boolean
+maxFailedDeliveries int
+maxReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+overrideOfQOSByProducerAllowed boolean
+receiveAllowed boolean
+receiveExclusive boolean
+reliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+replyDestination SIBQualifiedDestinationName
+sendAllowed boolean
+uuid String
+
+SIBQueueLocalizationPoint
+highMessageThreshold long
+identifier String
+sendAllowed boolean
+targetUuid String
+uuid String
+
+SIBService
+configurationReloadEnabled boolean
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+SIBTopicSpace
+contextInfo SIBContextInfo*
+defaultPriority int
+description String
+destinationMediationRef SIBDestinationMediationRef
+exceptionDestination String
+identifier String
+instanceType String
+localizationPointRefs SIBLocalizationPointRef*
+maintainStrictMessageOrder boolean
+maxFailedDeliveries int
+maxReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+overrideOfQOSByProducerAllowed boolean
+receiveAllowed boolean
+reliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+replyDestination SIBQualifiedDestinationName
+sendAllowed boolean
+topicAccessCheckRequired boolean
+uuid String
+
+SIBTopicSpaceLocalizationPoint
+highMessageThreshold long
+identifier String
+sendAllowed boolean
+targetUuid String
+uuid String
+
+SIBTopicSpaceMapEntry
+localTopicSpace String
+remoteTopicSpace String
+
+SIBTopicSpaceMapping
+description String
+topicSpaceMapEntry SIBTopicSpaceMapEntry*
+
+SIBVirtualGatewayLink
+inboundUserid String
+linkRef SIBLinkRef*
+name String
+outboundUserid String
+topicSpaceMapping SIBTopicSpaceMapping
+uuid String
+
+SIBVirtualLink
+inboundUserid String
+linkRef SIBLinkRef*
+name String
+outboundUserid String
+uuid String
+
+SIBVirtualMQLink
+inboundUserid String
+linkRef SIBLinkRef*
+name String
+outboundUserid String
+uuid String
+
+SIBWSBusConnectionProperty
+busName String
+property Property(TypedProperty, DescriptiveProperty)*
+
+SIBWSEndpointListener
+URLRoot String
+WSDLServingHTTPURLRoot String
+busConnectionProperty SIBWSBusConnectionProperty*
+description String
+inboundPortReference SIBWSInboundPortReference*
+name String
+
+SIBWSEndpointListenerReference
+cachedURLRoot String
+cachedWSDLServingHTTPURLRoot String
+clusterName String
+endpointListenerName String
+nodeName String
+serverName String
+
+SIBWSInboundPort
+JAXRPCHandlerListName String
+description String
+endpointListenerReference SIBWSEndpointListenerReference
+name String
+property Property(TypedProperty, DescriptiveProperty)*
+securityInboundConfigName String
+securityRequestConsumerBindingConfigName String
+securityResponseGeneratorBindingConfigName String
+templatePortName String
+
+SIBWSInboundPortReference
+busName String
+portName String
+serviceName String
+
+SIBWSInboundService
+UDDIPublication SIBWSUDDIPublication*
+WSDLLocation SIBWSWSDLLocation
+description String
+enableOperationLevelSecurity boolean
+name String
+port SIBWSInboundPort*
+property Property(TypedProperty, DescriptiveProperty)*
+serviceDestinationName String
+
+SIBWSOutboundPort
+JAXRPCHandlerListName String
+authenticatingProxyAuthAlias String
+authenticatingProxyHostName String
+authenticatingProxyPortNumber String
+description String
+name String
+portDestinationName String
+property Property(TypedProperty, DescriptiveProperty)*
+retargettedBindingNamespace String
+retargettedURI String
+securityOutboundConfigName String
+securityRequestGeneratorBindingConfigName String
+securityResponseConsumerBindingConfigName String
+
+SIBWSOutboundService
+WSDLLocation SIBWSWSDLLocation
+defaultPort String
+description String
+enableOperationLevelSecurity boolean
+name String
+port SIBWSOutboundPort*
+property Property(TypedProperty, DescriptiveProperty)*
+serviceDestinationName String
+
+SIBWSSecurityInboundConfig
+name String
+serverServiceConfig ServerServiceConfig
+
+SIBWSSecurityOutboundConfig
+clientServiceConfig ClientServiceConfig
+name String
+
+SIBWSSecurityRequestConsumerBindingConfig
+name String
+securityRequestConsumerBindingConfig SecurityRequestConsumerBindingConfig
+
+SIBWSSecurityRequestGeneratorBindingConfig
+name String
+securityRequestGeneratorBindingConfig SecurityRequestGeneratorBindingConfig
+
+SIBWSSecurityRequestReceiverBindingConfig
+name String
+securityRequestReceiverBindingConfig SecurityRequestReceiverBindingConfig
+
+SIBWSSecurityRequestSenderBindingConfig
+name String
+securityRequestSenderBindingConfig SecurityRequestSenderBindingConfig
+
+SIBWSSecurityResponseConsumerBindingConfig
+name String
+securityResponseConsumerBindingConfig SecurityResponseConsumerBindingConfig
+
+SIBWSSecurityResponseGeneratorBindingConfig
+name String
+securityResponseGeneratorBindingConfig SecurityResponseGeneratorBindingConfig
+
+SIBWSSecurityResponseReceiverBindingConfig
+name String
+securityResponseReceiverBindingConfig SecurityResponseReceiverBindingConfig
+
+SIBWSSecurityResponseSenderBindingConfig
+name String
+securityResponseSenderBindingConfig SecurityResponseSenderBindingConfig
+
+SIBWSUDDIPublication
+UDDIBusinessKey String
+UDDIRefName String
+UDDIServiceKey String
+WSDLServingHTTPURLRoot String
+description String
+name String
+
+SIBWSWSDLLocation
+WSDLLocation String
+WSDLLocationKind ENUM(UDDI_REFERENCE, URL_TO_WSDL)
+WSDLServiceName String
+WSDLServiceNamespace String
+WSDLUDDIReference String
+
+SIBWebService
+contextInfo SIBContextInfo*
+defaultForwardRoutingPath SIBQualifiedDestinationName*
+defaultPriority int
+description String
+destinationMediationRef SIBDestinationMediationRef
+exceptionDestination String
+identifier String
+instanceType String
+localizationPointRefs SIBLocalizationPointRef*
+maintainStrictMessageOrder boolean
+maxFailedDeliveries int
+maxReliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+overrideOfQOSByProducerAllowed boolean
+receiveAllowed boolean
+receiveExclusive boolean
+reliability ENUM(BEST_EFFORT_NONPERSISTENT, ASSURED_PERSISTENT, EXPRESS_NONPERSISTENT, RELIABLE_NONPERSISTENT, RELIABLE_PERSISTENT)
+replyDestination SIBQualifiedDestinationName
+sendAllowed boolean
+uuid String
+
+SIBus
+busMembers SIBusMember*
+configurationReloadEnabled boolean
+description String
+discardMsgsAfterQueueDeletion boolean
+foreignBus SIBForeignBus*
+highMessageThreshold long
+interEngineAuthAlias String
+mediationsAuthAlias String
+name String
+permittedChains SIBPermittedChain*
+properties Property(TypedProperty, DescriptiveProperty)*
+protocol String
+secure boolean
+usePermittedChains ENUM(SSL_ENABLED, LISTED, ALL)
+uuid String
+
+SIBusMember
+cluster String
+description String
+mqServer String
+node String
+server String
+target SIBusMemberTarget*
+
+SIBusMemberTarget
+engineUuid String
+
+SIPContainer
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+maxAppSessions int
+maxDispatchQueueSize int
+maxMessageRate int
+maxResponseTime int
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+statAveragePeriod int
+statUpdateRange int
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+threadPool ThreadPool@
+
+SIPContainerInboundChannel
+discriminationWeight int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+SIPInboundChannel
+discriminationWeight int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+SIPMessageCondition
+properties Property(TypedProperty, DescriptiveProperty)*
+
+SIPOutboundChannel
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+SIPProxyInboundChannel
+discriminationWeight int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+SIPProxySettings
+accessLogMaximumSize int
+defaultClusterName String
+enableAccessLog boolean
+externalDomains ExternalDomain*
+properties Property(TypedProperty, DescriptiveProperty)*
+proxyAccessLog String
+routingRules SIPRoutingRule*
+tcpSprayer IPSprayer
+tlsSprayer IPSprayer
+udpSprayer IPSprayer
+
+SIPRoutingRule
+clusterName String
+isEnabled boolean
+messageConditions SIPMessageCondition(MethodMessageCondition, MessageCondition)*
+properties Property(TypedProperty, DescriptiveProperty)*
+
+SOAPConnector
+SOAP_CONNECTOR_ADDRESS EndPoint
+properties Property(TypedProperty, DescriptiveProperty)*
+
+SSLConfig
+alias String
+managementScope ManagementScope@
+setting SecureSocketLayer
+type ENUM(SSSL, JSSE)
+
+SSLConfigGroup
+certificateAlias String
+direction String
+managementScope ManagementScope@
+name String
+sslConfig SSLConfig@
+
+SSLInboundChannel
+discriminationWeight int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+sslConfigAlias String
+
+SSLOutboundChannel
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+sslConfigAlias String
+
+SWAMAuthentication
+OID String
+authConfig String
+authContextImplClass String
+authValidationConfig String
+isCredentialForwardable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+simpleAuthConfig String
+singleSignon SingleSignon
+trustAssociation TrustAssociation
+
+SchedulerConfiguration
+category String
+datasourceAlias String
+datasourceJNDIName String
+description String
+jndiName String
+loginConfigName String
+name String
+pollInterval int
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+referenceable Referenceable@
+securityRole String
+tablePrefix String
+useAdminRoles boolean
+workManagerInfo WorkManagerInfo@
+workManagerInfoJNDIName String
+
+SchedulerProvider
+classpath String*
+description String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+referenceables Referenceable*
+
+SchedulerService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+SecureAssociationService
+bootstrapRepositoryLocation String
+layers IIOPLayer(TransportLayer, MessageLayer, IdentityAssertionLayer)*
+securityTagCompatibilityMode boolean
+sessionGCIdleTime int
+sessionGCInterval int
+stateful boolean
+targetRequires SecurityProtocolQOP
+
+SecureSocketLayer
+clientAuthentication boolean
+clientAuthenticationSupported boolean
+clientKeyAlias String
+cryptoHardware CryptoHardwareToken
+enableCryptoHardwareSupport boolean
+enabledCiphers String
+jsseProvider String
+keyFileFormat ENUM(JCEK, JKS, JCERACFKS, JCE4758RACFKS, PKCS12)
+keyFileName String
+keyFilePassword String
+keyManager KeyManager@
+keyStore KeyStore@
+properties Property(TypedProperty, DescriptiveProperty)*
+securityLevel ENUM(MEDIUM, HIGH, CUSTOM, LOW)
+serverKeyAlias String
+sslProtocol String
+trustFileFormat ENUM(JCEK, JKS, JCERACFKS, JCE4758RACFKS, PKCS12)
+trustFileName String
+trustFilePassword String
+trustManager TrustManager@*
+trustStore KeyStore@
+
+Security
+CSI IIOPSecurityProtocol
+IBM IIOPSecurityProtocol
+activeAuthMechanism AuthMechanism@
+activeProtocol ENUM(CSI, IBM, BOTH)
+activeUserRegistry UserRegistry@
+additionalSecAttrs DescriptiveProperty*
+allowAllPermissionForApplication boolean
+appEnabled boolean
+applicationLoginConfig JAASConfiguration
+authConfig AuthorizationConfig
+authDataEntries JAASAuthData*
+authMechanisms AuthMechanism(SWAMAuthentication, LTPA, CustomAuthMechanism)*
+authorizationTableImpl AuthorizationTableImpl
+cacheTimeout int
+defaultSSLSettings SSLConfig@
+dynamicSSLConfigSelections DynamicSSLConfigSelection*
+dynamicallyUpdateSSLConfig boolean
+enableJava2SecRuntimeFiltering boolean
+enabled boolean
+enforceFineGrainedJCASecurity boolean
+enforceJava2Security boolean
+internalServerId String
+issuePermissionWarning boolean
+keyManagers KeyManager*
+keySetGroups KeySetGroup*
+keySets KeySet*
+keyStores KeyStore*
+managementScopes ManagementScope*
+properties Property(TypedProperty, DescriptiveProperty)*
+repertoire SSLConfig*
+roleBasedAuthorization RoleBasedAuthorization*
+sslConfigGroups SSLConfigGroup*
+systemLoginConfig JAASConfiguration
+trustManagers TrustManager*
+useDomainQualifiedUserNames boolean
+useLocalSecurityServer boolean
+userRegistries UserRegistry(LocalOSUserRegistry, LDAPUserRegistry, CustomUserRegistry, WIMUserRegistry)*
+webAuthAttrs DescriptiveProperty*
+wsCertificateExpirationMonitor WSCertificateExpirationMonitor
+wsNotifications WSNotification*
+wsPasswordEncryptions WSPasswordEncryption*
+wsPasswordLocators WSPasswordLocator*
+wsPasswords WSPassword*
+wsSchedules WSSchedule*
+
+SecurityIdentity
+description String
+descriptions Description*
+
+SecurityPermission
+description String
+descriptions Description*
+specification String
+
+SecurityProtocolConfig
+layers IIOPLayer(TransportLayer, MessageLayer, IdentityAssertionLayer)*
+sessionGCIdleTime int
+sessionGCInterval int
+stateful boolean
+targetRequires SecurityProtocolQOP
+
+SecurityProtocolQOP
+enableOutOfSequenceDetection boolean
+enableProtection boolean
+enableReplayDetection boolean
+establishTrustInClient boolean
+
+SecurityRole
+description String
+descriptions Description*
+roleName String
+
+SecurityRoleExt
+description String
+roleName String
+
+SecurityRoleRef
+description String
+descriptions Description*
+link String
+name String
+
+SecurityServer
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+Server
+adjustPort Boolean
+clusterName String
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+customServices CustomService*
+developmentMode boolean
+errorStreamRedirect StreamRedirect
+modelId String
+name String
+outputStreamRedirect StreamRedirect
+parallelStartEnabled boolean
+processDefinition ProcessDef(JavaProcessDef)
+processDefinitions ProcessDef(JavaProcessDef)*
+serverInstance ServerInstance
+serverType String
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+shortName String
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+uniqueId String
+
+ServerCluster
+backupClusters BackupCluster*
+description String
+enableHA boolean
+members ClusterMember*
+name String
+nodeGroupName String
+preferLocal boolean
+serverType ENUM(PROXY_SERVER, APPLICATION_SERVER, ONDEMAND_ROUTER)
+shortName String
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+uniqueId String
+
+ServerComponent
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+ServerEntry
+deployedApplications String*
+genericShortName String
+recoveryLog RecoveryLog
+serverDisplayName String
+serverName String
+serverShortName String
+serverType String
+serverUniqueId String
+specialEndpoints NamedEndPoint*
+
+ServerExt
+PrimaryAdminExt PrimaryAdminExt@*
+accessId String
+name String
+
+ServerIdentity
+serverId String
+
+ServerIndex
+endPointRefs NamedEndPoint@*
+hostName String
+serverEntries ServerEntry*
+
+ServerInstance
+enableMultipleServerInstances boolean
+maximumNumberOfInstances int
+minimumNumOfInstances int
+
+ServerTarget
+name String
+nodeName String
+
+Service
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+ServiceContext
+name String
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+ServiceLog
+enabled boolean
+name String
+size int
+
+ServletCacheInstance
+cacheReplication DRSSettings
+cacheSize int
+category String
+defaultPriority int
+description String
+diskCacheCleanupFrequency int
+diskCacheCustomPerformanceSettings DiskCacheCustomPerformanceSettings
+diskCacheEntrySizeInMB int
+diskCacheEvictionPolicy DiskCacheEvictionPolicy
+diskCachePerformanceLevel ENUM(HIGH, CUSTOM, BALANCED, LOW)
+diskCacheSizeInEntries int
+diskCacheSizeInGB int
+diskOffloadLocation String
+enableCacheReplication boolean
+enableDiskOffload boolean
+flushToDiskOnStop boolean
+hashSize int
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+pushFrequency int
+referenceable Referenceable@
+replicationType ENUM(PULL, PUSH, PUSH_PULL, NONE)
+useListenerContext boolean
+
+SessionBeanConfig
+ejbName String
+instancePool InstancePool
+
+SessionDatabasePersistence
+datasourceJNDIName String
+db2RowSize ENUM(ROW_SIZE_4KB, ROW_SIZE_32KB, ROW_SIZE_16KB, ROW_SIZE_8KB)
+password String
+tableSpaceName String
+userId String
+
+SessionManager
+accessSessionOnTimeout boolean
+allowSerializedSessionAccess boolean
+context ServiceContext@
+defaultCookieSettings Cookie
+enable boolean
+enableCookies boolean
+enableProtocolSwitchRewriting boolean
+enableSSLTracking boolean
+enableSecurityIntegration boolean
+enableUrlRewriting boolean
+maxWaitTime int
+properties Property(TypedProperty, DescriptiveProperty)*
+sessionDRSPersistence DRSSettings
+sessionDatabasePersistence SessionDatabasePersistence
+sessionPersistenceMode ENUM(DATABASE, DATA_REPLICATION, NONE)
+tuningParams TuningParams
+
+SingleSignon
+domainName String
+enabled boolean
+requiresSSL boolean
+
+SpecialSubjectExt
+PrimaryAdminExt PrimaryAdminExt@*
+accessId String
+name String
+
+StartupBeansService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+StateManageable
+initialState ENUM(STOP, START)
+managedObject ManagedObject@
+
+StatefulSessionBeanConfig
+ejbName String
+instancePool InstancePool
+timeout long
+
+StaticCachePolicy
+properties Property(TypedProperty, DescriptiveProperty)*
+staticCacheRules StaticCacheRule*
+
+StaticCacheRule
+defaultExpiration int
+lastModifiedFactor float
+noCache boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+uriGroup String
+virtualHostName String
+
+StaticPolicy
+MatchCriteria MatchCriteria*
+customProperties Property(TypedProperty, DescriptiveProperty)*
+description String
+isAlivePeriodSec int
+name String
+policyFactory String
+quorumEnabled boolean
+servers CoreGroupServer@*
+
+StatisticsProvider
+managedObject ManagedObject@
+specification String
+
+StreamRedirect
+baseHour int
+fileName String
+formatWrites boolean
+maxNumberOfBackupFiles int
+messageFormatKind ENUM(BASIC, ADVANCED)
+rolloverPeriod int
+rolloverSize int
+rolloverType ENUM(TIME, SIZE, NONE, BOTH)
+suppressStackTrace boolean
+suppressWrites boolean
+
+StringNameSpaceBinding
+name String
+nameInNameSpace String
+stringToBind String
+
+SubjectExt
+accessId String
+name String
+
+SystemMessageServer
+DRS_CLIENT_ADDRESS EndPoint
+brokerName String
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+domainName String
+enable boolean
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
+TAInterceptor
+interceptorClassName String
+trustProperties Property(TypedProperty, DescriptiveProperty)*
+
+TCPFactory
+properties Property(TypedProperty, DescriptiveProperty)*
+
+TCPInboundChannel
+addressExcludeList String*
+addressIncludeList String*
+discriminationWeight int
+endPointName String
+hostNameExcludeList String*
+hostNameIncludeList String*
+inactivityTimeout int
+maxOpenConnections int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+threadPool ThreadPool@
+
+TCPOutboundChannel
+inactivityTimeout int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+threadPool ThreadPool@
+
+TPVService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+TaskProvider
+classpath String*
+implementationClassName String
+weight int
+
+ThreadPool
+customProperties Property(TypedProperty, DescriptiveProperty)*
+description String
+inactivityTimeout int
+isGrowable boolean
+maximumSize int
+minimumSize int
+name String
+
+ThreadPoolManager
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+threadPools ThreadPool*
+
+TimerManagerInfo
+category String
+defTranClass String
+description String
+jndiName String
+name String
+numAlarmThreads int
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+referenceable Referenceable@
+serviceNames String*
+
+TimerManagerProvider
+classpath String*
+description String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+referenceables Referenceable*
+
+TivoliPerfViewer
+bufferLength int
+inactivityTimeout long
+logFileSize long
+loggingDuration long
+maxLogFiles int
+pollingInterval long
+
+TraceLog
+fileName String
+maxNumberOfBackupFiles int
+rolloverSize int
+
+TraceService
+context ServiceContext@
+enable boolean
+memoryBufferSize int
+properties Property(TypedProperty, DescriptiveProperty)*
+startupTraceSpecification String
+traceFormat ENUM(LOG_ANALYZER, BASIC, ADVANCED)
+traceLog TraceLog
+traceOutputType ENUM(SPECIFIED_FILE, MEMORY_BUFFER)
+
+TransactionService
+LPSHeuristicCompletion ENUM(MANUAL, COMMIT, ROLLBACK)
+asyncResponseTimeout int
+clientInactivityTimeout int
+context ServiceContext@
+enable boolean
+enableFileLocking boolean
+enableLoggingForHeuristicReporting boolean
+enableProtocolSecurity boolean
+heuristicRetryLimit int
+heuristicRetryWait int
+httpProxyPrefix String
+httpsProxyPrefix String
+maximumTransactionTimeout int
+properties Property(TypedProperty, DescriptiveProperty)*
+propogatedOrBMTTranLifetimeTimeout int
+totalTranLifetimeTimeout int
+transactionLogDirectory String
+waitForCommitOutcome boolean
+
+Transport
+address EndPoint
+external boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+sslConfig String
+sslEnabled boolean
+
+TransportChannel
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+TransportChannelFactory
+properties Property(TypedProperty, DescriptiveProperty)*
+
+TransportChannelService
+chains Chain*
+context ServiceContext@
+enable boolean
+factories TransportChannelFactory(RMQChannelFactory, JFAPFactory, TCPFactory, GenericChannelFactory)*
+properties Property(TypedProperty, DescriptiveProperty)*
+transportChannels TransportChannel(ProxyInboundChannel, RMQOutboundChannel, TCPInboundChannel, JFAPInboundChannel, HTTPInboundChannel, MQFAPInboundChannel, WebContainerInboundChannel, SSLInboundChannel, HTTPTunnelInboundChannel, TCPOutboundChannel, HTTPOutboundChannel, HTTPTunnelOutboundChannel, SSLOutboundChannel, JFAPOutboundChannel, MQFAPOutboundChannel, DCSInboundChannel, GenericInboundChannel, GenericOutboundChannel, SIPInboundChannel, SIPContainerInboundChannel, UDPInboundChannel, SIPProxyInboundChannel, SIPOutboundChannel, UDPOutboundChannel, ORBInboundChannel, InboundTransportChannel, OutboundTransportChannel)*
+
+TransportLayer
+mutualAuthentication IIOPTransport
+requiredQOP QualityOfProtection(MessageQOP, IdentityAssertionQOP, SecurityProtocolQOP, TransportQOP)
+serverAuthentication IIOPTransport
+supportedQOP QualityOfProtection(MessageQOP, IdentityAssertionQOP, SecurityProtocolQOP, TransportQOP)
+useClaim boolean
+
+TransportQOP
+confidentiality boolean
+enableProtection boolean
+establishTrustInClient boolean
+integrity boolean
+
+TrustAssociation
+enabled boolean
+interceptors TAInterceptor*
+
+TrustManager
+Property Property@*
+additionalTrustManagerAttrs DescriptiveProperty*
+algorithm String
+managementScope ManagementScope@
+name String
+provider String
+trustManagerClass String
+
+TuningParams
+allowOverflow boolean
+invalidationSchedule InvalidationSchedule
+invalidationTimeout int
+maxInMemorySessionCount int
+scheduleInvalidation boolean
+usingMultiRowSchema boolean
+writeContents ENUM(ALL_SESSION_ATTRIBUTES, ONLY_UPDATED_ATTRIBUTES)
+writeFrequency ENUM(TIME_BASED_WRITE, END_OF_SERVLET_SERVICE, MANUAL_UPDATE)
+writeInterval int
+
+TypedProperty
+description String
+name String
+required boolean
+type String
+validationExpression String
+value String
+
+UDDIConfig
+dbMaxResultCount int
+defaultLanguage String
+getServletName String
+getServletURLPrefix String
+maxSearchKeys int
+operatorName String
+persister String
+
+UDDIReference
+authAlias String
+description String
+inquiryURL String
+name String
+publishURL String
+
+UDPInboundChannel
+addressExcludeList String*
+addressIncludeList String*
+discriminationWeight int
+endPointName String
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+UDPOutboundChannel
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+URIGroup
+URIPattern String*
+name String
+
+URL
+category String
+description String
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+spec String
+
+URLProvider
+classpath String*
+description String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+protocol String
+providerType String
+streamHandlerClassName String
+
+UseCallerIdentity
+description String
+descriptions Description*
+
+UserExt
+accessId String
+name String
+
+UserRegistry
+ignoreCase boolean
+limit int
+primaryAdminId String
+properties Property(TypedProperty, DescriptiveProperty)*
+realm String
+serverId String
+serverPassword String
+useRegistryServerId boolean
+
+VariableMap
+entries VariableSubstitutionEntry*
+
+VariableSubstitutionEntry
+description String
+symbolicName String
+value String
+
+VirtualHost
+aliases HostAlias*
+mimeTypes MimeEntry*
+name String
+
+WARFile
+URI String
+container Container@
+deploymentDescriptor WebApp@
+directoryEntry boolean
+files File(Archive, EJBJarFile, WARFile, EARFile, ApplicationClientFile, ModuleFile, Container, ReadOnlyDirectory, RARFile)*
+lastModified long
+loadingContainer Container@
+originalURI String
+size long
+types String*
+
+WAS40ConnectionPool
+connectionTimeout int
+disableAutoConnectionCleanup boolean
+idleTimeout int
+maximumPoolSize int
+minimumPoolSize int
+orphanTimeout int
+statementCacheSize int
+
+WAS40DataSource
+category String
+connectionPool WAS40ConnectionPool
+databaseName String
+defaultPassword String
+defaultUser String
+description String
+jndiName String
+name String
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+
+WASQueue
+category String
+description String
+expiry ENUM(APPLICATION_DEFINED, SPECIFIED, UNLIMITED)
+jndiName String
+name String
+node String
+persistence ENUM(APPLICATION_DEFINED, NONPERSISTENT, PERSISTENT)
+priority ENUM(APPLICATION_DEFINED, SPECIFIED)
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+specifiedExpiry long
+specifiedPriority int
+
+WASQueueConnectionFactory
+XAEnabled boolean
+authDataAlias String
+authMechanismPreference ENUM(BASIC_PASSWORD, KERBEROS)
+category String
+connectionPool ConnectionPool
+description String
+diagnoseConnectionUsage boolean
+jndiName String
+logMissingTransactionContext boolean
+manageCachedHandles boolean
+mapping MappingModule
+name String
+node String
+preTestConfig ConnectionTest
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+serverName String
+sessionPool ConnectionPool
+xaRecoveryAuthAlias String
+
+WASTopic
+category String
+description String
+expiry ENUM(APPLICATION_DEFINED, SPECIFIED, UNLIMITED)
+jndiName String
+name String
+persistence ENUM(APPLICATION_DEFINED, NONPERSISTENT, PERSISTENT)
+priority ENUM(APPLICATION_DEFINED, SPECIFIED)
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+specifiedExpiry long
+specifiedPriority int
+topic String
+
+WASTopicConnectionFactory
+XAEnabled boolean
+authDataAlias String
+authMechanismPreference ENUM(BASIC_PASSWORD, KERBEROS)
+category String
+clientID String
+cloneSupport boolean
+connectionPool ConnectionPool
+description String
+diagnoseConnectionUsage boolean
+jndiName String
+logMissingTransactionContext boolean
+manageCachedHandles boolean
+mapping MappingModule
+name String
+node String
+port ENUM(DIRECT, QUEUED)
+preTestConfig ConnectionTest
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+serverName String
+sessionPool ConnectionPool
+xaRecoveryAuthAlias String
+
+WIMUserRegistry
+ignoreCase boolean
+limit int
+primaryAdminId String
+properties Property(TypedProperty, DescriptiveProperty)*
+realm String
+registryClassName String
+serverId String
+serverPassword String
+useRegistryServerId boolean
+
+WLMCoreGroupBridgePlugin
+coreGroup String
+hostDoNotTranslateList String*
+hostTranslateList String*
+properties Property(TypedProperty, DescriptiveProperty)*
+
+WSByteBufferService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+WSCertificateExpirationMonitor
+autoReplace boolean
+daysBeforeNotification int
+deleteOld boolean
+isEnabled boolean
+name String
+wsNotification WSNotification@
+wsSchedule WSSchedule@
+
+WSGWGatewayService
+defaultTargetName String
+description String
+inboundServiceName String
+name String
+replyDestinationName String
+requestDestinationName String
+targetService WSGWTargetService*
+
+WSGWInstance
+SIBWSEndpointListenerReference SIBWSEndpointListenerReference*
+defaultProxyWSDLLocation SIBWSWSDLLocation
+description String
+gatewayService WSGWGatewayService*
+name String
+proxyService WSGWProxyService*
+wsdlServiceNamespace String
+
+WSGWProxyService
+description String
+inboundServiceName String
+name String
+outboundServiceName String
+overrideProxyWSDLLocation SIBWSWSDLLocation
+replyDestinationName String
+requestDestinationName String
+
+WSGWTargetService
+busName String
+description String
+name String
+outboundServiceName String
+targetDestinationName String
+targetServiceIdentity String
+
+WSNAdministeredSubscriber
+dialect String
+producerEndpoint String
+property Property(TypedProperty, DescriptiveProperty)*
+remoteSubscriptionTimeout Integer
+topic String
+topicNamespace String
+uuid String
+
+WSNInstanceDocument
+description String
+filename String
+property Property(TypedProperty, DescriptiveProperty)*
+sdoRepositoryKey String
+
+WSNService
+description String
+dynamicTopicSpace String
+jaxrpcHandlerListName String
+name String
+notificationBrokerServiceName String
+outboundSecurityConfigName String
+outboundSecurityRequestBindingName String
+outboundSecurityResponseBindingName String
+permitsDynamicTopicNamespace Boolean
+property Property(TypedProperty, DescriptiveProperty)*
+pubRegManagerServiceName String
+requiresRegistration Boolean
+servicePoint WSNServicePoint*
+sibDestination String
+subscriptionManagerServiceName String
+topicExpressionDialects String
+topicNamespace WSNTopicNamespace*
+usesFixedTopicSet Boolean
+uuid String
+version String
+
+WSNServicePoint
+addedBusMember Boolean
+administeredSubscriber WSNAdministeredSubscriber*
+connectedEPLToBus Boolean
+createdEPL Boolean
+description String
+name String
+notificationBrokerPortName String
+property Property(TypedProperty, DescriptiveProperty)*
+pubRegManagerPortName String
+subscriptionManagerPortName String
+uuid String
+
+WSNTopicNamespace
+createdSIBTopicSpace Boolean
+instanceDocument WSNInstanceDocument*
+messageReliability String
+namespace String
+property Property(TypedProperty, DescriptiveProperty)*
+sibTopicSpaceName String
+uuid String
+
+WSNotification
+emailList String
+logToSystemOut boolean
+name String
+sendEmail boolean
+
+WSPassword
+encryptedValue String
+keyAlias String
+keySetGroup KeySetGroup@
+name String
+wsPasswordEncryption WSPasswordEncryption@
+wsPasswordLocator WSPasswordLocator@
+
+WSPasswordEncryption
+additionalWSPasswordEncryptionAttrs DescriptiveProperty*
+className String
+name String
+wsPasswordEncryptionAttrs DescriptiveProperty*
+
+WSPasswordLocator
+DescriptiveProperty DescriptiveProperty*
+Property Property(TypedProperty, DescriptiveProperty)*
+className String
+name String
+wsPasswordLocatorAttrs DescriptiveProperty*
+
+WSSchedule
+dayOfWeek int
+frequency int
+hour int
+minute int
+name String
+nextStartDate long
+
+WebContainer
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+defaultVirtualHostName String
+disablePooling boolean
+enableServletCaching boolean
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+sessionAffinityFailoverServer String
+sessionAffinityTimeout int
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+threadPool ThreadPool
+transports Transport(IIOPTransport, JMSTransport, HTTPTransport)*
+
+WebContainerInboundChannel
+discriminationWeight int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+writeBufferSize int
+
+WebModuleConfig
+description String
+name String
+sessionManagement SessionManager
+
+WebModuleDeployment
+altDD String
+applicationDeployment ApplicationDeployment@
+classloader Classloader
+classloaderMode ENUM(PARENT_FIRST, PARENT_LAST)
+configs DeployedObjectConfig(ApplicationConfig, ModuleConfig, WebModuleConfig, EJBModuleConfiguration)*
+deploymentId String
+startingWeight int
+targetMappings DeploymentTargetMapping*
+uri String
+
+WebModuleRef
+earFile EARFile@
+module Module@
+moduleFile ModuleFile@
+
+WebServer
+adminServerAuthentication AdminServerAuthentication
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+configurationFilename String
+keyStoreFiles KeyStoreFile*
+logFilenameAccess String
+logFilenameError String
+name String
+parentComponent Component@
+pluginProperties PluginProperties*
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+serviceName String
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+webserverAdminProtocol ENUM(HTTPS, HTTP)
+webserverInstallRoot String
+webserverProtocol ENUM(HTTPS, HTTP)
+webserverType ENUM(HTTP_SERVER, IIS, DOMINO, APACHE, SUNJAVASYSTEM, HTTPSERVER_ZOS, IHS)
+
+WebserverPluginSettings
+ConnectTimeout int
+ExtendedHandshake boolean
+MaxConnections int
+Role ENUM(BACKUP, PRIMARY)
+ServerIOTimeout int
+WaitForContinue boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+WeightAdvisor
+advisorType ENUM(FixedWeight, WebSphereDynamicWeighting)
+
+WorkAreaPartition
+bidirectional boolean
+deferredAttributeSerialization boolean
+description String
+enable boolean
+enableWebServicePropagation boolean
+maxReceiveSize int
+maxSendSize int
+name String
+properties Property(TypedProperty, DescriptiveProperty)*
+
+WorkAreaPartitionService
+context ServiceContext@
+enable boolean
+partitions WorkAreaPartition*
+properties Property(TypedProperty, DescriptiveProperty)*
+
+WorkAreaService
+context ServiceContext@
+enable boolean
+enableWebServicePropagation boolean
+maxReceiveSize int
+maxSendSize int
+properties Property(TypedProperty, DescriptiveProperty)*
+
+WorkManagerInfo
+category String
+daemonTranClass String
+defTranClass String
+description String
+isDistributable boolean
+isGrowable boolean
+jndiName String
+maxThreads int
+minThreads int
+name String
+numAlarmThreads int
+propertySet J2EEResourcePropertySet
+provider J2EEResourceProvider@
+providerType String
+referenceable Referenceable@
+serviceNames String*
+threadPriority int
+workReqQFullAction int
+workReqQSize int
+workTimeout int
+
+WorkManagerProvider
+classpath String*
+description String
+name String
+nativepath String*
+propertySet J2EEResourcePropertySet
+providerType String
+referenceables Referenceable*
+
+WorkManagerService
+context ServiceContext@
+enable boolean
+properties Property(TypedProperty, DescriptiveProperty)*
+
+WorkloadManagementServer
+components Component(Proxy, OnDemandRouter, ProxyServer, JMSServer, NodeAgent, Agent, ServerComponent, SecurityServer, NameServer, WebServer, PortletContainer, CellManager, WorkloadManagementServer, ExternallyManagedHTTPServer, SIPContainer, ApplicationServer, ApplicationContainer, WebContainer, SecurityServer, SystemMessageServer, EJBContainer)*
+name String
+parentComponent Component@
+properties Property(TypedProperty, DescriptiveProperty)*
+server Server@
+services Service(HTTPAccessLoggingService, TraceService, CacheInstanceService, EventInfrastructureService, ObjectPoolService, AdminService, PluginConfigService, FileTransferService, ConfigSynchronizationService, CustomService, WorkManagerService, WSByteBufferService, DiagnosticProviderService, StartupBeansService, PMIService, ObjectRequestBroker, ApplicationProfileService, ThreadPoolManager, DebugService, SIBService, RASLoggingService, TransactionService, DynamicCache, ApplicationManagementService, TPVService, SchedulerService, SessionManager, TransportChannelService, CompensationService, I18NService, ActivitySessionService, CoreGroupBridgeService, MessageListenerService, WorkAreaService, WorkAreaPartitionService, HAManagerService)*
+stateManagement StateManageable
+statisticsProvider StatisticsProvider
+
