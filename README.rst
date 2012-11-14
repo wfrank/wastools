@@ -135,6 +135,8 @@ The recommended place to deploy this tool is a Linux machine which is capable of
 - Download and Install Jython 2.5.3: http://search.maven.org/remotecontent?filepath=org/python/jython-installer/2.5.3/jython-installer-2.5.3.jar http://wiki.python.org/jython/InstallationInstructions
 - Build a WebSphere administration thin client: http://pic.dhe.ibm.com/infocenter/wasinfo/v7r0/topic/com.ibm.websphere.nd.multiplatform.doc/info/ae/ae/txml_adminclient.html
 - Modify the wsadmin.sh (created in step 3) by adding jython.jar (installed on step 2) to the beginning of CLASSPATH, for example ::
+
     C_PATH="/opt/jython/jython.jar:${WAS_HOME}/properties:${WAS_HOME}/com.ibm.ws.admin.client_7.0.0.jar:${WAS_HOME}/com.ibm.ws.security.crypto.jar"
+
 - Download and Unzip the code of wastools/wasconf: https://github.com/wfrank/wastools/archive/master.zip
 - Modify the paths in bin/wasconf, lib/wasconf.py to the actual ones.
