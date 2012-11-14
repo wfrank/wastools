@@ -116,6 +116,14 @@ I believe you can get the idea of this tool after going through the following ex
           ]"
     ...
  
+The configuration specifications above are actually what this tool takes. Pick some of them, modify according to your environments, same it to a pure text file under wastools/conf with .yaml extention, for example SampleCluster.yaml, then run the wastools/bin/wasconf command::
+
+    wasconf --mode reset --verbose SampleCluster
+
+If everything looks good to you, run the command again to save the changes by switching to save mode::
+
+    wasconf --mode save --verbose SampleCluster
+
 
 Installation
 ============
@@ -140,3 +148,9 @@ The recommended place to deploy this tool is a Linux machine which is capable of
 
 - Download and unzip the code of wastools/wasconf: https://github.com/wfrank/wastools/archive/master.zip
 - Modify the paths in bin/wasconf, lib/wasconf.py to the actual ones.
+
+
+Future Plans
+============
+
+Currently wastools/wasconf is based on the AdminConfig configuration object of the WebSphere scripting tool: wsadmin. I am working on switching to the WebSphere JMX management API, which is more versatile.
