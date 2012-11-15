@@ -116,7 +116,7 @@ I believe you can get the idea of this tool after going through the following ex
           ]"
     ...
  
-The configuration specifications above are actually what this tool takes. Pick some of them, modify according to your environments, same it to a pure text file under wastools/conf with .yaml extention, for example SampleCluster.yaml, then run the wastools/bin/wasconf command::
+The configuration specifications above are actually what this tool takes. Pick some of them, modify according to your environments, save it to a pure text file under wastools/conf with .yaml extention, for example SampleCluster.yaml, then run the wastools/bin/wasconf command::
 
     wasconf --mode reset --verbose SampleCluster
 
@@ -131,8 +131,9 @@ Installation
 Requirements
 ------------
 
-- WebSphere (6.1 and 7.0 tested)
+- IBM JDK 6
 - Jython >= 2.5
+- WebSphere (6.1 and 7.0 tested)
 
 Instructions
 ------------
