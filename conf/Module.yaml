@@ -1,6 +1,6 @@
 ---
 ACTION: modify
-OBJECTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+OBJECTS: "JavaVirtualMachine{Server[clusterName='SampleCluster']}"
 ATTRIBUTES:
     genericJvmArguments: -Xdisableexplicitgc -Xgcpolicy:gencon -Xgcthreads4 -Xjit:disableInterpreterProfiling -Xlp -Xmn640m -Xmos640m -Xnoloa -Xscmx256m
     initialHeapSize: 1280
@@ -9,7 +9,7 @@ ATTRIBUTES:
 ---
 ACTION: create
 TYPE: Property
-PARENTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+PARENTS: "JavaVirtualMachine{Server[clusterName='SampleCluster']}"
 
 ATTRIBUTES:
     genericJvmArguments: -Xdisableexplicitgc -Xgcpolicy:gencon -Xgcthreads4 -Xjit:disableInterpreterProfiling -Xlp -Xmn640m -Xmos640m -Xnoloa -Xscmx256m
@@ -18,6 +18,6 @@ ATTRIBUTES:
     verboseModeGarbageCollection: True
 ---
 ACTION: delete
-OBJECTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+OBJECTS: "JavaVirtualMachine{Server[clusterName='SampleCluster']}"
 
 ...

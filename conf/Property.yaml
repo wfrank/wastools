@@ -1,12 +1,12 @@
 ---
 ACTION: Modify
-OBJECTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+OBJECTS: "JavaVirtualMachine{Server[clusterName='SampleCluster']}"
 "
 ATTRIBUTES:
     systemProperties: []
 ---
 ACTION: Modify
-OBJECTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+OBJECTS: "JavaVirtualMachine{Server[clusterName='SampleCluster']}"
 "
 ATTRIBUTES:
     systemProperties: 
@@ -27,14 +27,14 @@ ATTRIBUTES:
 ---
 ACTION: Create
 TYPE: Property
-PARENTS: "JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"
+PARENTS: "JavaVirtualMachine{Server[clusterName='SampleCluster']}"
 "
 ATTRIBUTES:
     name: com.ibm.ws.cache.CacheConfig.cacheProviderName
     value: com.ibm.ws.objectgrid.dynacache.CacheProviderImpl
 ---
 ACTION: Delete
-OBJECTS: "Property{JavaVirtualMachine{Server[clusterName='WCUSPRFINST' & name~'server1']}"}[
+OBJECTS: "Property{JavaVirtualMachine{Server[clusterName='SampleCluster']}"}[
               name='com.ibm.ws.cache.CacheConfig.filterInactivityInvalidation' |
               name='com.ibm.ws.cache.CacheConfig.useServerClassLoader' |
               name='com.ibm.websphere.xs.dynacache.disable_recursive_invalidate' |
