@@ -1,7 +1,7 @@
 Introduction
 ============
 
-WebSphere Administration Console is an easy to use web interface to do WebSphere configuration. While as your infrastructure become larger and larger, simple configuration tasks like changing JVM heap size of a cluster become more and more time consuming and error prone if you do it manually using WebSphere Administration Console. Imagine you have a Cluster which has 60 JVM's. Automation start matters.
+WebSphere Administration Console is an easy to use web interface to do WebSphere configuration. While as your infrastructure become larger and larger, simple configuration tasks like changing JVM heap size of a whole cluster become more and more time consuming and error prone if you do it manually using WebSphere Administration Console. Imagine you have a Cluster which has 60 JVM's. Automation start matters.
 
 There are some public available wsadmin script which address the issue to a certain extend, but in my opinion they are either not general purpose or not flexible enough.
 
@@ -122,7 +122,7 @@ The configuration specifications above are actually what this tool takes. Pick s
 
 If everything looks good to you, run the command again to save the changes by switching to save mode::
 
-    wasconf --mode save --verbose SampleCluster
+    wasconf --mode save SampleCluster
 
 
 Installation
@@ -154,4 +154,6 @@ The recommended place to deploy this tool is a Linux machine which is capable of
 Future Plans
 ============
 
-Currently wastools/wasconf is based on the AdminConfig configuration object of the WebSphere scripting tool: wsadmin. I am working on switching to the WebSphere JMX management API, which is more versatile.
+- Currently wastools/wasconf is based on the AdminConfig configuration object of the WebSphere scripting tool: wsadmin. While the WebSphere JMX management API is more versatile, and switching to the JMX Java API will also open the possibility of simplifying the deployment of this tool.
+
+- wastools/wasconf was designed with two operation modes in mind: apply mode and verify mode. When running at the apply mode, it apply the configuration specification into the Cell connected. When running at the verify mode, it verify the configuration of the Cell connected against the configuration specification, point out the non-compliant settings if there is any. Currently only the apply mode is implemented. To implement the verify mode in the general purpose and flexible way, a redesign of the configuration specification file format is required.
