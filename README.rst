@@ -116,13 +116,13 @@ I believe you can get the idea of this tool after going through the following ex
           ]"
     ...
  
-The configuration specifications above are actually what this tool takes. Pick some of them, modify according to your environments, save it to a pure text file under wastools/conf with .yaml extention, for example SampleCluster.yaml, then run the wastools/bin/wasconf command::
+The configuration specifications above are actually what this tool takes. Pick some of them, modify according to your environments, save it to a pure text file under wastools/conf with .yaml extention, for example Tutorial.yaml, then run the wastools/bin/wasconf command::
 
-    wasconf --mode reset --verbose SampleCluster
+    wasconf apply --mode reset --verbose Tutorial
 
 If everything looks good to you, run the command again to save the changes by switching to save mode::
 
-    wasconf --mode save SampleCluster
+    wasconf apply --mode save Tutorial
 
 
 Installation
